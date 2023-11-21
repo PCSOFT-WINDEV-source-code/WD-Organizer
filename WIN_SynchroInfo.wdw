@@ -1,0 +1,165 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_SynchroInfo
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_SynchroInfo
+ identifier : 0x286d09ce2d9ac64c
+ internal_properties : CAAAAAgAAAB3e/iWNLmNN7mMnAyp2CJ10U7q3cecruEcTOhPIcetC5dnGZAs5FXUZ/AMEE3Kusu1L699N1xektCBTIIWaRuwUURCASmjiZSdVTOGgizS62IHTDQjYMeJWnkfuVPesdhawcdd9o7zarZw1BISB3M4HVUgWhU5uUGbJ89EmR71ay+vYEKxkIlSGHnZioeTXYpfnFYSvP2bEq9ZpcWGCFwwMuhCylYQSP4KjGzf0qFd9bhcCIHqCvoT0DDzxEPG9ojaPBcqjQnuwBl3kS8ExAnJeYtIVA6Pch3VeCrgLyyh4EFxVJYx/R0C84PTfPZcEDFeZRe2Syr5Vqle+C6+Zg/7ei44hv8ngdv7HkFbh1tb7eousa3ecFqwtDL/OAAgihTPhocZ/MMkNld7/0Ghc43yjaJ0g9OelmFEMaHziq+W6zyoEawkBBQ64F1Qxx+vJO7PHDg7X7DRirYvGtotS3NBibsP9E95lXMw4Yi0gn7ohFBTgfGAttfF1uz7vECGQlCnSsJaQ6ftM4dI6+/LXvoteMh/0/V2iSO8K/hz/R4wDMaGafDGur8J9bXqOuRFRdKmQwLlP4WlxTW2hV+Bk8NXg2p04ysTRDYCoWrapg5ffCx/KcnqqiHxC+EgnyqzykaUmg2LATlHiz9O5xsXTTf5DStgUY0WEw2jEgh8xtgdgCV5IHKIryblW2ZwSkpuzN1iDR3yDNlkEoFZknnFzWtu4nsAUpLEk6YD4K194ifyTjz/ZhH6vtIajxJjWD6A5CzxyvI0IkVWfPwetiawV6Odft+yH70PaCNyafRe1DSBjdwBZ0XqqMRYYryc6HreOPJYi+SQEcFXOm6FZEmt7hiLAWc4yerDNDlqZKMo
+ properties :
+  width : 380
+  height : 159
+  widthClient : 378
+  heightClient : 127
+ controls :
+  -
+    name : STC_BCKGRD
+    identifier : 0x286d09ce2d9bc64c
+    internal_properties : CAAAAAgAAAAIz0ehbr06j3JSLoOF1xSvPQrYV1zF+oYfqSizCKQgx521MiX9LLkfHIUncKDPJvlVylI4pqF71et3QjbZpEZXQ1AtDeRtKuN8l/IvIlIyqPcNflMfBQC8vo70+Ugh7G3BjvyojWxdGpc5jP595IMfKT12KQ43hjpcQd8/rU9e2xTeMNJGRkQI+mE0XGj4g8rdFLL/kvTTX74eGnRoGQnLG5ZWuLlgTjo33J0VCMN9H67qumVKR+rROXAnINR28j+c0/RZxSx5Up/fBjXFeSQHBQbRWdqx6fVFUokMzKSF4UZWpc6cy9fLzzidJHId9z+55Mxwb8OjBiifMW/sdUOggxLjVvZxFVuOIVnhgIDJuNqWfGUzduwjt0Kuu+DZnTn9vUe40gzHII9NyVd0SNVM2TrQ0ARJqE+JFncqDZ9w0FsmZfLt6g==
+    properties :
+     width : 378
+     height : 128
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : IMG_ICON
+    identifier : 0x286d09ce2d9cc64c
+    internal_properties : CAAAAAgAAAC05zL6Y05/PWEhnCLvhJPgKIUPA6K1Q13hiuO4usrBnLi55jYynrDTnlrriidOS8K/cVWZTA/lso/+zPPTH7bJQa8smcnc9Bl4LvdF5e/6FJgJ69FrpGfZVcbCMMG0HzWmKN+mDjKFLlqqOj1giY8+0f+UR+9kJKlDFD4st9K9cliCZrZG0YIyBnMGNR3b0isc+T7VEh6/jp9d5Z0HgK4xjTr6O1JQnY7AwUEgfWYtab9KfGDOHJPj+JVPjeyKixi9m56IxO9wpouPtceEv1wpUZsD70euwCBxOiMaeefr++uEZ2/vnptQVew8jnMh97DHhrVyYKCnKjdxZrtXRqy/U6VtIYuCaUiMKNoh+AIJGM84HD9mdOYTXiGDAealgF8EZbmpNITm6xaKAFonXI4LTSfxEXQJS+5fsTJBQY8ZsFQHfaBFV82kfhTGu6zdYPZCf1zg0ImZSW31ZGJVD5BpWjff2YT5zCHrSaI9vTMtkZnx9iJcNZC3WOhgUGO6M+f6CoJMTQcIs29aYwNEcHWUXrwiDXQJrcE9GJcabf3WHa8SKSteSZaLv1o5GOBGfWcp6a3a526QT7et13zVOUIJDEryc7b39fH7da7E5ot65xrwMHWuTkFi6dgr1BE4h3rGjS6NJrunWilyNpk6IoFyPyelA2vkb9Jdu1tUiJi887DrFrjPTfh9ZJpo1axi/ZbkKPeJ+TC6fvJR9YJ1xPR5x+Z3pRJnnJpwFCCxPX3ngR4UBCbk043kaqC9xQO3reQYezhSgZKbrhyn5QkFI6ZZTJ7Otk+iGbC4USaFbVoJHFT1z6c0ZA97z87uzCYhxr9BGf1Zn799M02W1UQ1XAGZ6X1vZ5/mg+9s/h3WFeebTObgmJOyB4hZs6b2ar8Eo7A=
+    properties :
+     x : 8
+     y : 8
+     width : 50
+     height : 50
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_INFOTITLE
+    identifier : 0x286d09ce2d9dc64c
+    internal_properties : CAAAAAgAAAC/x92bHsZ/K0Nq9lnvtoPil/Cb4NP0z6vOS9m9tj1O9JGJDhyhBWnCiUDWOU19ew/7/vGsRGJTvGImdBJ5VE9A91rXpmNEUG8S9dR2A12HvSuhYLZG4yZbMtjuXn/FtUsf3qQUnfdqsxESxzGisfH9i1nKQtXs4fLNcJH2zT0DDR98N3t2lmg2USYj6Jx+z+1GcuxJmFKhipsFbhSUCgcWCugthoT2ordf4DT6+nMN0CGJ8Y3jazM6PqLIUT3LRORg0+qqu7gt2jMfUB2arK4EnJboLAwkUPtc8bCKmC7juHTSfREPwr9pgyr3LqEt19jepv8cQkZ688Xm3EGTvjMzt9Y/MUNcMqcN+FKqckoulSVJ6eC9rvzl7E3UjRSO0W6KUSAoQMJRnsY7kWA207lPrWF4V7bdnYaEKeCKbjzv6oREMTW4/A0EkJXgfh4YiXyqoTN3Ua/l2Z7quwlBeHqXuKkVFBA=
+    properties :
+     x : 64
+     y : 8
+     width : 308
+     height : 50
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : STC_PROCESSINFO
+    identifier : 0x286d09ce2d9ec64c
+    internal_properties : CAAAAAgAAADD1MzPJyVt8v3G11ECkjuRhKsZio22nD7qbM8jSUGuop5cs0YoA+dgyoROg3RrYF/6JMpLNneUbXoVdbDlqcynxhN0ge6kMGXMt3TxDR6SusIefl70jhtCsKy7OGTTR8XXjTsE47/T5DpAKHDP2T0FQYVmLVk4tTnl7aZg4Pc2V3WVC7LSmB8jiilkQ/fA6TCH06BUyUG5lJR6Tw5zz0siTp1VYkUcXNbENwkgfO+iA9Sn70nReqkAPAk12w5fAlbpRvFKGHl+88ImWHmTYu3/QwQqecQd2Ud0tkDdIkVwLTsMg3olhkIAWwrAyxgefJyDI7JiT+MysFXCupVOLUNMCnfhM15/oNpqOJoSH5fQoNqXlkrJrvJ6lZIzseXKvL+uLULC+0Vz9Hm6njX4VA/Z83fgtWxruAqJykI=
+    properties :
+     x : 8
+     y : 64
+     width : 364
+     height : 52
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : PROGBAR_PROCESS
+    identifier : 0x286d09ce2d9fc64c
+    internal_properties : CAAAAAgAAACjPBtDTBO4AE+fR9myOKKzn/fk4qFAgwrAz9DI6lf5gV+kwDoJOPZyxe9HaUeGDmprCL/xr78ok5+B6d7RPfq5R6ys4E0R5eQWYmn4hZJk1LutDa/egwAHl71U9KXADPYm2uAUd4BGzh9Cixc7rVVTaGbZXKq/PzcfJoCBPWHhDCiI73/e6tW7dniRPIFJcBleNXxf+1y/qVRZ5xsfPIApd0RY0BWWQpoKXV/wmNKuO2ky4LFaZ4pnJpeEbDWjz2oxMr/SRSgrga9hAylxyEpdQ1XgkZrfC26i7xUXJ7nPaqncDsPGxexvJuBRjg5+MZC+rp9vRxnP/5n9LUNSYNbTZ6biqI/cJQHPBGDGTw61jv+ptRRs1Urjy3p3rXnaMtglZO1dfas0eKLLRNIGSiw7hg1xw49mwlcFzX3JwaiJV31P5oMg63z37RJxxQAJOt98MPgqkG5+iEUnm9e/pDikHMtN2UvIbF7oAPfeAIDANGqXuyaS3KxwcP8aaIttLeLBKM4mucQ6mziW5Qbx8SgG2jSUebc0KqFa7qlIbbfxFYgty2kGqzMucLVW43yCScmq2H91ugt/QXjVt7kzlCS4i/jOlU5Ic1LfTu8sM9/kMhfLMjDT7qqdkusC0+Fd79oDwToCCMlmZwHrEbdD9U+SQTQtqiwxk5I9L2esC/PI+Pp3Ldi8aW1NTchsFkNY2Ijgf6jAQ8cjNk6aaDqJ+a4xxLFy4miquLy2IfdxMS/zWueDd+IKyQlEE5jCDc3Re3xDsNmaFdszR2nnGQpaJbfJoU/0zsckM1um7WSSQANAAnKNEZG+y620NImU1gEq83oxYK7Ru7FH1N6zNdMmOBH6mVY8rKyMaYRocf8k8qwiNfXx5sYHiK7+1C5VghpLw+I90TKYnTpYtA5FEneh1yl98APbiEJb+S5Oyvjj8zUUwlyDbh4kEJKj
+    properties :
+     x : 8
+     y : 134
+     width : 364
+     height : 14
+    type : 10
+    code_elements :
+     type_code : 17
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x2b0505c0135d6fc4
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAhFsNxKMy6cmBbiQl49GQXbZPG+fGXi9lVEKhZK7iJGzWW16VKlJs/XVFWjZCtf5p0ENSfvN6J/eEQSi+6F5EuX0H+CtlwYPSQNNyeb9A4PyVOFisFZutOZ+hg
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      MySelf..ProgressBarSystem = PROGBAR_PROCESS
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : Process
+     procedure_id : 1760073809814865484
+     type_code : 14
+     code : |1-
+      // Summary: Indicates the progress of the current process
+      PROCEDURE Process(LOCAL nAdvance is int, LOCAL sAction is string = "", LOCAL sInprogress is string = "")
+      
+      	IF sAction <> "" THEN
+      
+      		// Message
+      		WIN_SynchroInfo.STC_PROCESSINFO = gFontBold(True) + sAction + gFontBold(False) + [CR + "In progress: "] + sInprogress + ["..."]
+      	END
+      	
+      	// Progress
+      	WIN_SynchroInfo.PROGBAR_PROCESS += nAdvance
+      
+      	// Wait
+      	Wait(1, waitTimer)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b0505b2001b390b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

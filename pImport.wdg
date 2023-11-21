@@ -1,0 +1,502 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pImport
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1b01618800760e56
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      CONSTANT
+      	fromOutlook = 1
+      	fromGoogle  = 2
+      	fromNotes   = 3
+      	
+      	cftApplyModifications 		= 1
+      	cftKeepCurrentData		= -1
+      	cftCancelImport				= 0
+      	cftRestoreEvent			= 10
+      	cftDeleteEvent			= 11
+      	cftModificationMode				= 0xff
+      	cftDeletionMode				= 0x0f
+      END
+     type : 720896
+  procedures :
+   -
+     name : OutlookImportCalendar
+     internal_properties : CAAAAAgAAACuvfIXm0HgJ28GKlcyh/EE/59yKGOpRn5WckGbovzb70OR05u6ddRGXW77QBIxY/4ZSMyeTo8lJfoJ4mT1874WlQ7DYGvLczhB+wVr9OFSWJD6Zuwi0t0mwHfZ6kg1U9XWScYhpAtmkbwAcgJyXm/HEyBeaMA6tpiUok0DiQZj2zK4zlirlIiKGTJU6b91oXcb/Akx0s36akRyyhsxGjYdMGyh6mwnI4dYmgls8RImmMJmZJsE3U7jQKT0DFnDMn+DnaE=
+     procedure_id : 1945943763636917919
+     type_code : 15
+     code : |1-
+      // Summary: Imports the events found in an Outlook calendar
+      PROCEDURE OutlookImportCalendar(LOCAL sProfile is string, LOCAL nOrganizerID is int, LOCAL bInfo is boolean = True)
+      
+      	nSessionID 		is int
+      	nNbEvents	is int
+      	sEventCap	is string
+      	nReturn			is int
+      	sAppointmentID	is string
+      
+      	HourGlass(True)
+      
+      	// Starts a session
+      	nSessionID = OutlookStartSession(sProfile)
+      
+      	// Browses the appointments
+      	IF AppointmentFirst(nSessionID) THEN
+      
+      		WHILE mAppointment.Out = False 
+      			
+      			sAppointmentID = mAppointment.ID
+      			
+      			// Checks whether this event was already imported
+      			HReadSeekFirst(OrganizerEvent, OutlookIdentifier, sAppointmentID)
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Check whether a modification conflict exists
+      				nReturn = TriggerExternalConflict(fromOutlook)
+      				
+      				// Cancel the import
+      				// The event will be proposed again during the next synchronization
+      				IF nReturn = cftCancelImport THEN
+      					
+      					// Next appointment, without modification
+      					AppointmentNext(nSessionID)		
+      					CONTINUE
+      				ELSE
+      					
+      					// Keep the data found in the database
+      					IF nReturn = cftKeepCurrentData THEN
+      						
+      						// mAppointment was modified by the WIN_CONFLICT window						
+      						// Saves the modifications performed in Outlook
+      						AppointmentModify(nSessionID)	
+      					ELSE
+      						// Applies the new data found in Outlook
+      					END
+      					
+      					// The event must be modified
+      					OrganizerEvent.Guests = ""
+      				END
+      			ELSE
+      				
+      				// Reset the data
+      				HReset(OrganizerEvent)
+      			END
+      			
+      			// Imports the event data
+      			OrganizerEvent.Author 				= ""
+      			OrganizerEvent.Content				= mAppointment.Notes
+      			OrganizerEvent.StartDate			= mAppointment.StartDate
+      			OrganizerEvent.EndDate				= mAppointment.EndDate
+      			OrganizerEvent.OutlookCalendarID		= nOrganizerID
+      			OrganizerEvent.Locations				= mAppointment.Location
+      			OrganizerEvent.Title				= mAppointment.Subject
+      			OrganizerEvent.WholeDay		= mAppointment.FullDay
+      			OrganizerEvent.CategoryID			= CategoryImport(mAppointment.Category)
+      			OrganizerEvent.OutlookIdentifier	= sAppointmentID
+      									
+      			// Participants
+      			FOR i = 1 _TO_ mAppointment.NbParticipant
+      				OrganizerEvent.Guests += [CR] + Replace(Replace(mAppointment.Participant[i], "<", TAB), ">", "")
+      			END
+      			
+      			// Saves the event
+      			IF OrganizerEvent..NewRecord THEN
+      				HAdd(OrganizerEvent)				
+      			ELSE
+      				HDeactivateTrigger()
+      				HModify(OrganizerEvent)
+      				HActivateTrigger()
+      			END
+      			
+      			// Next appointment
+      			AppointmentNext(nSessionID)		
+      		END		
+      	END
+      	
+      	// End of session
+      	CloseSession(nSessionID)	
+      	
+      	HourGlass(False)
+      	
+      	IF bInfo THEN
+      		
+      		// If no event was imported
+      		IF nNbEvents = 0 THEN
+      			Warning("This profile contains no event")
+      		ELSE
+      			sEventCap = (nNbEvents = 1 ? "event was imported" ELSE "events have been imported")			
+      			Info("[%nNbEvents%] [%sEventCap%]")
+      		END
+      	END
+      	
+     type : 458752
+   -
+     name : CategoryImport
+     procedure_id : 1945945215335939893
+     type_code : 15
+     code : |1-
+      // Summary: Creates a category if necessary and returns its identifier
+      PROCEDURE CategoryImport(LOCAL sName is string, sCategoryCaption is string = "", nColor is int = RGB(191, 210, 234))
+      
+      	IF sName = "" THEN 
+      		sCategoryCaption = ""
+      		nColor = -1
+      		RESULT 0
+      	END
+      	
+      	// Checks whether the category exists
+      	HReadSeekFirst(OrganizerCategory, Caption, ExtractString(sName, 1, CR))
+      	IF NOT HFound(OrganizerCategory) THEN
+      		
+      		// The category does not exist, create it
+      		HReset(OrganizerCategory)
+      		OrganizerCategory.Caption = ExtractString(sName, 1, CR)
+      		
+      		if HNbRec(OrganizerCategory) < pTools.Colors..Count then
+      			OrganizerCategory.Color = pTools.Colors[HNbRec(OrganizerCategory) + 1]
+      		END
+      		
+      		HAdd(OrganizerCategory)		
+      	END
+      	
+      	sCategoryCaption = OrganizerCategory.Caption
+      	nColor		  = OrganizerCategory.Color
+      	
+      // Returns the identifier of the category
+      RESULT OrganizerCategory.OrganizerCategory	
+     type : 458752
+   -
+     name : GoogleImportCalendar
+     internal_properties : CAAAAAgAAABemGxTsu1VgQRtEKd20NbdYLX58uq86knwCPMzS29h11JbPiHgbzDvfsr+B1RZrGMvFdTmwp6nG1jIa3jshGxws4Bu4y3hu9yRg+vMkytIwDV8sdRd/Ir0kmE49zjAZ925qWmKLXgZdHT0TzmxsnVfgGYxDW2BH/FsVqCCSGppTfPyG52QoSPxd9JNxmQvjfPy4qGZZIKCBNVSKXONBT/9YAEu8uHjSeCKgB8FQ1LEG/DkCVBeAbwa9A==
+     procedure_id : 1945951507468295266
+     type_code : 15
+     code : |1-
+      // Summary: Imports the events from a Google calendar// Automatic process of errors: display the error, RESULT <no value>
+      PROCEDURE GoogleImportCalendar(AConnection is a gglConnection, LOCAL sIdentifier is string, LOCAL nOrganizerID is int, LOCAL bInfo is boolean = True)
+      
+      	AnOrganizer 		is a gglCalendar
+      	AnEvent 	is a gglEvent
+      	nNbEvents 	is int
+      	sEventCap 	is string
+      	nReturn			is int
+      	Person 		is a gglPerson
+      	Location 			is a gglLocation
+      		
+      	HourGlass(True)
+      	
+      	// Retrieves the organizer
+      	AnOrganizer = GglGetCalendar(AConnection, sIdentifier, "19700101")
+      		
+      	// Browses the organizer events
+      	FOR EACH AnEvent of AnOrganizer.Event
+      		
+      		// Checks whether this event was already imported
+      		HReadSeekFirst(OrganizerEvent, GoogleIdentifier, AnEvent..Identifier)
+      		IF HFound(OrganizerEvent) THEN
+      			
+      			// Check whether a modification conflict exists
+      			nReturn = TriggerExternalConflict(fromGoogle, AnEvent)
+      						
+      			// Cancel the import
+      			// The event will be proposed again during the next synchronization
+      			IF nReturn = cftCancelImport THEN
+      				
+      				// Next appointment, without modification
+      				CONTINUE
+      			ELSE
+      				
+      				// Keep the data found in the database
+      				IF nReturn = cftKeepCurrentData THEN
+      					
+      					// AnEvent was modified by the WIN_CONFLICT window						
+      					// Saves the modifications performed in Google
+      					GglWrite(AConnection, AnOrganizer)
+      				ELSE
+      					// Applies the new data found in Google
+      				END
+      				
+      				// The event must be modified
+      				OrganizerEvent.Locations 	= ""
+      				OrganizerEvent.Guests = ""
+      			END
+      			
+      		ELSE
+      			
+      			// Reset the data
+      			HReset(OrganizerEvent)
+      		END
+      				
+      		// Imports the event data
+      		OrganizerEvent.GoogleCalendarID 		= nOrganizerID		
+      		OrganizerEvent.Author		   		= AnEvent..Author..Name + [TAB] + AnEvent..Author..Email
+      		OrganizerEvent.Content		  		= AnEvent..Content
+      		OrganizerEvent.StartDate		   	= AnEvent..StartDate
+      		OrganizerEvent.EndDate		   		= AnEvent..EndDate
+      		OrganizerEvent.Title		   		= AnEvent..Title
+      		OrganizerEvent.GoogleIdentifier	= AnEvent..Identifier
+      		OrganizerEvent.WholeDay		= AnEvent..WholeDay
+      		
+      		// People
+      		FOR EACH Person of AnEvent.Guest
+      			OrganizerEvent.Guests += [CR] + Person..Caption + [TAB] + Person..Email
+      		END
+      
+      		// Locations
+      		FOR EACH Location of AnEvent.Location
+      			OrganizerEvent.Locations += [CR] + Location..Value
+      		END
+      
+      		// Saves the event
+      		IF OrganizerEvent..NewRecord THEN
+      			HAdd(OrganizerEvent)
+      		ELSE
+      			HDeactivateTrigger()
+      			HModify(OrganizerEvent)
+      			HActivateTrigger()
+      		END
+      		
+      		// Increments the counter
+      		nNbEvents ++
+      	END
+      	
+      	HourGlass(False)
+      	
+      	IF bInfo THEN
+      	
+      		// If no event was imported
+      		IF nNbEvents = 0 THEN
+      			Warning("This organizer contains no event")
+      		ELSE
+      			
+      			sEventCap = (nNbEvents = 1 ? "event was imported" ELSE "events have been imported")			
+      			Info("[%nNbEvents%] [%sEventCap%]")
+      		END
+      	END
+      	
+     type : 458752
+   -
+     name : OutlookListProfiles
+     internal_properties : CAAAAAgAAABMZbzOui8Byfyg/4Zx4n6EwBvYoLaKvDeYD5mhY6GQHsVC8YnYz3bT7oh63bHIm7HDoarBGlUVpWVRDpgTpOme0llByFJMEdV9GKjdFkEiL3n6DqFchfyOw9J/ib+T9nPTDyKEw61CrafyY82ct9L/aWX5oR6iuR4R7p/0N7xSi4GrlzPJoGSaNErvtNZBpRjevgKqjNnlndjfm9ALywUU9wc0uo+0f0PwTLe0YuqCfGy+FmqjI8sygLUPG+fbori/CfnCjHxH0f9G1P8=
+     procedure_id : 1946295319593617323
+     type_code : 15
+     code : |1-
+      // Summary: Retrieves the list of available Outlook profiles
+      PROCEDURE OutlookListProfiles()
+      
+      	sList 		is string
+      	bApp64		is boolean = In64bitMode()
+      	bOutlook64	is boolean = Outlook64Bits()
+      	
+      	
+      	/////
+      	// CAUTION:
+      	// If the application is in 32 bits and if Outlook is in 64 bits: unable to retrieve the list of profiles (MAPI is not 32/64 compatible)
+      	// If the application is in 64 bits and if Outlook is in 32 bits: unable to retrieve the list of profiles (MAPI is not 32/64 compatible)
+      	/////
+      	
+      	IF (bOutlook64 AND bApp64) _OR_ (NOT bOutlook64 AND NOT bApp64) THEN
+      	
+      		// Retrieves the list of Outlook profiles
+      		sList = wl.OutlookListProfile()
+      	ELSE
+      
+      		IF ErrorOccurred THEN
+      			ErrorThrow(1, ErrorInfo(errMessage))
+      		ELSE
+      			ErrorThrow(1, StringBuild("The version of Outlook (%1) installed on your computer is not compatible with the application (%2)", (bOutlook64 ? "64bits" ELSE "32 bits"), (bApp64 ? "64bits" ELSE "32 bits")))	
+      		END
+      	END
+      		
+      RESULT sList
+     type : 458752
+   -
+     name : NotesImportCalendar
+     internal_properties : CAAAAAgAAADaVcYQMCZEsQiY16HmpPu+uYaeCvYxPSY6nFTBMUpK2wyJKzpJNNDp4qoWWO5Yqe7qEoYDFgiV87IOPYYcztRh2drIDEgIf06gKPLzO8CP9DWaihwsIQ4ty/hD435j81oa6Yr6M7Q48yfSrY4X9wr3EFZs3etcR9yHTFuXXMy8cUHjG1ladZx5ZwSmbqPn0uSG1GcGGbI=
+     procedure_id : 1946302045516000460
+     type_code : 15
+     code : |1-
+      // Summary: Imports the events found in a Lotus Notes calendar
+      PROCEDURE NotesImportCalendar(LOCAL nOrganizerID is int, LOCAL bInfo is boolean = True)
+      
+      	nConnectionID 	is int
+      	nSessionID	 	is int
+      	nNbEvents	is int
+      	sEventCap	is string
+      	nReturn			is int
+      	sAppointmentID	is string
+      	__IDNOTES__		is int
+      	
+      	HourGlass(True)
+      
+      	// Positions on the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      			__IDNOTES__ = nSessionID
+      		ELSE
+      			__IDNOTES__ = nConnectionID
+      		END
+      		
+      		// Browses the appointments
+      		IF AppointmentFirst(__IDNOTES__) THEN
+      			
+      			WHILE mAppointment.Out = False 
+      						
+      				sAppointmentID = mAppointment.ID
+      				
+      				// Checks whether this event was already imported
+      				HReadSeekFirst(OrganizerEvent, NotesIdentifier, sAppointmentID)
+      				IF HFound(OrganizerEvent) THEN
+      										
+      					// Check whether a modification conflict exists
+      					nReturn = TriggerExternalConflict(fromNotes)
+      					
+      					// Cancel the import
+      					// The event will be proposed again during the next synchronization
+      					IF nReturn = cftCancelImport THEN
+      						
+      						// Next appointment, without modification
+      						AppointmentNext(__IDNOTES__)		
+      						CONTINUE
+      					ELSE
+      						
+      						// Keep the data found in the database
+      						IF nReturn = cftKeepCurrentData THEN
+      							
+      							// mAppointment was modified by the WIN_CONFLICT window						
+      							// Saves the modifications performed in Notes
+      							AppointmentModify(__IDNOTES__)	
+      						ELSE
+      							// Applies the new data found in Notes
+      						END
+      						
+      						// The event must be modified
+      						OrganizerEvent.Guests = ""
+      					END
+      				ELSE
+      					
+      					// Reset the data
+      					HReset(OrganizerEvent)
+      				END
+      				
+      				// Imports the event data
+      				OrganizerEvent.Author 				= ""
+      				OrganizerEvent.Content				= mAppointment.Notes
+      				OrganizerEvent.StartDate			= mAppointment.StartDate
+      				OrganizerEvent.EndDate				= mAppointment.EndDate
+      				OrganizerEvent.NotesCalendarID		= nOrganizerID
+      				OrganizerEvent.Locations				= mAppointment.Location
+      				OrganizerEvent.Title				= mAppointment.Subject
+      				OrganizerEvent.CategoryID			= CategoryImport(mAppointment.Category)
+      				OrganizerEvent.NotesIdentifier	= sAppointmentID
+      				OrganizerEvent.WholeDay		= mAppointment.FullDay
+      				
+      				// Participants
+      				FOR i = 1 _TO_ mAppointment.NbParticipant
+      					OrganizerEvent.Guests += [CR] + Replace(Replace(mAppointment.Participant[i], "<", TAB), ">", "")
+      				END
+      				
+      				// Saves the event
+      				IF OrganizerEvent..NewRecord THEN
+      					HAdd(OrganizerEvent)
+      				ELSE
+      					HDeactivateTrigger()
+      					HModify(OrganizerEvent)
+      					HActivateTrigger()
+      				END
+      				
+      				// Increments the counter
+      				nNbEvents ++
+      				
+      				// Next appointment
+      				AppointmentNext(__IDNOTES__)		
+      			END
+      			
+      		END
+      		
+      		// Close the connection
+      		IF nSessionID <> 0 THEN NotesCloseDatabase(nSessionID)
+      		CloseSession(nConnectionID)
+      		
+      	END	
+      
+      	HourGlass(False)
+      	
+      	IF bInfo THEN
+      	
+      		// If no event was imported
+      		IF nNbEvents = 0 THEN
+      			Warning("This profile contains no event")
+      		ELSE
+      			sEventCap = (nNbEvents = 1 ? "event was imported" ELSE "events have been imported")			
+      			Info("[%nNbEvents%] [%sEventCap%]")
+      		END
+      	END
+     type : 458752
+   -
+     name : TriggerExternalConflict
+     internal_properties : CAAAAAgAAABm1uNH2p1tnVgrJlRZHCXGVYhr4uqZ612cnMC0n4+mn+5mtp7Nflww9mSVQhJPY0mgMc+KBRk5XNNmcqRcXmL0x7OotUTtGaVkU/U5N583j8A7LPhUz1Dvj/w3v8Qt6YwG7Qa2mw7+OUn0PzDRU5A5pIII0Q9AR9yRDh3VEjqWTyqEtlYnVHnUgu+xZ/qG34Iiwqgd0DjqoE1k2vzH1lQ+sBxYiJgB
+     procedure_id : 1946714396729138608
+     type_code : 15
+     code : |1-
+      // Summary: Triggers a modification conflict
+      PROCEDURE TriggerExternalConflict(LOCAL nSource is int, AnEvent is a gglEvent dynamic = Null)
+      
+      	nReturn is int
+      
+      	SWITCH nSource
+      		
+      		// The mAppointment variable must be read from Outlook and Notes
+      		CASE fromOutlook, fromNotes
+      			
+      			// Opens the conflict window
+      			nReturn = Open(WIN_Conflict, cftModificationMode, nSource)
+      						
+      			RESULT nReturn
+      			
+      		// The gglEvent object must be read from Google
+      		CASE fromGoogle
+      						
+      			// Opens the conflict window
+      			nReturn = Open(WIN_Conflict, cftModificationMode, nSource, AnEvent)
+      			
+      			RESULT nReturn
+      			
+      	END
+      	
+      RESULT True
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x1b0161820074f5e6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

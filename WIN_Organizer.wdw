@@ -1,0 +1,2943 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Organizer
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Organizer
+ identifier : 0x286d09da2fd4f29c
+ internal_properties : CAAAAAgAAADpzuW26wcpmLwdUY9dqKR52F+bkn/GgKNG/UmwQsjcYkMAwFD225wUnCVTR8cGrjx2IYsm1fzMJZFz9MlXaxQw1SSvR84HPMLRBGAXsIgDHM6RQnfNYVOZicjszec8XrKQIW3YZzEvQEtC94WgKTH1VjphkygrVwIlcmfIWfMnTuEU3C2GgkXgE0vYMEHW5YmuciwUho0Lto2ejRtVNt59WxUA4uMFkLOQYktdkSaUaYCZsv+K8M/ENcWEXAKWyqkAfkya6LgYtQF4dhMireSt5oMsz0MHObNUHjdOec7edllmwgJTPcphCCTrZQH2W+Atk3XdCVlQ+G2b6wWyTh4f7O1vzGFy/bIL/VnfZOLSxXuXu88U4qRRQiLpLVtaW5mMo1UWvVhDNZ6i1R24jEQhIWwo1bgd8rrwlaFeDhqaQ2jxCqmw7LghUrzovLzz+I+qnI8JOLxy698p3SkLD9n8qrz+RotTSIQRkR2PS8HvQ+7uEvzBT95+HKamQti252Oz38Ro7jdvN6Wj0l7ipnP+P2YIQobZRCwzQEZOgWBw/KcwPWgiMjJwG1PfgUpMZXlSnageepLEPMthdfS4wG8uZ+HBRj/S4AAc8v7ouYqqxWLI4X35I4y7/jL0sNeByztcb3WgfHME8sc914fcCGBR7ZkuDs4YwWWc0DI6mQnWbt99bHyC4KaEXqv/8/NBHCgBq2v7uXwjX2Qt5ROG4AsIK+l8IbASE1UP8BwwkL1VOgjds9LgvqmZfVkFQtWEtsnilUYjr9rxkbQZarK9g59pZJ0lBLxxerJI8JjdWlp6w7QeqJjIzgVFBYbw71EDemSd7dh4FIJVhclbdRvNojxttPT6O5DuGlwrAw==
+ properties :
+  width : 1010
+  height : 728
+  widthClient : 1008
+  heightClient : 674
+ controls :
+  -
+    name : ORG_ORGANIZER
+    identifier : 0x286d09da3007f2ac
+    internal_properties : CAAAAAgAAABI8dDOZk29E70HvYt/1R9/5R9i8zDcZuGjmaczjpaaqQcYfMhXR0nozyXRDZ4oOsKdFll6ZKuYc+Eacn2Y1xFyx3BiGwua2aqdBVs3L8Fwj+2OJzwMzqciBLmjcLhMriKHqJupwTAbS6AV8zP5KaKp/5iLUYmRoFviioVAm5T1hYC9BaVLBgj8CDnOezJuT175Mv1cFGTxsD5CCCtuzi4XTB2jStMw6mY/K5hBWMbqqC0DdboJoGEwHJmEDXiGUXS4upvfHrpi2wo7s9NdNHUdCdSUKRh3J7afE3nMsgf3w9SUEgNccc9rNyP0R2tPLD/2GBej9z7n69WDuTPM7nkBsB13tYF/jsjfCzvLslpau8YLjLFlC3z/DTMIlg9jsRung1RCIE1qA0/d13rlJ9b6e/exXQivDAKfOq/x2u0VghTjby1CU7QNYl8p33F1kFAzuj1l1YOhVZHR8EZZ4VDhppbLiczwphsLDbT0mXvPRS0K3QcSw3mWuoPjdgicQJQrFCoATMZV5FxR4wBLmEAzDriM2X+XKcjrNFDfUUgUNonzf2A7gJxO2HIbpexUGfDMZhv1tmHLVn45LS62xVIGArHJRDd5s95ZO4JxWRzIfG4Fs3It2rQvBo2rzIQ0Ik8xYyLbXrZqIyKK6rcRYW8HGm2rEkI1YD5kGTh93qmZlWtHpDW9IF8zysDMoeULDPfDLMkqU/q4lkktBG/DIqi5+WkAyVjyAXDxsOObyxpD10Fu5LHOhNU3gww0wC4OjtbBSXD441tw8Msx0LeCPi1H97qqDCah+u/bFOHMHTyjIJ9G7q27ECKa0nFzdiVJygkVBQCqwHUEVDCNxEut3cl6R1k+S+gX927JLUqFvReVA9WRIXhKN0xvOgWIqvW9/9VviAVh9s1aulg3PxAyea77rmcbwp9Q6pHGSJZXFBcdDJVdEJTDpsPx5cttZeIruM3PIlPf6zJD452ltzqvdUaTdb0t9fx/pqanw9jp163TacErsXmfaRz4PoUAImNeAdgjhdPj0FMe4Yv9R9iaE/BkFgVWuWvywQITI25hteSkffBYETB4VFiAtp2shzfrGukdQeU0P1aI7J5Mqm+f2G+I1XsYEOk0vBOT16IQj0hMh8uXwFVBWMgA/tCPDCWTBbkaY9b6HBVW24k0BWj104SiSNkHjEb9LhXzkgSPUzuN00agSh84TAQ8oK/mUKJdFvpLg/UC71Fc8ljJlaKUx77u8HZo1M7J/KFi4+5zE0RzwV+NFQuHNtJiyTgjq/30M5UC6SUd4/Mq0BNAIuJ30ybbcgI607crJ76WaQCJIE9XRH/I7httnz84quobiGx8v4RbwfhEAP977wmiGuUglWX8wejfxyyPPqH0S4RM7qS+xZJEH2wkhoaQoBooRMnb0DFqCD7l/AQjE10bVFSCRJig1Go1B1cISKvC6EigZKbF8PFaoobrM/JVV7PsJTHFlbkvGbPZ25Y7MG63DQSLeM+PUTn1MzQnyJ5fu+OsoFZ6k7S18ctePYCxRwNA24niV9cA5E7S2oSjHhEARX9afkEeL09EmyGXStGEK4dAPvCWNejmQcOrJIYeMY+G3Oy1unUWibqeJ7FEzRbFRC5WXIqTutkNC648Q75sqortI5SbsLw11R+c5UZX0Xi4hhDIGsmUur+CbylioYNxmdINd9VCeuNepWEQSiwp5v+P3LLGqgsC6GkftEVGS2kX/9KFkJxbeeP1aj8JzVkHKnOPof+Flozt0dPpGB4zycSx9pH6nQ7tUNmEYw37Vhc+Zu0BB0kKIoZ6VG1NsnqljUP+fGAVK/lHAtg6nf393PYW/hKnnwy1mB4k745SjiAjV2qfX60Ep2E6aX3D1nXk3/IZtd8KqCpcESO3vK1WwqLFwM7k/80j55XIIp82KcS4uxB2o04CPS+kxl8gVySmBkXpAIYOEb9P0kdpHfLP6wjlwyR0s8/K4acszAyt40b/ZLhfZAKFBufAQmDQuf1owwSJk4L2msmmVfm9tpnebVv4fjkIxTT1E6tKXnOJ153R8ZrW7q8kNzll1+FldN9BXQ0D4FkRe0ZGjofn59lPxO2Et1aZEyIFgTNEqkUJntkfzZ36x2nzq8JBbcDQ/xK0pdr8YNm06hVtoEeCA1MzPOg3lmhTP3pxzCgSQO78Q63LCFR4a/6eyIJ9cu80fGygYc1avhF6eqqv3CEg/9MEgRx5I7DAIM9JtTvnPRYVuoZ/quDi7E7TjmswM2abG5mfmJRHT+g5lfnqT6k/nf5YMgUXn2FscXGzyNQqAp+/WfODdTvXMVOREPXd2GiXQmjMmULCipnb2oU9whP/E7YhZwjo/TJId7NIX1B8RdKbcF2NHAgT2gZqrGVQShjRe66qA2+NAk4MbzZh7bHJ32ToKrF8uX3UfTRYGKJz0bl7AbSnWo39fxgwAQ5mZ+s/YP9GgEPFru8ohBvDBkv1+GWl0pCSyYIaHAfsTxn/hQLLNpyaxp/hC+5lX1sWJp/8Wnt4mX3v8j5knBueNZfhgbEVI8W2WfiIA1638tZbE7jnyAwXx+d4JscNt1SjPI7Zng8n2TmxZpo2LwMoh5OYzSSik2HJerm285IRR8n1u2906pK++5Iv+UKLppAnvi6dS76HQgGIrlfqGVQjR6QhXQvse8pl/Hh4WtbY4GF9rtCEBqqu/UcZvthnAjmSJARvhW1u1WkvN5JWC4PjnQ4lQcA=
+    properties :
+     x : 183
+     y : 34
+     width : 824
+     height : 640
+    type : 76
+    code_elements :
+     type_code : 107
+     p_codes :
+      -
+        code : |1-
+         
+         DisplayEvents()
+        type : 14
+      -
+        code : |1-
+         
+         // Manages the addition of an appointment manually
+         // -> creates a record in the database and modifies the organizer event to associate it with the record in the database (ID property of ogiAppointment)
+         IF ORG_ORGANIZER > 0 THEN OnEventAdd(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 135
+      -
+        code : |1-
+         
+         // Manages the beginning of event edit (editing the title)
+         // ->
+         IF ORG_ORGANIZER > 0 THEN OnBeginningEventEdition(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 136
+      -
+        code : |1-
+         
+         // Manages the end of manual event edit
+         // -> saves the .Title modifications (only modifiable element during an edit)
+         IF ORG_ORGANIZER > 0 THEN OnEndEventEdition(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 137
+      -
+        code : |1-
+         
+         // Manages the selection of an event
+         // ->
+         IF ORG_ORGANIZER > 0 THEN OnEventSelection(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 130
+      -
+        code : |1-
+         
+         // Manages the move of an event
+         // -> saves the modifications of .StartDate and .EndDate
+         IF ORG_ORGANIZER > 0 THEN OnEventMove(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 131
+      -
+        code : |1-
+         
+         // Manages the resizing of an event
+         // -> saves the modifications of .StartDate and .EndDate
+         IF ORG_ORGANIZER > 0 THEN OnEventResizing(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 132
+      -
+        code : |1-
+         
+         // Manages the manual deletion of an event
+         // -> asks for confirmation before the deletion
+         // -> flags the event as deleted in the database
+         IF ORG_ORGANIZER > 0 THEN OnDeleteEvent(ORG_ORGANIZER[ORG_ORGANIZER])
+        type : 134
+      -
+        code : |1-
+         
+         IF ModeAppointmentEdition <> 0 THEN	
+         	// Ends the edit
+         	OnEndEventEdition(MySelectedAppointment)
+         END
+         
+         // No selected appointment
+         MySelectedAppointment <- Null
+         
+         // Retrieve the period with ..StartDate and ..EndDate
+         SelectedPeriod.StartDate 	= ORG_ORGANIZER..StartDate
+         SelectedPeriod.EndDate 	= ORG_ORGANIZER..EndDate
+        type : 133
+      -
+        code : |1-
+         
+         // 
+         OnOrganizerZoom()
+         
+         // No selected appointment
+         MySelectedAppointment <- Null
+         
+         dDate is date
+         
+         // Retrieves the current date
+         dDate = OrganizerPosition(ORG_ORGANIZER)
+         
+         // Selects the date in the calendar
+         CAL_CALENDAR = dDate
+         CalendarPeriod(dDate)
+         
+         // Refreshes the events
+         DisplayEvents()
+        type : 138
+      -
+        code : |1-
+         
+        type : 66048
+      -
+        internal_properties : CAAAAAgAAAAIW5hLl499Fu+EJItP/9LOLAUlQP2WmhhEa7of4qpI9yuVDwBrKmY0UeNFo4aVfpxSay989B9n9bEM55qPxzb9A8QrRMEVuUXOZuaIVIFWhXTnT3L4qd8/1MlW4Gkt/vMyxEzQ/BB7sGpECPN/3yF7CnrhtWivaWiT7NtOKjiHxx5oQll9KkJExabyFzoEjh6mETAUNeusE6wZuCVj9Kl47RbZIaMoLIZkfvXrb7XR5rT024iupfarFDt7UMsnbezf/Thv69m7rkNEi2pd/blU6B9Qh7yf70MXi5ZDzLUVAwD4+ELg4yeAas+R8KqfasWDnnhqqi/NvIk3hI/0ntC6F4auUpPlUiTePVDUtzIcqt8BCQ==
+        code : |1-
+         
+         // The mouse coordinates are in 'Screen origin' mode
+         nMouseXPos is int = MouseXPos
+         nMouseYPos is int = MouseYPos
+         
+         // Start to give focus to the organizer
+         OrganizerGiveFocus(ORG_ORGANIZER, nMouseXPos, nMouseYPos)
+         
+         // Retrieves the subscript of the hovered event
+         nSubscript is int = OrganizerInfoXY(ORG_ORGANIZER, oriAppointment, nMouseXPos, nMouseYPos)
+         IF nSubscript > 0 THEN
+         		
+         	AppointmentSubscript = nSubscript
+         	
+         	// Enables the 'Copy the appointment' option
+         	MENU_Organizer.OPT_CopyAppointment..State = Active	
+         	
+         	// Enables the 'Export the appointment' option
+         	MENU_Organizer.OPT_ExportAppointment..State = Active	
+         	
+         	// Enables the 'Classify' option
+         	MENU_Organizer.OPT_ClassifyCategory..State = Active
+         	
+         	// If the appointment has no category
+         	IF ORG_ORGANIZER[nSubscript].Category = "" THEN
+         		
+         		// Disables the 'Erase the category' option
+         		MENU_Organizer.OPT_ClassifyCategory.OPT_EraseCategory..State = Grayed
+         	ELSE
+         		
+         		// Enables the 'Erase the category' option
+         		MENU_Organizer.OPT_ClassifyCategory.OPT_EraseCategory..State = Active
+         	END
+         	
+         	// Enables the 'Modify the appointment' option
+         	MENU_Organizer.OPT_ModifyAppointment..State = Active
+         		
+         	// Enables the 'Link to an organizer' option
+         	MENU_Organizer.OPT_Link..State = Active
+         	
+         	// Searches for the appointment
+         	HReadSeekFirst(OrganizerEvent, OrganizerEventID, ORG_ORGANIZER[nSubscript].ID)
+         	IF HFound(OrganizerEvent) THEN
+         		
+         		// If the appointment is linked to an Outlook, Notes or Google calendar
+         		MENU_Organizer.OPT_Link.OPT_LinkOutlook.OPT_LinkOutlook_Cancel..State 		= (OrganizerEvent.OutlookCalendarID 	<> 0 ? Active ELSE Grayed)
+         		MENU_Organizer.OPT_Link.OPT_LinkLotus_Notes.OPT_LinkLotus_Cancel..State 	= (OrganizerEvent.NotesCalendarID 	<> 0 ? Active ELSE Grayed)
+         		MENU_Organizer.OPT_Link.OPT_LinkGoogle.OPT_LinkGoogle_Cancel..State 		= (OrganizerEvent.GoogleCalendarID 	<> 0 ? Active ELSE Grayed)	
+         		
+         	END
+         ELSE
+         	
+         	AppointmentSubscript = 0
+         	
+         	// Disables the 'Copy the appointment' option
+         	MENU_Organizer.OPT_CopyAppointment..State = Grayed	
+         	
+         	// Disables the 'Export the appointment' option
+         	MENU_Organizer.OPT_ExportAppointment..State = Grayed	
+         	
+         	// Disables the 'Classify' option
+         	MENU_Organizer.OPT_ClassifyCategory..State = Grayed
+         	
+         	// Disables the 'Modify the appointment' option
+         	MENU_Organizer.OPT_ModifyAppointment..State = Grayed
+         	
+         	// Disables the 'Link to an organizer' option
+         	MENU_Organizer.OPT_Link..State = Grayed
+         END
+         
+         // If an appointment was copied
+         IF AppointmentClipboard <> Null THEN
+         
+         	// Enables the 'Paste the appointment' option
+         	MENU_Organizer.OPT_PasteAppointment..State = Active
+         ELSE
+         
+         	// Disables the 'Paste the appointment' option	
+         	MENU_Organizer.OPT_PasteAppointment..State = Grayed
+         END
+        type : 65659
+  -
+    name : IMG_GOOGLEPIC
+    identifier : 0x286d09da3008f2ac
+    internal_properties : CAAAAAgAAAADkrsSYqfN82fW4N8Pf+1bqmVaNC5rUHi2qATGgKQVWL3VOfghtsZp+yIjSTDnZ65vXLcQK1eSoT/cnJsRei8Rf4sOzQhAuz938LMBcB60RfTQAlMCohuT08T5MmP9cnSuBmsnIbQ1V42UPr5E0K8jpZ/c1YD+37+dZ2HFUY7NcOPmTB13jmaRRmWBmnTyWSsN1+3S40WEODhsZ9Zjy6jHP117Im3/YFS0p3s1xYNu7/DopyXPTQ3PuNjTmYavF9yL7nKV3tdmdXRu7b/PElz+7y97Ez+a/pfPNA4p5dCytcROmz7JMB2wDirWI/QZev6Pys8TxxEJhWNY1i61SAGpFEEiyJbUcqsL3HfYkYf/DdCihEH/W5lxZ23GkkIPQIHi7zX9DdvXEF36t0g9SpIbyWs3Y2QdIiFzxmp9UiPZOlKyns6ZYZLpMuFe93r9DEcRPF/M9EgMSKdXXtInbHv3HsNI2VF3tU/002mc6wrcLHNkYBRv8wv/QjmX/G9gDspCxpLCNMcZUcZk4oFeWfx/aFp+auzjCjAY/995lNbwd2pbZLmokKiB38kFmdYJ9skrwPbz9npJwhkzmj2oJ7RoxRdzRbZXl2zcC1ghOOeRUYZk+A==
+    properties :
+     x : 6
+     y : -81
+     width : 18
+     height : 18
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_NOTESPIC
+    identifier : 0x286d09da3009f2ac
+    internal_properties : CAAAAAgAAAAu7oVDyuPiBnfmsB0GlIeU+U7tSX0pY9abe/mXjsBi1X4oDaw4PUodNGqpzZS2nvQFydYAO2E9cDEiYGYIwP9Z/8JeXaVKJmTMR8SBNvjTJZMJFXHgynkR4Q5j7mh8T8fOZn/iT6SyQuQYhLaeDBU+UWXh3nSDSGFIuJ05/gWRw6WjUfL6WV0AF9Kqe08Iazl4i+iIuWN9twSODf2Dn+vy7a6GinztZYtVngNxBZVQPWfuHuQFSUzdj8MldRRFCoDUbcNmFxrMOqDoVJ4+/dAZljdECLVS/KknPxAyASUDXCiYCUtyqzXxRYM4EWo6OnwxZT4NapYNHC4jqVJ0ZE/95cdF2W/CWEPJaCiPafkt6bpJeuSnMPGEYhdh+RHLv5o+iawh83XAlVx5pYSZj4KifPZgUp9+p4RRfI+STY5WD8qnKkB3PWYVVpovH9R1U1SauoSwmB+UNT4SGP2Lx1W64DeS4GrLaVInXm+sb82MSoBCtqowBxYmMv2gaF09DdgXsWRkbaLUh+yfbkPILDfmKG7BwkU4RadSGm2KbLF7fQP3RHU+crxfmyXCP30ALKkRGmzoi3ape8ybainZwf0DcqGdSvv6OLWE7yKzNoM5
+    properties :
+     x : 6
+     y : -81
+     width : 18
+     height : 18
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_OUTLOOKPIC
+    identifier : 0x286d09da300af2ac
+    internal_properties : CAAAAAgAAABrhI6rHUFA/65DUPg3M13UGCmXf9jTTju4+P42w/dh7zm8rPLFlJf7CQUbFfBTxZdOdR9oHnT1zo0tVWxpY7Sg5JHHG3jMIrdQvpJ0vlfPnWYMrQLPfT2n0Xjh4SYuzeBvXjCehMiCUQzBDqGI2UDDZKOaXpQv92H3zblzSvENCTzzdkzAsik2cTzauERcXLvgkQzFiF1B7YDp1kvP22afNARrHY8zhIG0lUGMwAiWZ8iEQFoYwkNRBBdBTagf0sXlC4yMQAWf9zVjwt6kykBSNgNAwg9w3EIxrSbjMjzRQQvJLUtnde3nw0ffsIj36ybaj4lPCriDP2riYl1Pq7jJluuBHip4QegHN+evAf8+aJRkCs5KYhNLcDXxcB++DIS8tONorl7p8kZEiPYrdphPzs51On5x0HrmbFRsctRGhgfAB/96ha750oJdJPSSxGZDO6B5sAbd4NTG6jjoaTMO1GtfOUXb118DluchMcRfF3LR5Too14bb738uyv8jgtO5as4WOS8CTFNGhVhoNeDcV2JAr4I9WcGM8JVFcwVQomsmvozvq2rOU1pXmL9trSN+V6/xDqyb3Xcih78ZfpzxZtVZ3j9RGf19Eiw5/fscKvOcRvOUDw==
+    properties :
+     x : 6
+     y : -81
+     width : 18
+     height : 18
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_PLUSPIC
+    identifier : 0x286d09da300bf2ac
+    internal_properties : CAAAAAgAAADdxjX5TXawnYIHTfGySfW3gHFP3gDacy/q0zO54Zh07GiPBimBzmpCPo+3qV0RPgnyr2NgD+wNb/ni/H4k/GUYtikaMN/HbhBnwjtsvrR4L0t2Gmpnr1FEW+BD3bQTBjfOKR0aetnW9DX76+zwvGHa1NEzk3j+gt+/krorxmAmkCSrwxKWxeR+0JMRAMHaoIr3tpSdmwf+TGhPxpirsLPssDOWV/2/mrfG/0KL6rtl+Rh5cdYNRTFbQ+zRLUl6JuHoDfQ9s06l0jBOuvsdDpEeLMNr5oKRU1GotLzTBlulUL0b7Rhy+BJT8yGuLyPEQcZaZpTHAIooAa1iX3wQuoYcIDe/ti1ee52BSxKsET5LRUzVkgUF82HlFFEB4E/TnQUJnNUFmWKqntI7Vjdfct7ZmgrenISuQsovZC+UFqh6gcWXaE2S4qni3QHIVLlNhHnkA8Gq3XCPoYnnq5LcRfxlFEqfAiSWbwReM2DfCHXPvjauT3kQ3R1NB9iX+kuatsKnCgEKIujlJlWr6qY5qKwGAf/UYIWDU4Ahe1oJS7po6qfTbfrV4Bdf0z84zhZx+pwZgcShSK8gxFAPjnZ+hcdURCa9PDXzlOKAw0eYqfa2yFk=
+    properties :
+     x : 6
+     y : -81
+     width : 18
+     height : 18
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : SPLIT_ORGANIZER
+    identifier : 0x286d09da300cf2ac
+    internal_properties : CAAAAAgAAABQC8AcdzHn28YqiwaXSMqurh7mWyctmmFc5QrzoiKP1GrTI8+F/ev1s75N4lG4fzTNeQ+CYvyZBX30d5we4r0CdxukR1tonqSPhF2yt0p/r4qERPAqIcznQhIuT6GDbUuR2szT4Y5st35Lby4XQ3PhBvlrHULVHNrw6b6f1fosqmoi3PoGMMtkilKPNvdyBObcRyVzA13VLRl4/GUBswyPf/v1QxGwjhrZZ/vVdzpXn99ZnhQzYS9CHDYkzFY/awJJQxArPzKfJhQxljfbIfbWyzAePsNIXbdS8S7InV5Eku7VvcdHv3Di2gRPR51mO2zXakR3EhP54nBVmBOAFTj382oCym81411AIURQMj88p0LA
+    properties :
+     x : 179
+     y : 9
+     width : 5
+     height : 666
+    type : 28
+    code_elements :
+     type_code : 61
+     p_codes : []
+  -
+    name : CAL_CALENDAR
+    identifier : 0x286d09da300df2ac
+    internal_properties : CAAAAAgAAACTiDEf8cDQ3LO/jAe3YN5XZwSfZH8K9KPoh96obKjB0QHoopeO2DwPqrFh36M7nLY68CL1GdNXuhzEVVxMNV/+NcLxaPs8vTJDYt+jz6njEz00iPNubNtO4K3OVGsKmZ4tkqETruIDQBpxoBciyWUMPXV3cm5C67W1dnVu89GK2gLetUN/amAez1YvTEqK1G4dfKiRT0QpicXyU3mJfVUl+FS9r4qYGcwR/5LS0d3ULrYvyKTYIZxrP+sf3hXh+NRcLYFjcpnH/BIl9IO2BDb9wunq6ZfQMxWj466hrn1I4DnJEGufmKhcDHhnsbNKAi7nTOPBrKB/fHrIJCcs6LrbN6XKm0K/ENhZQlaV7ZZeIF01UpexwDSPQL3dyeNWHkBso2qna9K32zwFQinfqcoahwXVVolwnOlCewr09S2v+KgYs0+b0vb5ipxrSdGeAbl2KXagY62eAYyYKMCeFty5MZW7HUtGIx4GZ7Pq/mX+fqb9e6q2byWcOZA87xcs5dsJ1yTXHtKPmnRpjjf2JW2yoz4j4eH6SvW7H1SAQlxl/ifH1znIiMhkX3+3JBZlnQzJGVisqbZKERarPj5ee7iMCQAOe0M1COgDOz3Ze/77gzwlIU/59wLF1FY16NiR18hlFKerSZra9pEItDdg/uvtkyCF1PBXQh90PT2W51zYJOyM6JsNS+uCuAUeiAAJM9oYfa3DFYqUCzodj4InDnOy7P1ikQSH+ash4P5JMU8MqZsSj5yZv1QHSOwx41EIA+9kbwkl2LuSdFq5oQapo8lAlQZzY9rSI7qjL2sDhqhnWZvXu35i9Hz2oDvEFxqJU69TLXF5HcpCC0oJYmfComRyIOt+kT0sxwRdDbppQl+QQR6cOGZkrEUvVPFFomnbDJJSC+uJ6QNACZnG01UVLEasi3ai3Pj6hhQTVCVBuwJvh+3ffrDQpjNBGJuGLZtF7IFjgv26mcYAYsddldHU/mt9FnNIlPMaxHiqssUrCCehJBH+PGKuIVoV3iXfmAPMqJNqZp65/3SR5+OzsrSUWNoZgSPJHsI/N/6f+ywXyxxMQb7zP/+2ETyxzshHbcDDB7DPCOfYSV9shgZ0/C1lyTKUDs1IrDBdFKKOs0UMjhuZzdBk4ZRUldGM2/xZ/WHvV95ax1zevHFcr5tJ1gN4j5JJRt6qGFM/HNYodkPMmbf4wJMpAAwUG7RattFMqeW8TlF7ItwTdThG5mYmeSSpAHrYFwGTfENlm8OqWGymrcN3MF1JHpwkrMgA0JO7Uc9d0W0g3+ilH49pS8DTDkRlZ1PcyiLYWQpKRgi5LtP7Q70v7L3opXi3+ReSMrGpIQ7/bLR8EAl/zYe7U4AxSnk6pTRo3EWh12PbB9Yp1D8llfUaZPBOAaDj3a2ggCCMZKTrzaZhkQJCF3vARVsIk2yrZd6mfvs7m3h2WhkaMlgHgRtKFSlOlESSvhV2hUcacDgl7y61tUE/2wRvRwT9TmXxEuBs83LRHmPtXli0WQLrG/uMnH3SngKWj7Mb7Gzd7D3bunlVSSrldaH1zUiZu/KxmePyPVtYgC06jWExxgCx0uplq7mEtovYxD948Wha8Dp0FoR0qZ5p
+    properties :
+     x : 6
+     y : 34
+     width : 173
+     height : 175
+    type : 47
+    code_elements :
+     type_code : 100
+     p_codes :
+      -
+        code : |1-
+         
+         ExecuteProcess(CAL_CALENDAR, trtSelection)
+        type : 14
+      -
+        code : |1-
+         
+         dDate is date = CAL_CALENDAR
+         
+         // Changes the position of the organizer
+         OrganizerPosition(ORG_ORGANIZER, dDate)
+         
+         // Selects the corresponding period in the calendar
+         CalendarPeriod(dDate)
+        type : 120
+  -
+    name : BTN_DBLCLICKORGANIZER
+    identifier : 0x286d09da300ef2ac
+    internal_properties : CAAAAAgAAACeLB7t62N7HcHfmFtwcBEtKpsNCCiiJhs9ZaMbmPXj2zTvIzHmMhXHtJkN1fADK2XYkBCsuqMhedZ/Xv2zJeNoNYw7rvnAIacXH47DUFb0UBZ6TIcrdj7DVVuGZsiMbiu3cpaDt8+S8Crx/8pv1EIi/LfRJy5z5MQWZRoJh5TS3qx8mb0vVojRvZW7OaXpM1D33UrhQaJCLGkTWrJKo8jKvQ88WTQfLEMwJeGKGz/NI1awB2kltLk+7T/so80gXvT38DSPGlQd8n6ZIp798kmMr+E+67cbL90qJClK17z43S18xdTitpFw4QOyQpPLRC+UshWtEip0HUR5kDYRGDf3HRh4tluPqyWe7PyqXcntG7AVyrX2y32ypZbFxYT9BsgTX0kV1efVn1ytyRwsnuZbK37FxHuctiCPb4t0aNXoXpQ03jUiZuMohcTCvGUWpeIx5sXKhtX7Ct8Y6CH8RPe9Dfd28yqSDxJPpcWWDTTFvbbXcb1Olw/Oqy3fKqJwUa2Mr3iB+L/MP1GqUC7gx5hdlhSXljyXWhqt3CrXSNjJTmtF/7jko0lCh0DuTtesbVhFouF2sx+lVtVday7J5Lr2HaQuHANRcGHrHG3bAw3V10WTuQggBX7yEs2A0FnUakxV3rw6AcbNPQ209jrG4CdtCAoIY2q6wwoXyCaCdi3NTnQ0/gf1D8DgZbd/
+    properties :
+     x : 52
+     y : -87
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // If an appointment is found below the mouse
+         IF OrganizerInfoXY(ORG_ORGANIZER, oriAppointment, MouseXPos, MouseYPos) > 0 THEN
+         
+         	// Edits the appointment
+         	ExecuteAAF(ORG_ORGANIZER, aafOgiEditApt)
+         ELSE
+         	
+         	// If a double click was performed by the user outside the editable areas (days, buttons or hours)
+         	IF OrganizerInfoXY(ORG_ORGANIZER, oriDateTime, MouseXPos, MouseYPos) = "" THEN
+         		
+         		
+         	ELSE
+         		
+         		// Creates an appointment at the selected location
+         		ExecuteAAF(ORG_ORGANIZER, aafOgiAddApt)
+         	END
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Day
+    identifier : 0x286d09da300ff2ac
+    internal_properties : CAAAAAgAAACn41QKq9kQUEpehw3DFqiaTRT5jakEaJeDe6eygTyQcxcjDNPd3PApIto8orsUsB6Z6CD7wOJqMQjXLyHLQw0bB7kG2XMYaxa14qNLlMrocdZQYC/cuqGLFl8VbOB2tfjo0eeNerGZdhVsNYAIJjw55MCBFJhn1MnOeDzzGx87uBsIJGYN/a6bsJortAQeloj/3GBjxFerV5OE/u64tMa3tz+QQQqkRZLjswotMYjteTgwGTGsK7pI8D7KtskMda/O9/sih9+iOld+t69tp3+Ci05I5A/MaeI/JsRPjxnMCABWPubtg26E1Vzjk1tx0FIbvfakZW6dRUE9ga6g2GzOc4aKRQCL6rYZdKYCGZvviJM+dxqHyXX3UwpBlGytMo/HHN17aGnoVBQzhknlMchpH56XvOIj2/IODVtEnO4wgetuKgMesIQcVijltPX53L3noLHSijuc8lzrj0v469xkHs0FI3hh3pjBYtyADHTgKvWagnWdMrT2QDLS0z9SnT/ZLmB8R0kf2C+ZTTW0r/PsAt2frAaY7GymucM8FTzZ5KNwT4tqB1nETnSXX44lZhs1cBb71FAsEbi0Pu8qP4lu18Xt26FQ5FhYBxWdIiiHcrJ7HxcSbQi2b6HdqphJw64p54fnYAHmr+bSoxMHrb4o3vCJbkmEVEE2qluuvtGy6qFD2/0ENZ6ifMZFDomzHU6LqqI=
+    properties :
+     x : 183
+     y : 9
+     width : 80
+     height : 26
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADw/9RIZZ0e+PNuE84i98yvmwBRjUQ1lJ4ZQyezFT+GDwe4vNltDddvfkpbmQXiryTXoH/PsxXt7Jeo2vVXKLujoAtCj3ImC6j9ofooPYjhpXYdXKVdpR1jH7UnhvTXhmkK0fNHDnU0SyDJYQ==
+        code : |1-
+         
+         // -> 'Day' mode
+         OrganizerChangeZoom(ORG_ORGANIZER, orgzDay)
+         OnOrganizerZoom()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Week
+    identifier : 0x286d09da3010f2ac
+    internal_properties : CAAAAAgAAADuIHZYeTXzcrymky3ei6nMc2tX+UzaMY1u8J3JPQednGO07OnZAkb253uuz7Da0MJs4SVH1XUlMj1xzKdDxG0w3YGeSDfGM+NPEcGQtp21zwo0uONM2lBUtUmnQzT6z+23Yor3Jw6I4KnHc12sjqrTlSK07HQepXIN+f6sDHbBi8jxKKwi3IUOHAB7uG4YqnHLqSblrSpz62DJBrhMollf2HTXTE+NbyP2e/2eKjEmY4SbUzU9NBQu7LnrNFZp5O39DTDjJBx9ZM83VIvlPaCLHhlYBDERusOTK7mNgOEeeQdU2npVHUqL6o5CV9duGuig67t1z/fzWOWJ7c/Rl/3XhK45hz/WaF46FsCiUvXNg32OIX0/ZJD1BS5y8jJKdAjMaSOVBRA1+AYfof6FVvSSzYiSA3YBrUDlH54FHUrX4FPWf2VgESEE24O/c7OaMyeBirnco1SLWLW2lZbLETm+38jSpkm5XBXnIpr7Jccne7Zx1haSgmyAcp2XfAHNLFGImcJfBGUxERgVe40Ea4/ncRCfUu4saAwkDCdKTLdSwldFfqs7PXf2AzuX2ul9SMdIvjt6pcHG9jjcAkCXM2tURm5zh9YAhX1eBEQ4Q6Y1g6nEmg8b5p7jfI9FH5E9VAhdM+oMZcsYfvmf7nRn/7hRTbwHoMIHL1oWAql3CE7NF0ASQaa+KJBo0BFNXpDRZcLuFG6myatiRD4=
+    properties :
+     x : 262
+     y : 9
+     width : 80
+     height : 26
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADw/9RIZZ0e+PNuE84i98yvmwBRjUQ1lJ4ZQyezFT+GDwe4vNltDddvfkpbmQXiryTXoH/PsxXt7Jeo2vVXKLujoAtCj3ImC6j9ofooPYjhpXYdXKVdpR1jH7UnhvTXhmkK0fNHDnU0SyDJYQ==
+        code : |1-
+         
+         // -> 'Week' mode
+         OrganizerChangeZoom(ORG_ORGANIZER, (RADIO_WEEKTYPE = 1 ? orgzWeek ELSE orgzWeekOn5))
+         OnOrganizerZoom()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Month
+    identifier : 0x286d09da3011f2ac
+    internal_properties : CAAAAAgAAAAykX5o1Yk3gZQDfuwWdpH91aQAmXsmx2yQE+o3cgUwGoBprHINin//723/x2mkAWuJlVHYClVHTeaTe59giWTgKtP1wWHhgcyWRamOtl+jkJrXQO4nOaczrXHyBnbg8EYuIAnxKx0Bbv+QO2i1CS/nEIpW84GD6pg40Q15NmzfTpm6Kk93QXUE0E2twtYusmo/SkPcVx85XipCsuUbEwcjj6WrlcXz8wxv7mb2wBAq32Cq8jvaKSnrIK8oLWVhxz7WGh6qfKPtLOEnnygikTG3MRX3zTxN+kZ7Sly8ckd2AzIuSy2brTcAD/momVz3LphasCO5J2wCpukuEiPUdxHzdtxo822QINQKY1aFL0K/F1VpYR7r4fmh99duoX2tvHZcyseU58+oZEparV0ADTaog08w1sRc8Ly5eiZsAGGn8nvLL4SiANR+n64noHQPT+EtVT/z7RMqzDNPAbtcqrNwT2dwW7OoSxdfpe7WDEbxBw74NgeINSPA+Eifi3RYlgs6RlwEripeNYqsNbYx7BWP+cudJdaNeUZaVzOd02KSwpmSOCD7zLYGH153qXRA6hMqTdkZaaZfShq3KsFErHkhlaL9dpdDq3KUlIfu95Ujki1I6hu7Z6mhAZKQ+89wLGavmhUPETiuRwY1eSKvMz/y4my2vo2L2fWlTKAlWhYquiuIsos6M5AHKbSu+3qLMLm0WDvpEdc1OA==
+    properties :
+     x : 341
+     y : 9
+     width : 80
+     height : 26
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADw/9RIZZ0e+PNuE84i98yvmwBRjUQ1lJ4ZQyezFT+GDwe4vNltDddvfkpbmQXiryTXoH/PsxXt7Jeo2vVXKLujoAtCj3ImC6j9ofooPYjhpXYdXKVdpR1jH7UnhvTXhmkK0fNHDnU0SyDJYQ==
+        code : |1-
+         
+         // -> 'Month' mode
+         OrganizerChangeZoom(ORG_ORGANIZER, orgzMonth)
+         OnOrganizerZoom()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : RADIO_WEEKTYPE
+    identifier : 0x286d09da3012f2ac
+    internal_properties : CAAAAAgAAAB8JMJ4szdQB6W6/LsYTi6yzFAGmk1qo+ElK5rPDP22qyPNDnba8r8+yC2d+5hptEPGJtrW6VS8nGZe2BcoEg+y6qrpOssNUsa0FkA8y5npBFA2MmsvtmHmSIaDpZS/QIAynd1dFSLbtd/XpV8snLTKE4EnBmYX1Zk1TFrcsr3kNyM1sVm2tdlSRlihz2/Qp6MplYCewsxzOMlnupMl9B9JzcYVyLC/4wAT15WXfZOaOtQoUNW+UzyprMIa7HV+nhxLjC1OrQXh5ZI8bQnkokvnKdjniJmUnVYu7Nrtnc4ALTK4VjEspFx2t9wQ7WtAT9WjTA4c+XFxvU7uEQrArPCbqKX79lTHxXE1BAejk6sw66Kw06kMjfc/cfEcPEWkVLAUKWntZXrlTTVjR7ShR/pJ+RXPqpTKrHfzohqbdgk5clIs73PGFYL7T2meuwLkE7FhFv/6YpZ0JB/hjpt6CWSafjSmRc90mRFk2GBeNXTJyVsJeAtGYSwQukL+GxoxF+E9DDswp13yId+StD/+KBcLP0yPyKm3tXSWBjDB/qem+dWuSy0Gm0l/msNJd7FwuYqwC0s4Rstl765fTSTIDJhY8uVKG/8/nW0h4iBbEA9rUnYp3Xq+7ThJPo7wi6oGnG2OMCWtXlMCl1P9U/kD3Iff4yltVROSl75bqEBwqCdGqclJmEgJkszG/VWFHRzpetbGbf0=
+    properties :
+     x : 428
+     y : 12
+     width : 238
+     height : 23
+    options :
+     -
+       internal_properties : CAAAAAgAAADBgoh1EIunlM5JHOeijaMale4lgAnY54bekrkzgMTC0RFU/f7kLU7PfD+7crcdJXBwz8N3pA0ahO+VDxrX1q0jppuE/jTN+e45LpxEl6GPCtekjed8mspjkMpgMn6LIfw8IJcVCv1yDn0oxDh0z5G/XZ9oRk8hN4GqcJXED5Wr7MlP
+     -
+       internal_properties : CAAAAAgAAAAxDpOo3KYdqaocmD0VeDo2H2CFmu+cuEYhyb+ec6LVr5yI7tWSaAqeAyNwV5dCrwGI/vh3cDGUVubP+kbITDmdk201b9ElEYO9pboViOVi5rnu0NZXcLQEXksqN5Uz3nzaNLK8fTM+tVXxZJjJwoZ/n+yQZExgp8eMikdh+PsvOEj7zKqO
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1-
+         
+         OrganizerChangeZoom(ORG_ORGANIZER, (RADIO_WEEKTYPE = 1? orgzWeek ELSE orgzWeekOn5))
+        type : 17
+  -
+    name : STC_TITLE_CALENDAR
+    identifier : 0x286d09da3015f2ac
+    internal_properties : CAAAAAgAAADJEciXjkcu7rwLzJWuzGDIFcrGVJcVHrqHwd8TCXAduQojVQlvLGGtTNb4ieQomz0CtUGFD005Cm9+1EocTCtfWtfd4E4Au55LIocmhX1hpVLu8704U5O3Pa79wJ7H/VGLzMex2zzWmNlq5safj28Fy7xaEmXV11GYUziqxx4v6QHMpr7UYYe0Mk+2jN86XhZl1scVF5QLYstMGPlVTEfM7127FtyUuqqrn3tZCLrsTap+B9e9cusOeXyDXMfQhimxiVhUN2ndyk2IlYpWdwaPhNMXpJI3MbLpxvoqLnPE6Dl1yvdgXcS/2C9a9ynYj0K+VkEmFVQD2u0E/bJ3ICqDfn0vw7UjPNBIF8QNmOoAUwtEofSKvWsIHxjTMI9XEekjKCceVErWRIgtvziiMXhD+WGWVf6HZF5y6DfhAHO9T+1dGtvyKOd6ODCS1RPzrgQqqZyg6Mn7ri2IaKwE5/VmGSZnQuY=
+    properties :
+     x : 6
+     y : 9
+     width : 173
+     height : 26
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : STC_TITLE_CALENDAR1
+    identifier : 0x286d09da3016f2ac
+    internal_properties : CAAAAAgAAABnAuRDeRtO0Dk4oXx0gu1KJCPX/a+DR2bH/9JOTCW5RA+lz0b6e67JvEqRqn3vtUpIlktruua/LslT/wRaqcsHXDokgZ1ey9Gp+xZRwm1rNm/g8m9nn+E8yw5ZLLFDGzbhVs18PfU872u6a4dEVSYX5m9wwkbBMX1hysHuLIaGEdB1zidbyYKzCaULkCuTA1t0e+K4mMAn47SOv9MPT7N8PGSASpf4fwMDbEpI8YO3YWI79otewULzeLghNXLSoyKNp+ZDCVTa9UO8nUWwKCgVBIZeBWVUTO6gMRSm4Bzt8ZYMrGe1N6KyytO3RI8TcX+BMDdBf6fz7Reo6EXJIiDfU4YohX62P3jk6Z2QYr74Hr++v5KKQC9w6X28dRo9UOsmCyOyQ2FPzSIMnE1hnfOhCGdyY4AebX9aDzt5SwJ+Jr/GEu7G2aP9Pq0t4490gFQfGiWJn37J7a2fiE42eKRRAMFoGw==
+    properties :
+     x : 6
+     y : 208
+     width : 173
+     height : 26
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : TABLE_CATEGORIES
+    identifier : 0x286d09da3017f2ac
+    internal_properties : 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
+    properties :
+     x : 6
+     y : 233
+     width : 173
+     height : 442
+    columns :
+     -
+       name : COL_OrganizerCategory
+       identifier : 0x286d09da3018f2ac
+       internal_properties : CAAAAAgAAAAd5Bw9G9a7+VqJTfaTRZJERzjvSQUCASCjI5JHSi+hRh1+Lc67Q8A5fg6fHXnBAOP0X8tHgTu+amN8VSOrI8BFpM49Xdmm3KH+7YuN/dzENr+LBEMO6Pap1Jol82qIb4xeMXayztei6x+XVYA99mSV9qaSIZXy53BVZzngZAQVEdvSx/8lE6UTSUJ6tlX5Q8NcF+lW9bRPIo4ekW8ab7uOp0o7YBJkK4B0xYPiBg==
+       type : 3
+       content :
+        internal_properties : CAAAAAgAAADlhS/0N++4NLkT8de98ap4XUlGcPO8z9FD1sb0PbwLUgfjYXw92/MJQmOmsVC5/p1ReD0aQMuKhSkkm82kAlb35jJMf8+KiaxQZfPWFqgHBm1NjzqnzUguzl8gzWGQEJhzyQi78bw6tPQNWabZFUHgtfjIV87n0ZpZfGTQVLWZQVIZYOBs+Jbf+XPIbdA2MArX+5LsyEn+zdU3EL4X87AMOi9JqqlkY193s8dL4ZNkfmWISH8=
+        type : 3
+       code_elements :
+        internal_properties : CAAAAAgAAABnUbrLUqZN5HQk5lQUy30KrNnG/8LAdLKoYURRZmXVPvX4LhMnJWd6bl5LZS/pjQSp2vEt6aQFHfhVwIkZ8LUaqKnyCYmnW5CtYFjd2MhhUWPJUE4aVxEk5Jo7oA==
+        type_code : 2
+        p_codes : []
+     -
+       name : COL_Selection
+       identifier : 0x286d09da3019f2ac
+       internal_properties : CAAAAAgAAAC1O0oXifNVArYoB/I4BTCGm1Lw/IJOcKC3yJFMOTybg2UsvfiT+P+x9afc+Z+xcUTwH5iT+yt2ozM9uZJ7V0xT7TS4sbnMC6PEEJ1bT5J4qMvVQsSUR3YUIvemogXFz8UgE2WK5aHCLtO2MuVhuzhThOrgXcY8bT/AqcTTt2CR/0uffsA6QQ==
+       type : 5
+       content :
+        internal_properties : CAAAAAgAAADis/lHCc3BUnoVJgQT+vAdFKMG8mD+C9Xh/p0aZSeSKPPi32bQR7qhOybNCVaqhwVarl8F2gZcUI6d9ca45Vd3o8flPQQ6DyZHGLzuyFY4VgAUi9eqjKQwoPEwwaDTB2gf66gpmC25S8GkSkeO0oca7L7ZgQIngH4g2k/AvqLOeC0G/Mvdg5zNlB7UXRH2LQpYHMBT5V389ODPvvagcheem+nUnviyqRhiFFiEUlY2tle/AALlRwx9CC2eU+6wsBkfiJmR/f6IxpsPwfvtXB2Z4ceqmESmPHkvIFe6bv7brPYFD752WckGVr7K6cd4cepLuMcI0v6XN5nghPX99kv+qXUfmoQ53RgtIlsfC+8plq4p2fmviAy23GnWFQtb6S+sjG3IyzNnZySFGLoCUuLWw6h7gNfFf57Yz+nZCXyHgKK8klyOLIl+w5A/4FKV3QYtdQpYfaL7kWlW++hw3DUIyZPM4J+5+38zsr1cxnIMqObhaVWnhuYX6wOtwdikCgzf5v7TDU/TYg==
+        options :
+         -
+           internal_properties : CAAAAAgAAACZ2nNNoNcq0CQOMUHaz5TYNxMCZWC6QYxp9OOAS5gisfGFpUq9b9l+oBtxP1JUQOVzTu5Kjj4QEQ==
+        type : 5
+       code_elements :
+        internal_properties : CAAAAAgAAACXbcLNqAfe22lTSKreHePXrSeA7Y3PiThTba0fA3oMhnPw6NuAT4ZSrFwB53J7AQuWGQ7xC0r1XxfPQBA4ISgjs8gblRmZHauIeiogT7TjGvyVCuTS5V+DYo73lTYiHwJanPHgWh8zUAEjNTTmLU/kukGG9+xY9Lw0qkkQisDPFMa3GKa87cAW1Xau1AA=
+        type_code : 5
+        p_codes :
+         -
+           code : |1-
+            
+            OnCategorySelection()
+           type : 17
+     -
+       name : COL_PictoColor
+       identifier : 0x286d09da301af2ac
+       internal_properties : CAAAAAgAAAB4O/hDfRBUUk5r5kBMXUmMKj0DPmcO+0B+I6q1i8G7Rh4EXwf3/VG5EBuUnMZhdPp9ZzVEhCl41C4cPnE/4tVf69J5UqnjlTNXFDpNd4432hETtLVnCKjXz1cxlL/3gucor5mTu9n0lGJ0PGDXkWm1a6uVBuNOl4FTj0v7TdW0249x+Q==
+       type : 8
+       content :
+        internal_properties : CAAAAAgAAADnc6qbY6nM+Uzmdh5qu6LEPhwqI4V+lq88ClnRHTdH5MbtNsoRkNpq9iY5ugvJv/y1+zWxUAvKv0QSNp/dv2+KKxsD13mJL+bNwyY/cUrr2iZl5m0WS6ETEa7AZtO4Flh3jHyg9Tach3RdjlR715yU6QoO3jtsvko2CYuMGUbikzRgwCmSjY7MctaFRaV6+boZGzc/iFIl3q5vIMA1zKONdWiQ0nRP0lARdOXI4EFmXF6GUfZvaBS8b9UDbhhz7+egdzFTMTD3BA//dkev8r59qqvubd9yaoxHNdeBTw1GrfXNUhGeXMXi4FOnVESNycWVtF9IMC9TSAcFDfj2G6Npg35kc0X43pO8fbLk3hI11ops3/dvz6LR4pMXEQEeyANTlmnTQhKgqA010r1y64BqPjR1babc7Zo3tgGe
+        type : 8
+       code_elements :
+        internal_properties : CAAAAAgAAAAZWwBl+QCNnGRKE6RNhLXuVMUGv5LQlOJoEVRhRkWFXrW4nuMHZXfavv5rpd/5JZwRkrk1MVxtlWCdiNFByE2ycOHaEXG/Ayi1aHzpaEjwaRFwrY0DMqi6TjRFXg==
+        type_code : 8
+        p_codes : []
+     -
+       name : COL_Caption
+       identifier : 0x286d09da301bf2ac
+       internal_properties : CAAAAAgAAABHQhrn4Fc42My78IRmrFcwr+Sc9oJ13NdaDXVo+QeTKtVEeSZR9RdaUgqn859G0NQltLATm29eOIzMsVT4WE8sIi77UecAL5QR7NKjJ0J9lii7neqH7RA/8WHWwfNpZoo4K9lCtJsEsxiEdJ8n/PtccD/l2vugCbOTKiAtuHO/ZZFxMTe7llY6EHkHUhzYD8sSSDxXws2eci0EeGIzSsj7EiydDKMfd8/Ah72s1PndKb3BWlY5twQni6a+
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAABzmmeijxKPdusmBe5OuwhFYNG4U+iCCKPG9KEHtGnMVJn0bqQ4n7NFv5MMo7Vd6dx+wUBWcbYMyxYpYASM3e68GX8VSHiDzkLyKCa96RHNR6G8cj3031yQbN2jnvWyFPhHJrdzCMgI2g/o7h+x3mx6G0mEPjnyGLc2KdXebO+NBBDifSeZWzNiRPTCHZA4tY76FOU9X2ghyHPOWY9Fa//cLvjnIJNcm4kz9gcKf4uP4DuRbYCVcKuAWV/BviQXxoe2NOe0et4Dk6raCXp7s/FkjbxY9HodBmmZUUSaS+zN7paU9afWxdX1LQnzGSfFX8rQXm/nwDJvBwwfY4+Wx+Ht8GFmcdf0vCV/zxhvY1w+25/K9ZCW84LEXCAw82JT3DcqgDbCsiL60ho/SJdUcJu60v4NWZUiXks3TjcVWdIQ8V9pNEnJiOVx06adH6OmmUyXdlX5rAogse47vedzX0DvF5c/tRRP8R0utGoBrd2N/1QflM61VGSH3b8uB7U2c7idg9CCJrk6IaFqYPkHy1O0uk/pI13ZgoDi+NPYrjLwT0yMgUBY7V6Hu1CxCj0qt5b0WBToTA==
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAACnkfoLk53pvIV1mWX9Qi4ftoMGT8KgZPpwqfwJ9pU15gVw9qvPTX+aDt57BcfxmRjt/hVx7eC5USQ5LBXtDIFenI12/Y1Tf4RZhF4Bi+jgV1bRiTq+D1LkpNr74A==
+        type_code : 3
+        p_codes :
+         -
+           code : |1-
+            
+            COL_Caption..LeftIndent = 2
+           type : 14
+         -
+           code : |1-
+            
+            // A category without caption cannot be validated
+            IF COL_Caption = "" THEN
+            	
+            	// Warning
+            	Beep
+            	
+            	// Resumes the input
+            	ReturnToCapture(COL_Caption)
+            END
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+     -
+       name : COL_Color
+       identifier : 0x286d09da301cf2ac
+       internal_properties : CAAAAAgAAACMVPGzUPSlokD0AdQLQLLS5FIvvwxZWlX/Su+xc2I7vwaQLc+9aIALXGQ5VoIOZWji2Insn2t1llaqSW4d88y3GU/3Q46wCsFcz2KgIwi7Irs2MPnvhNlC4Y2M/QnC1kdnvzv4PUCZGCig3un+WNufwfvMfCuXhd65TXun+tgf22u7XlMtAu8xuPJXhv1/Cu4KwOgkZMX1L8xTh5Lk2Dce1eclTAFDyXHCfwdNBX76
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAADGLlgx+lvKHF6QENSlE14hS3CqEC4IRiTSNemJBz5NVocrwkvso3FC4miPrg4SnzB/Id8nFFBKJIe0G8L6ZHFs7i5vmg9I0Uw0Cxz/njfYjOldTSBmoci0q5fts+ypqgy88xAV9ZbYCQyTDEl1BsNKqueWKVG1tQ8P7Wst0hUPPFZyUt7/+UNNbfP/PRHm7GSo2cR0teZNrrTvs9cnyStQKvJDjomPBbILj3KzT7vOvnithqA2cT/BxeYXJmA5AJ93Tgl7q+QIkYwroZ49EWyDIIolypepkSOPoekXq/c1acy8WAkL1tQUkLcQAEER527Iq/1c2BJjhmHnrJounYf9rCp2MuG4lMr2oxui66ZwJf3bDesODUzz5V7VsIjvlG0MlfyPkHI2neOj4Vb69Hs2Kr29wn0MmPZMkIaAH9I8HznuoDBRaNmSqhIcegMQK8hH6+dkBOTSrjkZnMT7VQY7rxCDqhJbKbDfKBcKBbB3rNFqzmD2Z3knSx1Gj0ITaG8nGKc50G37NVtt0Q7pDAuAmi87gjWSDAw4DBuSM67l3M1lgI1AX2zoLSGu8orpamLZdqx6/q5n7zCwkCj4DyfUepYeTLDry0mMWiNGlXI7n84hPQ==
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAACS+QNtRE/wSvaf+YL8WH0uhzD3RsWGtuhnk+BTn05WiffLa8qmCyHmnofxT5SYIhKS3GKSXWpfJBxJDxkHnseq7k7iBqEI7kuXNAtGotZtjg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        code : |1-
+         
+         nColorEnd 	is int
+         nDarkColor	is int
+         nColor		is int = MySource.Color
+         iCat			is an Image
+         	
+         // Lightens the color
+         nColorEnd 	= HSL(ColorHue(nColor), ColorSaturation(nColor), Min(100, ColorLightness(nColor) + 10))
+         nDarkColor 	= HSL(ColorHue(nColor), Max(0, ColorSaturation(nColor) - 20), Max(0,   ColorLightness(nColor) - 20))
+         
+         iCat..Width = 16
+         iCat..Height = 16
+         
+         // Start the drawing
+         dStartDrawing(iCat, dErase + dWithOpacity)
+         dRectangle(0, 0, 15, 15, LightMagenta, LightMagenta)
+         
+         // Border
+         dLine( 2,  1, 13,  1, nDarkColor, 1)
+         dLine( 2, 14, 13, 14, nDarkColor, 1)
+         dLine( 1,  2,  1, 13, nDarkColor, 1)
+         dLine(14,  2, 14, 13, nDarkColor, 1)
+         
+         // Gradient
+         dRectangleGradient(2, 2, 14, 14, nColorEnd, nColor)
+         
+         IF nColor = -1 THEN
+         	dLine(2, 2, 13, 13, DarkRed, 1)
+         END
+         
+         // Backup
+         COL_PictoColor = dSaveImageGIF(iCat, inMemory)
+         
+         // Automatically selects the category
+         IF Position(ListCategories, COL_OrganizerCategory, 1, WholeWord) > 0 THEN
+         	COL_Selection = True
+         END
+        type : 21
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : BTN_HIDDEN
+    identifier : 0x286d09da301df2ac
+    internal_properties : CAAAAAgAAACthOErSj6pDY5O6jap0mgPGvI0Xl7pIX25JQ3SjQ9J/vJPBlH+RgkrmVE4BSZ44WSVlVLc0GkX8q6GXGqM6MQxBTiMfzCYvqu2amlySoFQf3YaVMW0yD8wRD378k186C3ML/hcX9CRYUKBGjQYNLShnocElWjgS3nWvnDO9EOFkoq4mk+tjJzQC6t0Plfy7UpfSkcNOHpJapTC++yFpfltNyZWdS+pJdx1quDB8VSwyebiV6ZhvMrI9tGRDY/sC5P5SGIcc5zoUCP171LAEvtd6LLojfmx2wwKil0heVYpL06vrgvkHWSEgM9M9egk9mNS8szgiwtiqWNUXevuQOfSa8oQ4G2DQnfIC9UlfI8jDo+Fr+w2ahXJYbJxGZAsYnoauENB6NChpOs5V1b5aLa/6jba7BNZW3ALwcFT3mRQJtSQNCwAngRoBwB/IFyR+wzKemY/25neBUagWu0T2lvBGePNRX/PSVCBrf0+iNgL+aa7KHl6bgL7XnRphzvKk7/YN/rf2b2QvdvHU/wNzkNz9JLlO6BvdJUTz+b9C89wt3t2g7d3eM1Yl14Q5lCCdh5cOZILOHBjdzzAueqnN5+r4M1f/H+gjyBpvCTTzUFTceCHPrkfMz9yvNDKObNWcntJMIv29CVaFre2+2IkAZ5OzhHO6t2N4NyOqKBk8cDNY9QVdAFvvsayTYv9r4Fd60x0TahP
+    properties :
+     x : 155
+     y : 10
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         SPLIT_ORGANIZER..X = -3
+         GR_PANE..Visible = False
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_WEEKNUM
+    identifier : 0x286d09da301ef2ac
+    internal_properties : CAAAAAgAAAB86+cp3SUT5z8Fs8IvLbxrGTQYEGAeT+ZWpBFqAeFb8dieKmp5CcKg4KanQuKAijeO0jNpBnVQ5JE6cmfbHRrrinXujQfI2PLlXnkTCBGYnA7jyh6lkbUf2dMTUNuUzeC1zV6CUvhxiNJxFaemSpHNGb3ML7B04jtnWdLIMqVUv7F1nzzazYiPHGSOqVoV8h/GI8dNj552qEeekGvDKS0iqW8O1fJT197xm3aMeU8JzcbHP2qjdgmvCoIBy9Wl+Al6AzeZbWZZu8qSbSEdc5A72oRPsFa0OC31YxRJBagdSdU25OF8boJ2/n3HvxvHZRxslXqkoJuF7JWdEriHIgJR/WjwtsxvlZEWhaZryr45grrO/TSnza8bGgSQsYrgAVD/x1gEsM0wkTIZRys+gQ6+wFAuBCrV6Zp23ZIrXw==
+    properties :
+     x : 672
+     y : 12
+     width : 317
+     height : 23
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x286d09da301ff2ac
+  internal_properties : CAAAAAgAAAD7mLdZQF+q7mHdqMKqPikgbZvIRhKHk+XchJDgQDTy7FOYGGV23/0wh7s7b/TCoibreIU8/x5Z7fla0MaeFj6J7UBC50UKdiwA3TiAKmVzVwGzpad6KMQRb0C75C6h1ZNEAQyOigek0gfWxdBFzSM6p9hLR4cY8AbFTyjQuvbjjqNDn4YE8L5kPh8aXCN0rJUnLDvKZs+3ywIduxg+LjFejwWek5UGAvfWAECdPZW+e2kmJTpP+YufHGdsBTvr0EiaO2zw1nTrcNotVRNcgu6VEv+gAvYU1+/QP8miX9u9EOdhZohGVNpr
+  options :
+   -
+     name : OPT_File
+     identifier : 0x286d09da3020f2ac
+     internal_properties : CAAAAAgAAABiM6HVpj4XGYGmRdKvEtzFzQvjlIyivj2DoJ78j610MaFCO7fNVO1yAbGAVqmZgTvSpsC3su55Wopg6zwdPwSPNC8yo6QhWSYl33Xp/ENkne2UuYm9oM3YmkF5Cb8vIWwPlfcx5i7FK00dJQRt1kz4JmYv+Jqsi3w30roMxGjbtEffoL/FpQ3Uy8UqqFRnFbA+VJb7kfR/TefmRkCQueYhVgG1ZfhC5+yPvE6GaLh5Iauwv5aB9y9EdVAGCK5lGt8RCe8Hd4IJ3IsvVYBLZihaa0vtVrvWmTIS95f1niYVdToMIjZDnoGA+nmhtIJWpXXz2cuN0R8V1HD3GzhxVg==
+     options :
+      -
+        name : OPT_Exit
+        identifier : 0x286d09da3021f2ac
+        internal_properties : CAAAAAgAAAAzISUEZmWWw+AOFhmoxVoP86Lwtff7FJJyuj1nog3MwAiAAUI+NSMW1Ut9I8zCpXymSfgqhDJX9m5VJu/r1FwsPe5FzcA/z+aNkW/Cc7hsDWAqeQQMeZuDNEInXd8cNvju3Lu184nSOwrI9LX02ORnqkOPODoTaUJTz29cAwPRwVKklQ766RxlNkMs4pahIC2dojxlJmzmGed/xDzEM/inO2u/exDIR4Tv6rXVVq8MPkqGyqL6M0gtscxaWyDNQNISi5iUsoAu2BrSeysc/gG3DoXrrieygCq8Hr75aFaS+qk3JpwILeBgPIV3t+Sk29ciL0gXeWh8pIwSkJYghw==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             Close
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : OPT_Display
+     identifier : 0x286d09da3022f2ac
+     internal_properties : CAAAAAgAAACuf8RkilYTXiS2b5Ff6ETtQDt96GS9Y5SDuBgsLyI+v+BNAQN/bA5OBc45NK8FBuMSW60gOle7xcZ4Q8kKStvzJ3PtBCqEXIpKoZhDM9k0FQyPPuMfIyxpf3Kd0pVyz8v0MplITduUzYIu3lthUEknyGzbtYR0g9J+fCBbhgTTSS1UOcd1U5BakfsxHuSishionEju9/ekGgLQDVnRbn8Aoqhar/PQYEbklIoueuwO0/9DH1BqvhgEHEhgF0pR0kI0NttjHsgw+lMUnJtt/1dRvJosjo+GGbrCiyLqq9nLIVZpXDcKRnED1zBINusPzvb1yl/GN7i7nlKyG56WRKe1qA==
+     options :
+      -
+        name : OPT_Day
+        identifier : 0x286d09da3023f2ac
+        internal_properties : CAAAAAgAAAAr0usDZ5vNM/jqg1ZXPvsVoUvcrm8DRdYjZpytj9z5GzILw63kVyVvVZBuUx6B3wVghT+KS5V6ulxmuQPSqz357YLbSFOOWXEMqkSBfpBKOla7NCuDH2lY0lDIyNEVNSjfT95yHxNoGa+iTbGYqu8dK/O/uEfY1JS0Xjws+/JOAjwFdshVkc6j8kO/VfyBZCCSPWeBIgI6l+nsItC0H6ywySnmGuYx8xExY9Fm4qrOkpzVKX7360Xlx09f1E7JkqurhmNGJWN74lUG2/p8lmS2dO9fMmgXpagz+c4rVimxA9iYQaHTkNBYedFrQcVLFiYn
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             // Changes the display mode
+             OrganizerChangeMode(ORG_ORGANIZER, orgzDay)
+            type : 32
+      -
+        name : OPT_Week
+        identifier : 0x286d09da3024f2ac
+        internal_properties : CAAAAAgAAADAHYRuqGrT/EOvuNWM7d81q35zr/rcsylg2WpIjlujwFxGU4bFDGpzQrhBPApef1UQSSbw0faKNlfeDu4NGNL3TJUpfw2xSWSHdCXSGorWTAXf8/1aqtR04Z2/uyww2h5O/byCJsFIUmHVE22SDZC2qzkwkBuaJuS4XaMQqDqV0mJZn0IK1mngMgOXp7Vjkr7Gz0Z/N1HLwtMUTRDzOxRwOd+2iCgrwLdzEl8YNE8hvxWNw8lpYqR1CiXDsdlK9UnTft75k2rG+NNAVSM7jYylS8IftUi8HZQTV+k7IfRSdkeNJGE71+yrWCF4jLALQiWp4Zbw/N7pA/oi
+        options :
+         -
+           name : OPT_Entire_week
+           identifier : 0x286d09da3025f2ac
+           internal_properties : CAAAAAgAAABiABT2vkVmyVH0igJincdyX+brVs8492EKdV7cUkB/y27upHK8NoUEYj+vnwBBVXIgvX92ZpbppjQSWdp7+1CNaKxXyWn5Epkxd/BoVYFNJaWjY4sR28LYpSeqUwdAJi6vEoAdmZbiRQixPd5w5smzuHab+6FSdhxFXScOvuTf6XgI0AV1R/aMh5wnW2LmquyJZ8RNL2ZKmPe/03YNk+m4hYS0hPU6/mMSz6AER3c4UjtHAqzt0iSWgBLJ71LNYiaWD52vZqf/3xBMItz+5Qr5g0fs0mECZFRSacED3l2co9iah/se/gVe3lg6jrC/tZHU+QEGXsRl6A==
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               code : |1-
+                
+                // Changes the display mode
+                OrganizerChangeMode(ORG_ORGANIZER, orgzWeek)
+               type : 32
+         -
+           name : OPT_Working_week
+           identifier : 0x286d09da3026f2ac
+           internal_properties : CAAAAAgAAAAqpozaDyuv2ZreZ8khwMadHNEeQ0rnbuYy32MRY23lXWvPwxsgJ6esmUSQGFb86EmVhgEp3iu6wyV6oHwqQNRQEdhYiZILf6jL+/D/q1sNveh82Vnpui2PORU5XGnpQlHZHl73lUeOkO86RhC++gmHuoMy6OIhsKvHBoV5FXbzaosKNDTRrgzRFwqzPqwvZ6snXRCIaSqPPydFuB0rpIg8Hkwwv+psls1kqfSc5Qg4iirdXphiW+210A1Rd9r1dLb1+WKhkiKi3hq2kFPKyAqUKcIdFDcKmcsEmOUuCwaF1WCqSSMuFVQ0rzOcjbMph6vK+xSfl/I/chvzGw==
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               code : |1-
+                
+                // Changes the display mode
+                OrganizerChangeMode(ORG_ORGANIZER, orgzWeekOn5)
+               type : 32
+        code_elements :
+         type_code : 26
+         p_codes : []
+      -
+        name : OPT_Month
+        identifier : 0x286d09da3027f2ac
+        internal_properties : CAAAAAgAAAD1MW5vrDy/YM+uinZt3HxE9Z2CyqNHI0nAvZ1jcFjm5YJXeYsZor13pseBbVvdCCJdetFFB+WzFcnzYClvpfKiz6O512D40fKyRrWWQjgtMCAx2vHe6HLi/OSO3uD+lsfwVgnuYeBAIn9hqjYV7ipNSyql6HmOFBQjaIsoq+i3s48NGbnyU8pHirU7eJu8GKm6IM95plhm3OgRUVkliCkXZ2wmcuhErmmA9PkYWLLcE1AY9yEOIsfucwBzlO8/S19E92Ch1CHnLKgvqUOJY76p99GmrSy11H4PYSNW/ZH8xYLKJkHPZ9undPjYH/8PiqTHmlY=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             // Changes the display mode
+             OrganizerChangeMode(ORG_ORGANIZER, orgzMonth)
+            type : 32
+      -
+        name : OPT_Separator
+        identifier : 0x286d09da3028f2ac
+        internal_properties : CAAAAAgAAADJ2vlT5C4oYxA2IT2fpRyZY/WxE2pf+/iX7rPHAkkxkhtJoiyX8yODetM+9ey4Lr8kM2j5txdSwwwZFKgxBMtuDDCC2mmknVycT1gk0ycaDtVkKSGhK4chi/I1C9JXM7cRnoqgIPc76lh35g2hAQegT2yiTpdeXRl6sjQ5Ammy/N6jOOjv/589/UM/96iHSS/ftNRoKX5Zs1WeRYApBjh3daOGh7FsJ36AMJba7zS/LycEJMWnesHPsgVPRXqMRXfYJot8LPtaXDr3jNaS7EuUsfg4Me+6J4uuyND9pq4VvEQeIA7TldCOMehXfW7yHEQfUGBhq5TR
+        code_elements :
+         type_code : 26
+         p_codes : []
+      -
+        name : OPT_Options
+        identifier : 0x286d09da3029f2ac
+        internal_properties : CAAAAAgAAAAVqgFzZu1EP1iP3n7yyVJEnfT9KIz0XzygTd8+Z5Pwp2h4uobe1L2wQ9aILDefqn27q+XIp4FgZ839VsvhwnUbT3sUZxIqu2k5cMcdg1J1rO6pmKLRWMNGQn78PhkDkszLN75m3Y/4IjByAmrf5Bb0+fy4WVf5RspNNnpDswhgFFgt/bqXJ0LnHFvoOceQReW3lOfrjLejyaxlXQICQziE0z05U3P11SMXTjD6PaXlzdPO4DUPCpIyFQmPfTCC1swxhuHYkVKGuOhNdE+a3idaApDTZpf5zOE2yKXVblKQEmxh8VSXQNxmuUXOrYxaHHbTjJgGOPTbpPvsBA==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             Open(WIN_Options, ORG_ORGANIZER)
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+   -
+     name : OPT_Organizer
+     identifier : 0x286d09da302af2ac
+     internal_properties : CAAAAAgAAABrOWWOlpdTbNNV+mRM/q/VWkNrpx8nI4+06J/G0MMBVAHhHjSZ4fcWfchLzzYgI+3d3ZZ2YngkE+WBljtXuHCBZqpfzbS5Ijsi7krrxXrs2dYLIwIrJ7Wcwyv+dBjrE5SSQ7HMDz8IiRbSrI4qolfFqqgy75WY69BPRa0NN0z9PfzLfVUWs67DD7U2mzVEPtA3dTg2zEYv7CvgmJwkRVXNSUvpvPlFXclNS136e4a2by9s18zSekLV6mfzyxx0ojsomqOQW/mF0jW8EdNO7JW6IUBh5m0iI3JjI9o4B9qj2wMGbi1WrXhsI7oqx3ggz0WkpwQ+Te0sfN9YHAcTX1IVx1zg
+     options :
+      -
+        name : OPT_Manage_the_categories
+        identifier : 0x286d09da302bf2ac
+        internal_properties : CAAAAAgAAADYUyWJdTAEDPZSQmK533aSIUEUcgv7/Y+Eem/BI0jDamNEKKwv6G9P65V9C7DDREkYpNiilNsYOMKMwj7vBVjrYblAbqzB0Jy4Q0Iiwt9pUmfHScQnp1f880o080S2gd0UGt+VICvpUaBjRDpAf33zbFvPba/iAJ3xZnIsROSmF3AxvHfXCiYf/9LKiaIPxyznyHXiyua0F+JqCQGqKhprOIgGawOjw5vJwt8ZP/FLADMYsp6e7719SLo8qjbHKo+ePAeD5x8BhZBGCQRkZqFF8eujcrpNfD+8O/XZyDSprcLqJKZ3cj86Z7xNujQo4XGe/M2jUPh7WtXotos7+J6ktHVPK98=
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1-
+             
+             // Opens the window for managing the categories
+             Open(WIN_Categories)
+             
+             // Refreshes the list of categories used
+             TableDisplay(TABLE_CATEGORIES, taReExecuteQuery)
+            type : 32
+      -
+        name : OPT_Separator7
+        identifier : 0x286d09da302cf2ac
+        internal_properties : CAAAAAgAAABpulnzBM7IA3BWwZ1/Rfx5Q5VR88o/21g3zpPnoinRMrspgsy3E8Mj2nNeVczYjp+EU2i599eSQwwZVOhxxItuTLBCWmkknRxcj9gk06caTlWkKeHha8ehC/L1S5KX8zdRnsqgoHc7qpi35o2hgQfgT6yijteenZl6MvTZIklSXH5DWMjPH39d3WOfl0hnaQ9/1PTICR6507U+JaBJ5thXFUMmZxEMBx5gUPb6DxRfD8ckxKWHmqFvEqUvZZrs5Vf4xitcjFu6PNpXbDYyTOs00ZhYEQ9axysOaHAdhs51HCR+gK4zdbDuUci33Y7SPGQ/cADBSzRx
+        code_elements :
+         type_code : 26
+         p_codes : []
+      -
+        name : OPT_Accounts
+        identifier : 0x286d09da302df2ac
+        internal_properties : CAAAAAgAAABejzR1Mo5yTS8NYgUfuP9kVO2jzeKqO6WXZPUtsMGzL3G1K2dNvGLecOV3pTO+yQnUZLhTerl2iVFQBZWd7UMnpGXWyoyxkFg0FS/g/s8XHOxy+o1oicL56xlPLmB2rx9z36q7BiEUkekI3dOU8GXP8IrAYvKSVH0dHux+Nk9b8VmMZ2Nho5TQMAkd2mjcCJJoGACLfN1MUaTKW2jG+dqMIDTgD8SJXx60mhjYKZlVY2dc3VKfACo0DLf3HJcepE5unLIZEgPyQ4PM4L0sM67xkMMvBujd5uv11eX7UoiJZkPzTsfcMDeeS9qTrS+pExCoGSZk4JK1UnqMBX3FNLdF2A==
+        options :
+         -
+           name : OPT_Outlook
+           identifier : 0x286d09da302ef2ac
+           internal_properties : CAAAAAgAAADiRZB4FCSTSJtVNK4hzVzhoxURD3G2lYKAfpLWEewgINxw/8bQlpYSxN7HRE28kaLucSEfjl2nYbcKw85gEP9ir9KIRdXyLJHx6hasxk5T1SkuplpLcc9Fu7hVuMlLKLpcCjjTd2FALIHoGgjavqWnDkwSWHN3m82kOzXl27wDakWHFRnd+TChy5o5+cPHTfmLHiFy2tNH0jGhKHdqLPFiDb2igf9O5F2XIczYoN8IvqPrK2X9qSnyoPKWOf3Zx1NqdAfFUCHf9DVe6A5LjWbqIAUkvwEictCZP7pNTfHrtyXVIQneyCUqtGZPe3IlOZWnD8l3tbHf8cZPXS2bGIttFggF44Ev9ecoy1S/O00QOfRy
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               internal_properties : CAAAAAgAAABkYxCOUYE2SIcGyy5+4wwrT6DF+SgxhKYNE697YSO+C/M48G0BQUcnkrKT8QFeX6iz4Jvjh7uHfgUS4CsNltWZQi1w3Wjctcozk+DG4/azu9iXKmOT4z+Fzb/9rFJFUBd0mzntXNuOl9Q91Q==
+               code : |1-
+                
+                // Opens the window for managing the Outlook accounts
+                Open(WIN_ListCalendar_Outlook)
+               type : 32
+         -
+           name : OPT_Lotus_Notes
+           identifier : 0x286d09da302ff2ac
+           internal_properties : CAAAAAgAAAD7rg12vF0wPVYLW5ZZHeNoQGl97uqzg+s8ABV4Z5IBaFnxAu+KWlHXk9iL7s6BK4WctUq5meEAhmyCdByvysA+NUD7R0QNQfjDNbW6mhUvaaSYAtWi9CePPWGS66QbPFTz8tnXXwfmj8pfnKCm+u4sWgmgrap/SDMxs/TRe6BIm90pNypnCAc8o2xLUDvSn7DCQRcTiI4oGzNvehbkVYX9zPHUKIG96YLRxQzlB4kn3h2mBi/QRQmsQTezv1TPLVSvOieeMW3PEoot2erYz4M1T32KAg9X4RSVXxi+b3wNrGJbd4z0FcwJmroVJJHJRiE9Gu9IEfQAdhg/uTjt8/t+J+4VHpVwyAb6R/yoMyH5OUz2dg==
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               code : |1+
+                
+                // Opens the window for managing the Lotus accounts
+                Open(WIN_ListCalendar_Notes)
+               type : 32
+         -
+           name : OPT_Google
+           identifier : 0x286d09da3030f2ac
+           internal_properties : CAAAAAgAAABma3Mzr2wQLNuF2DsXpyYuKvNT6nYNc2lLEPzVBSDC+8mGlEo7Wiy9DrVDb5QdS9rmjVzEaWhmG2zBO4B0tN906G2EJ6ZH/qU2d8OikPEsoCNTtwqPZug0pbRwG17D8Mje0dthswKOxmPpKPyy/6A7H6bjrPRjXqGlIyDVDO6Y07vlvWac6PofHJ8alJAuML0k3A5zhYFwn/JaNMMZCkCPIF/QIHzaygnfZXOoTr5TvG6FRPuVlzq5L/mZTFqrkKpYTNHZeUrQUKhQqC5AoaG/LP3lo5aVj0miswSXTRyJio+ERCeIV3lxmfYpXBZUnPlhsLHOcUKJFaIf7QAWaIOGIrvJ3e1ays3cpXTQ1bI=
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               internal_properties : CAAAAAgAAABkYxCOUYE2SIcGyy5+4wwrT6DF+SgxhKYNE697YSO+C/M48G0BQUcnkrKT8QFeX6iz4Jvjh7uHfgUS4CsNltWZQi1w3Wjctcozk+DG4/azu9iXKmOT4z+Fzb/9rFJFUBd0mzntXNuOl9Q91Q==
+               code : |1+
+                
+                // Opens the window for managing the Google accounts
+                Open(WIN_ListCalendar_Google)
+               type : 32
+         -
+           name : OPT_Separator8
+           identifier : 0x286d09da3031f2ac
+           internal_properties : CAAAAAgAAAAhwpE7XLYQexhOKTWnrRSBa+25C1K3UyDvluuPemH5alMR2jSvG8s7woumTdQgxiesqwiJJ7fic6zZpPhhBNs+3DDSumlUPTzsf9iEc7c6rpUUqbGxy9fxSxLFWwI3w6fh3vogAId7Cohnpi0Bsecgr7zCficeTWla8kQBemG65Ob78KD3B7d1Vftnn2AfEVcnbCyAMSax62127chhfmA/vTsef5m0v/Y4aJ5iByynN+88PD0vIhmnSn13DbJkDV8gfkM0tHPS1KJvdC4qRPM82aBQKeeC79PmsMjFbvZNdJz2CBbbjciGOeBfdWbqJEwHuNj5A3y5
+           code_elements :
+            type_code : 26
+            p_codes : []
+         -
+           name : OPT_Synchronize_now
+           identifier : 0x286d09da3032f2ac
+           internal_properties : CAAAAAgAAAAwjdQwj1Ok+AG149cOaT+bK4W71QsKWJXJIEEyoI2ROxvGO0bqTJ1bWYnPCmVUDnq/5Lq6/LsttOasHUzyB7lbDH3tzY5nVyNtPMg3ln0rwaBOX2sJPOXPLhO0xFpU1XewwgVGcmFpZevyF9RswsWjYyIxa/H4xMjthcwER0kI7sBkN9dDkRe9q3RmUnd6OpfPyG7SuOL6L+wxlQ/s5c21lWvoStgmP1jOuffSgCNv6gjh7nj53qSSvcKrHuFk5pTD9A/r0vUPx+7Z/l2tQeBC+i/HcGGaAdVOrI+MagkZ41sxjjTd92L+S1d0kxIkrVV5b1TRU3ChEKymp0YnfkJ+hyxH7FPQCkoqskBfmw==
+           code_elements :
+            type_code : 26
+            p_codes :
+             -
+               code : |1-
+                
+                // Synchronizes the events
+                SynchronizeEvents()
+                
+                // Imports the new events
+                ImportEvents()
+                
+                // Refreshes the display
+                DisplayEvents()
+               type : 32
+        code_elements :
+         type_code : 26
+         p_codes : []
+     code_elements :
+      type_code : 26
+      p_codes : []
+  code_elements :
+   type_code : 26
+   p_codes : []
+ popup_menus :
+  -
+    name : MENU_Organizer
+    identifier : 0x286d09da3033f2ac
+    internal_properties : CAAAAAgAAACaby/C8fhwiaaC1fz1AeR6tN85Tk1NgdOu5InnGlD/MSKi09CBe7O2zAFNqZmQKxXpPUsPGpKlQdorN0Wompc01jDA82cT7QHZHqfJ/cid3GGVZBcYttxihi4wQJMlpiFsALcmUlUirVSsJEMityANuRu2fQPhNFURfUtfDLk+R3o6CYRNaskNWo5E23V+d49CrbDwu22DS3zvRrCGsdUm60Zt6KtNGFp/IMIaigkIZtDYr6tX7sLTSxrewBChslKuuvYyD6Y3Ym4cICDMoTrwGdtQ4I9lR5GQcZjzdy9eJcks07V7Vr979U/Of8YUK6JMh120+m6qL2312YH5SwtaOpfUemzpdmzvo7pqgT1EwQDYWQC/vWf2dOMt7zC+6VuNuXWcWXI=
+    options :
+     -
+       name : OPT_ClassifyCategory
+       identifier : 0x286d09da3034f2ac
+       internal_properties : CAAAAAgAAAD4adbsRigNGOJdkKEb132+769LeHy/j0ct/XQSnohHShR/nhIuS9B+4EgX38D6Rz65GsslPINkT5rab8AyVYhfb2WDvxJx+DZoWmJ7WL7oKyn1ZhvvsxcVds8K61c35R4wELZRDC7kaBh5QJ+LhS31My/IiveRIkH5I1dzoWgMi+lpFCXfVY8RSMg71j9tXHxI7da9RH7WjdOBBOcVBz67Rgx9xrSizd7bub55wF6EczPwzDcJlV4/SCYer6DjNEzCL7pOTYrsNI+c2GuyWcmib2xsE9RV7Q8xxsl5Flk5vkNtX8ffF4l52jj5JLGDuYUSApAQ6ztwmMTN1vb5gFxDuvfZUIsivADNerbE28WvbJ5JfuLdDDWwApjednpmD6mNAoWFgTG3E0w7ZkE5Dj5vEpkk1TtFlzuhFUpb3hVV53o=
+       options :
+        -
+          name : OPT_EraseCategory
+          identifier : 0x286d09da3035f2ac
+          internal_properties : CAAAAAgAAADNn2vzmfZi7pp/DJI3r1l4pnv8xJr+Z/aB97azW1CR065bqB6m34vvTGKpzuRFeDNIq5vRgkjWGzdLknhJ33wn/wuy0C6FzSrYhQRawMQM7YUCxoTX3aFVk2lDEAHqLLZRKN1GdPM0BpD6LEgoHNEtam70D76AQ79DsV6KO8UxjBGvvl/n+GsfV+g0uj1pQwiTbaSumkMsgAmjSX2Ls+RJAj8X5N/Ilkf21vlQogCkM8DQ54YI0IVogLCwpdG79yk4mgL2XrG1Fyf9nQ3voJn+AajksMzrWXq7RAxXrOFFZ17ihJjImJGrEn84lVF9BSGVVxBAib9QFxoA4c8F9s5qV6IbQSISII/PlOH7bYm8CGYq9G39O2MOkfkf9vae0sz+cVfByzXUn2vV62/kJv8/56dRUKeSxcHHSwqSyeIRGosWTJ2xzBzz5HxMErY=
+          code_elements :
+           type_code : 26
+           p_codes :
+            -
+              code : |1-
+               
+               // Erases the association
+               OnEventClassification(-1)
+              type : 32
+        -
+          name : OPT_Splitter1
+          identifier : 0x286d09da3036f2ac
+          internal_properties : CAAAAAgAAABCK2kvpSKz1hmsiR0BnK2BBZKkiCeUBEBMT6bNG3Oa8ESoH1eGyZE1h0kp7gw+dLJkMH8H7vkGUlX0vgmI8wMqXBm9r5y32QJvh3n4/BMHDXjJ+jOngtMUlChOUlEHujzivRTq3INP8FaAwqT4NMr5kfwjHE7Uw7qVppCSHaocjKHQkWO8BzjEbn5Xh7Zo8IQFXlISX6LUP0VSTgP20mxrPL8do7q2ZrkrozQEBQ1YqlJ/YuepglpzF4ErHuFOOrFzw1Am7oEqBo8DJvi2OUmj1tSge93e1QLNkIxj9d9Dojb+qUgBX6gpjCvqKOs/yr9c+mHOwG54xBM1SJizgFQXKYHXo8rURtUsrKIz16kCnacLGxEbkVdCg7DjnNZZ9LUXESy1MI1hxxBTcvi57g==
+          code_elements :
+           type_code : 26
+           p_codes : []
+        -
+          name : OPT_SeparatorCategories
+          identifier : 0x286d09da3037f2ac
+          internal_properties : CAAAAAgAAADwQvEqIqYFTwPtPbyLGEfrTcFPclf5BTKM8ioUXqd/1EcHmygfSlrkr4PZRHmTnmwiFoIXdMnHq44rmOpxXkvp1c8ZHM+9VoTibQtn6h5pRBsMu5AJFUUo1aPt0LwpBwRp3458RdcXX2WIjLzYugQu/2fJRGm7Jh2o4kYdtoHW9EKP/YUX7sc8qyLvJagZudKp2Ldpm9O4MSPbdjBDlla0ZOnzfLMptVnuYObZyg4WDTU+g3kQLEydicmC2qbqfv0cV5xk1zRpnAJJHJWwvHiTVggJSPVcKqzSezkJRTpyvpNAqMQKWWFtAGA93GtPZeM4M5+mr6ib9sDwh5ex71DC+mkzXtkiX2rUBV00vzqGNANbMhIEVsFbYdzadAUKOn5OStEFdoaSKoVTGl0SFD9qQtdr
+          code_elements :
+           type_code : 26
+           p_codes : []
+        -
+          name : OPT_AllCategories
+          identifier : 0x286d09da3038f2ac
+          internal_properties : CAAAAAgAAAAlBPRFRbTZ7dxfR1ABdxc0z2z+hXzH3uSeGZJtKgjyVxllbaPXrVRIm0RZFc8CiaA8f28SFg9rDEMWiUSe1gW26/NeXnx55MB/GXysRP3t6lrId9lSebFOzuRwNyOzAOw9sUWrcx6M6snFy1Dfm1YFBjHTnk4kbymXuLHs6zX3rWaNSsDFsEqBOkZTT/QTqz2hB1Ylf0Or4kRzpQ+mU4RDS2UlkM2P7R8+9lXzzS22y3OVuYJbimq3IbBrShivLDcIOYiHveyo0U0VHWEZKInjbkcnP2d7osdyCmJFoDtDzAbU6zEjMmhukQVHNbEhQ9SWx+OQJtqduZiOOCjvJPo0SBUJlkY5ezxajfECgPt0UwmX4XgaVELj4zfFrD/ClyRWJH/zUFw35eyKdP5zN3158UlP9/DHH+16TDtCtg==
+          code_elements :
+           type_code : 26
+           p_codes :
+            -
+              code : |1-
+               
+               	// Opens the window of categories
+               	nCategory is int = Open(WIN_Categories, "Select the category to assign to the appointment:", MySelectedAppointment..Category)
+               
+               	// If a category was selected
+               	IF nCategory > 0 THEN
+               		OnEventClassification(nCategory)
+               	END
+               	
+               	// Refresh the popup menu
+               	PreparePopupMenu()
+              type : 32
+       controls : []
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_Link
+       identifier : 0x286d09da3039f2ac
+       internal_properties : CAAAAAgAAABdD/CjVrWuU1ukN3PQUhzmmY8DMH8iHHU090RC5TPCg2o+IMKiIpGfbpDXfpdi9rv9S9H1rVemvaU7XWPNG+iHB09N6uR3ScNI8spHo5dpqlfJZuFaUYgosgzNPwclmfEP/49uJCcCwVTJvI7Ra8GM1akNJIXhc42v5Sh9zjkvNYg9w7bS8UA5IwF461LKzIPhpGZlnisUK2UX9IhPjtrbFbCnf3D57SexzHPXEt/2meUiqlEEaEefKrFVDTAc6a8uS/I4hVtjGNe6Q3Gc67vHT3+hgRGEoZgwd7vA0ZRBcURhYr6RW8XTy8OV+ckVdI2Nru6PDXx9xew0BX/0QGT0dPHBz3sAFqjZ/my64qtFqkezaYHPG481y9yuSwIwQIC9l7I6/hg7Ij7lANzLy1uocqqZ9ebdIqtVmC/W969iWTjBR2jwfbQnPRvcgiY=
+       options :
+        -
+          name : OPT_LinkOutlook
+          identifier : 0x286d09da303af2ac
+          internal_properties : CAAAAAgAAABOUV5MmaLDCdrxPqGBUp0eI4Nt2u+hJwzjmUP2zXluHbRxu6SRP1UaaTux1zrYbzMg0n8lGr8ZK7j1berOijqCfPWYi5irRK33zKXv50DrrojfI4W6P/Bd5FtYONIoy5PwqmmMXWOiKsWtJctN7E6SaPXWo1e/TGxTN9xUw5iTvINNONXAcR5d4WAYy4xxG8WeDR3qRTzwkJzFvsMakf6AOOKCx2VsPvSkieIZzONOVGBN/Qy2uigg/ya49modj6lQeKBYdxY79QX7WJlgnrUYkPdgeIc5WeihAV8HZe4H9dGJbjd5MxM+nXr7MWAu3L45FMDTonNGrDlZwNnrcx6RFk6pE4qpug1hN3nwiyGaS7OKj6ZJOk1agpum9WEua4mwUoaKihMbJKUm71pCw14vsf/y70WKMAgWR88=
+          options :
+           -
+             name : OPT_LinkOutlook_Cancel
+             identifier : 0x286d09da303bf2ac
+             internal_properties : CAAAAAgAAABWvxaplESUwlORJjiDxR6OQvfhIVy6uMqCnhae62N5srrA0dmpm6F0lwQZrbYw8fF+koCuzAD3JyBEKFmOroVP4bjYQuoVzwfi3CuUEV8FDfdBtJ2BNfh/gy7w92yEVyz265UaX6oZwSeEn7Oc45L5/xp3fqGQ9KkyOOonyx2IwiNHX8zrELVFomGsi6M7otIqERAQzJf88x8AodXWxWz1+OM1RAgmR4sztrcDrUNgoqEAbxuUnrC3+zFFdi7Zk9pGb1c5Qj2PU/RosKYuKXwwT5ZHg2LjkLYzFs3uk8CdHJ9rPWDHzWxDqbTSTDNzkWWSKzvlGOEDkSsgdpssJOLvWXCCbPm4ZjPIwJra8SJ2NBQCfvL2jocWaeRgWQjADKzMi1HgZ4vG/im7rJxPF6R1MPHMsKky
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  	OnEventLink(fromOutlook, -1)
+                 type : 32
+           -
+             name : OPT_Separator4
+             identifier : 0x286d09da303cf2ac
+             internal_properties : CAAAAAgAAAC+lwXjaRZnmk2wjSk1oEFVSZaotIMgwAyIi+KohflQNhru0Rl0T49PDVc/9DbEcjiCzrmpPFdE5CPSHE9CIVn4ig/lvPUlIqtwyDIVYaj+JL2e737698wZyQV/E/bw9ec7/hlBWxAokcPFp5EdURGQdlHos225TEuqgyEz6qJUJBm4weNs12AUvqYfX55oYJRlDnpqR1oUm0F+4t+SNqCf8OO5H5b6SqWnL9gQQYGMznbTHoOHmrCR18FlNJe2vLdrM8BOPHngdDdrkG7Q1e9FYlB074N+e6A94F5JK5c1ILZ2MdgLU9qbojHmbEPTuj/IdmUmmErAlM+BBNTjbMSHvR1rC1KwflVA0F5nH23C7RvHb03f1ZN+z0wPqNoloOEjJTi5PLmV+0QHpowVgg==
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_Outlook_Sep
+             identifier : 0x286d09da303df2ac
+             internal_properties : CAAAAAgAAACbma41HU9eqJpaxnHI3TyumJR8Bdr+CvdTtz/fa4yc+/K6EEee+xtl5niCrTKk5zd5uQNmY6oA7PF4qQuCj8yYBFY6i7mHBEjSE39t8pZ91qeKmfKfDaOMuf3VNphV004Z6WAmY5ftdxlCaDpUPtSsD7nDpp9TfIFc7C5vQkUaFr7Bo49xIqlMX5yLS/iR4diFPgELLReiSU/2B+F0d1dBy1xc4UiuePpHCxfqI9fvYpi12JIZJTv6DkRjA49zlw5n2n25fFlcwTc4Kcq1kQ0o5fd2OYb9yU1Xltqi3hMbXzL37W3TkpiidZPuZfyEvjrhNOgNxkHyf+kpoP4YuHlpMzK0vQjDvpv1hj4rdgOPQ4DoV11fA3RsdqEfL/gHx4l7f57IsUNVb978s8S5fVR9d4yQ
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_LinkOutlook_Manage
+             identifier : 0x286d09da303ef2ac
+             internal_properties : CAAAAAgAAABSOeFlXJApojC4cFL9FD2GBqh11CgD3eDrgPHVduTAQNieV8ue8HE4LnAieRWrgnyE1kyu+/TOz0tq6ARcT92uZBMG4tFwqADiwS2w8tBkZz2+msyseBaQRpnrse1xm7UU4Evn+DKVkaFo++se4rt2PxtDb21a0ZytH0eWTRpEmGtkfW4WJSEr6hEav74k9q5uHviV75RL+DrOeG/m4nCz9RMCcoFoIMFAzfkc9V9ySjkJ7mf7j5pDbZDSb/S8eqpFamIH8IMFl2yn8B7guOju2+x3QNih6GqdVYTxEvQA4d8+UbDCUUs9txEGzlceBXGP607jC0NwqBRQaUms7yJ7tFzuuo5T4COwf9g+Oh/Ph1++2W0RKlqMKNRZdrlgXIAnaWDvuUYXF7g60F7TO/0fQ7xK7xqYGin4DbcjJHCqqK+7
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  Open(WIN_ListCalendar_Outlook)
+                  PreparePopupMenu()
+                 type : 32
+          controls : []
+          code_elements :
+           type_code : 26
+           p_codes : []
+        -
+          name : OPT_LinkGoogle
+          identifier : 0x286d09da303ff2ac
+          internal_properties : CAAAAAgAAACjjQDoDv00BWAGgyv9GQTzF8ijg8XoN2+K8wGZvp9sv5MJdWIzj6fFR7ig8CJQLFfWWyEtgSafVzTaABRS2iVxC1KtstBjWvjKlggp/yBKSmv8rguqkav0H+sljQVet0RZgW87DNqPyW8p88X4/QkD8oYlCJ1su9lPKfSLJGiBOsCJMPiZgv3wZMUwLRszgp2zH40V8AaFydQHT5TrHlvC4lAJ2opgtrGq3Ue/HYUnjDMF4jWpXujeX5bPzrHwjcmyh3yMyNeW7PHIEBzeOnX5BYmxXbVN8GvFFIBIHqmOHEArZQ/sA7fx4kKtWk1XSsEZzjDOt7VskOPeHidBiqf5MzDDbF9jeKvbjrrtQanHIWNv2euM/P11zMO9RM6WWi04+7nvcE+zMBS2GdOaeyr0Lh+9fAOOgTKyo7rEMA==
+          options :
+           -
+             name : OPT_LinkGoogle_Cancel
+             identifier : 0x286d09da3040f2ac
+             internal_properties : CAAAAAgAAAA6yp2glGzmvt1oRUcpjDbd3tLsN1zBnvI7jK9v23uyJdxdfm5/TuyrEtIoqgWFMRgp/tBy6VBmg+P/tBdzr9+x1rYqfzJj4V8GAdvgoDfN/hL8XSkPnrxgNC9w0cUDn5RYq4ax30dFH8dXeIpCQjLOcJT/BDk2YmiBqHJfZS4yH60CXBwTkI9mfKEwvmFtYB7Cn3Y7FsoH18lriFEvH8zy0022cw0i7SVeVYEAqtDNDcJQvaKy69WMywtysoqKLHzENfG+IGwbcnpICFOdQGpenvIqgvRUUb4e7N3DiCriVY+A31UenQa1zl/6RGiJPiTf5gK78OhAhQy4z8br0LgNnQYAU1P6p6EHjYk1lx9OKRhMysFQvAhW9NKxbTNFZWDp65mzs6CegvZ9acCLesgNtpuXoA==
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  	OnEventLink(fromGoogle, -1)
+                 type : 32
+           -
+             name : OPT_Separator5
+             identifier : 0x286d09da3041f2ac
+             internal_properties : CAAAAAgAAABowZ8Ff+hl5E+yhyc/qltfS5CqvpkKLm6qLcz4RcVcSu4yAYnUawdHMZPDFL5APnQuaoFRVPO8PPdWYMfC9ZWcTvtdhCSyfywZacOm9iWZ/5rLbCXFxPl2FnqgCPvxhOY8Tz7c8pW9eviiLHp6tnRbQ561bixWMdz/EAKQ52KsbNGIfbc4R6TI7j4PaxrYCAylVnbWi+KghfuIfCUcyGplMq3TWehUvBfJASrGM7vWlLDVCBmTkKSFxf8heNNsBA/Rma5AyOec8KXpBCLg7xP5vOr+ta90F/x7zrIdxw2deGysfwo7TbI7/MuIQhWVHI2KsM9ooqT6DsmLhrKN5q7tD7dddfzCYLfy4mAFqeesy3Vh0es9t3Fc6VYZptgnpustLzK/OruT+UYZSCLj1A==
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_LinkGoogle_Sep
+             identifier : 0x286d09da3042f2ac
+             internal_properties : CAAAAAgAAACygLdp4PLHe/TTF0TL4Ko9CwbBBDnbN8wYGIPZkwqg5HTeKFg2W2wfP67mjmsaIJeEXtg6cxs4FC3rK5WIxiL0MVJ73n2I6uZALc13CPwDpHHg93rWJDWyyDaZTH5oFw+f18ypvMiHdS4sUNocTsSkjylb/ucL9Al8VD5Hok1CRgZbQxfJGiFU93RzkzDzHUoFPgGLLZciSc+2R6E0NxcBCxwcr/6OWKpni7dKg8fPwnj59FY1wadmonAH/4tHS0qL/gnNeKWY7VvCtg3IPWgA72GckotZQ8mDg+QgSPJLjdAF81dVAMpEOyl037b2vI9ZRI+UvaWey8FmCxGZUn87soyFIFY1eSXRAk8oQl+rGJMjVAOpD7RSqRSE4usE0JAw6e5IiHjYsFlBXxLPSYAogJWp
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_LinkGoogle_Manage
+             identifier : 0x286d09da3043f2ac
+             internal_properties : CAAAAAgAAAA0k0ufpmrbtLY6/tx/lr8EgCJfdoL194rxumeiLcP3k+elil4Ba1DFZ8ujkgDmvZOzTVvFwgNJ5OQ52ZVvSvQd+/LB1VTr3yu2rG59Lat/BuxtbQ/n8919k/QYrkCkslQfb+bCDykQEqaX5PD5naJ10naitnBVUMkqlkgf5DErE/oznJVFnKRcwxALMJWbxamu/jiV75RruBrOmE9mgtCztWPyAvG40JHwHWnspW9imilZXInHg0bHf4woEVgoGHRXFpTVEKMFtyLPSswgaD6gGWT92kQ9HCLbFca3WqxWwyWGL9KurR8hKZXU+Ds64xudo/RNn/cs6K6mcUECmf5vRIJuqoxdhiUQ/bwSNPV3T4d8eU03zKgmvCZxZk/a2BwfB6AvZ1ANDaJU+nQp1Vv5vTbMbZgamKd6j8nRihoAAgkd
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  Open(WIN_ListCalendar_Google)
+                  PreparePopupMenu()
+                 type : 32
+          controls : []
+          code_elements :
+           type_code : 26
+           p_codes : []
+        -
+          name : OPT_LinkLotus_Notes
+          identifier : 0x286d09da3044f2ac
+          internal_properties : CAAAAAgAAAARazA7Pl1mYVjb1ZA+z92+zBIS4YEWOvO10F79L9nSRerGL8tpmJRjxZEWgrG6BgNx8Rn9z+g1/WS1Ufm9sOUXSxAlHW1L8PvGnwSMyAhtm+YamZDEB128ZUdjP4J2dyXuTZOIt3TtL0FrXz/frbDmMlKsaY+IwlB8wd43S+rsEFJL7Shc17yh3V91QGlObPxpWBVMx6BD4WCQI1Qc9DkIheMtOVKl3Z2299LOfCTiO0iahj1RDr/K99cJPZZ7/H22JYQBPFl8lnpz9NUY7TnZ1ErDZ2RX5pZVx9b2EoMbN5+ZHYJAA/Zj6CgQLYJ6ZAkBlAUn3A4HDRKZRlrXSJTZJOg42xhqvC25NNdcXxkXv2jcnQsDpYkaCDI5MOgUpbbZGuG1BZatWw2SW5A8Y6KAXiynAs9IV0UCrP4hc8wGBzE+8g==
+          options :
+           -
+             name : OPT_LinkLotus_Cancel
+             identifier : 0x286d09da3045f2bb
+             internal_properties : CAAAAAgAAADb67pHOcGNFfwJJOZMI5VEvzNNlj1i/VHStTZrXADbVlPwcZNK4U0AP9GlHyIqskGs+XP3GBejXBwunTgQxNCyfWHdjPmy4Ae24Wl44PNRgu7Q6VPdRHJauLPOLSl/j5xUp4a3yVE3FZvDZoYGBhbK0PQb3iPAVObpCITDdVZOy9mu+M7hbvksyJWKfoH5rHJOMyJNYMRBjdUvI/zUupkt7gi5Xjb5vHJLbohn82+SQAHP1FHHHggBrPTlLSelMWcvwEDNtZdO5//B864q09/RHXGlDX3DqNfnMYw6+RFTxBpLUqCHRK3ag7xlz5FwxZ0utW3cFQNJRD+v7pukH/c+pB3rRIgNqGAWwDx+PHpxLpfrlfp11xEpO2nYBpTkxMFISnhUHD8/JVUciOH04WOq1bq2gQ==
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  	OnEventLink(fromNotes, -1)
+                 type : 32
+           -
+             name : OPT_Separator6
+             identifier : 0x286d09da3046f2bb
+             internal_properties : CAAAAAgAAAD8VUMhq1ShoLvO0/vrhqeLF+yWki2OouIuoYDtUeG45roODX0IX6srlQdnAPIEYjiC/sX9sP8IaEMynOveIYG4ysdv/nTSpyzpUbvOrvVpP1oL5A0tLIkuLkrwaPspDH6kVz7sMrWlisgK9GICliQr8/6dpgSO8RT34EJAp5qkZMngDRfYN+yIHoYnk7I4+Bzlht4O0zowqV8MCEkQtCYhTgk3jSwASJu9JTY6d7cyAAxx3G23XHDJaSPNbMfYUNsNZYIEjANohBmNsAa0yz8lSEaCCeMwAzAvAn4h+8lZREiIs06PyV4fAL/8zqkxGBkmlNsMrlCOog1fakZp6kLxA6NBIcAmjKN+bnxxDZN4JyHVTW+5M/XgbartisRL+r8Be4brDu/PtQJFZM5XQA==
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_LinkLotus_Sep
+             identifier : 0x286d09da3047f2bb
+             internal_properties : CAAAAAgAAAB23HOkrLgPOQXjP7qVGnHdSyspTBGzT7QGSPRxIku/uJt3b/DrHiIkM3NBYEXXhhhe7nanIN0Ho8KbmCYNikOd0fclAGGQxoBWQU/LLlKtmMeAj7RNKXn8cf8J3Cg1owBda2qIMVOTiyl88HAsbphSu4vdSG3PKhHUTlKJcg1SwOYXHYXnfmcMs9J39YC5eUoZ+L8BU8uwOSNX+rzPOnpg2F0/YM8l8fVCjKp1ttI6qUkSvx0MOBBRTa3mnmKe8nHAowCAuxgV2H5VKIFkeNRvAozVnDEIHtDG762dkX6m8lecvDCOzd15DFzZGLf5080qKZHQgYo5NFZGsfnbQYb0VM/VkKtsbdg6o8+m6RSMPg1pzMxuIFehu2ZU8rtEAECwNMsbbIiQKIdVHFMIDsXsxFHt
+             code_elements :
+              type_code : 26
+              p_codes : []
+           -
+             name : OPT_LinkLotus_Manage
+             identifier : 0x286d09da3048f2bb
+             internal_properties : CAAAAAgAAADx3gBc5Ska9fF5MZey2ZDR/Q1Uc43g8v/kre6EglCSRgZyPdEClGmQAKRwz1kPHFp+JoKUC9SKE+kabh7k3xNAgq/YJInwdM+C5RNyhpSuPQOmbH5w5AaYzFUxu8G9ZeviuA157Hb1lQ9U6YVajiVU2RdZhSWKnYhru9FkjUpycrFsI2yaQalfMCUgwWrw2MTyENx5hQJNYq4IPLOo3AxfgTYjUbov2QDlPGqjFh6/dQK8OyosZrOulm8fEqXr1x36RW+KaQp+GsFKyU0lc60J/LOor22UBWlqQNWgJ6/NTOjd0r+3XPAsLGTXBTwJkvw4EmdaiM51zykntP77gBl8d7EZDxXU/7AX6HNbcfjqxB6PCK7cZ71h0wHIhwQFP92CPotEQLfGRJVH7Xk22F7+oBEXkmVV3Wo5zogSy9nDR8xY
+             code_elements :
+              type_code : 26
+              p_codes :
+               -
+                 code : |1-
+                  
+                  Open(WIN_ListCalendar_Notes)
+                  PreparePopupMenu()
+                 type : 32
+          controls : []
+          code_elements :
+           type_code : 26
+           p_codes : []
+       controls : []
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_Splitter2
+       identifier : 0x286d09da3049f2bb
+       internal_properties : CAAAAAgAAAA/EIZahk/AR+pdYAQYlZCEGueZjyiZvZk12AnEEmyle7E1HHrLXpZuGPKQ5S8fN+1RXUzS2yaHkxb1sXCD9AoxBZKYseJuhQ73NyOqCg/L6SBxfjflgpucgPTk2Kt/glzGGfAu6nPH7IKcvJYO4Ao5cXxPkJQcY+J9LnJs807ETHU0QXPKd4g06jJlTbBwGPyFJuJ63TI86qLPMYh7V4cAQbxyypuf78CETOsdYrKTV/9kT/66s6uKSGIOU/J/aWK4iA3ty+5/1QiMMYUrdkicL22JxoJzKpkuMS9A7ojGN1NTNn9SCInIH777d0pgKy7de9JNR8cfLbi6TcM2/fEiwtpIwsnVpXJZiQ9eCnY/6GBMVGiyOv7reKXol8lW8bAQChVcnx7wVO1wHwuUAw==
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_CopyAppointment
+       identifier : 0x286d09da304af2bb
+       internal_properties : CAAAAAgAAAD6mRS2SXyCqZ0DorDbKbJlLF/uqyX4ZLVeSYZ9ntUL0VDb91QPDAw6w633s5hBdWO3Ube11zBIh1lfBZtF6ZVOxsZ2tkU55EyXcTmClXBbViqRVuMzhEzWsSP5AMPqeVYygdsdbOUp86AIcLd8fJ5y9q80s9tr7TmUGaao4sHPR2iJVzKAAYxTH07q9IDecX1ZC1Qb3zvPfBgWhS6ioujy4vU+7CaVrDeXJGmflCsoxsmYZ9+hLANiq7pzH8AU/446r+Th70sWeBFnhT9giT5RrwbEnXVSbB1FB+D7zZLy8te9RWsm5HWqsPACTxOV9Hw0kxX42gQ2E2R2kz3QvbTRNE37CoBdUeTNYUdc0UxffWehiRQBb7QYtYrBCmkvX2vB76HaDYQwuFySq0vZ9FdV8h5qOOA7Clu6V5ECSS4=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAAjKuIsl2VC7bGyw6UOjuaritQ6cE2Twp2zFLqYdAundyQh9ZWqCYerDOuMycsmfW4DH/XbzscshxKv48gJJcvW9Eg+5Cu49vysVSNmFuqlPFqHEnpkWOZ51AWkfNCGWbNcgOcrJaC072EDryQB9G7aUQiERDb7mOgh1k43E4Wsrw==
+           code : |1-
+            
+            	// If an appointment is accessible
+            	IF AppointmentSubscript > 0 THEN
+            		
+            		// Stores the appointment
+            		AppointmentClipboard <- ORG_ORGANIZER[AppointmentSubscript]		
+            
+            		
+            		// Enables the 'Paste the appointment' option
+            		MENU_Organizer.OPT_PasteAppointment..State = Active
+            	ELSE
+            		
+            		AppointmentClipboard <- Null
+            		
+            		// Disables the 'Paste the appointment' option
+            		MENU_Organizer.OPT_PasteAppointment..State = Grayed
+            	END
+            	
+            	AppointmentSubscript = 0
+           type : 32
+     -
+       name : OPT_PasteAppointment
+       identifier : 0x286d09da304bf2bb
+       internal_properties : CAAAAAgAAAA1XBkyAz27/nXl6JWv3xIiVlDIw+0quNLT34M8lFYszSIX2HnY1hhaGGZHlNzcUSXS5ddS0INAjXoJtVAUQmPeIT8JJWwOlrYhubZqRMlhNxGdjfTFxnZP+93Yj4/NROBEuH5p5IQ0d5wSh3F7H9KToHYJVwVNTbxdaPc8P5R1ZnWY+haapo2Qid677/9yYvITzKpaiA6vIXJnXmtwnFQqg2qGxsPVqKxGRwKSqhF1rulMnpZlaXic9+5jaVwNlPJWzhOcH5dMWgxs7nQm3qjM5c5Rvg3d9/mp02f0mPJp+zoIspsPOlcq8MjM2r5Pt/CVQJhn0sp+2lipGvHrXyMb7BgIPhU0GpqD0hCQ9IURjj1rRcWka6uJBg24HxpSwgevZ1RRKYveyQDYxvY56H0GidkfCwaotgDoUExaze86OQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACromqk/1q0+ZuISbsUgJbFljh6iMug2omfTFKIFAPXbwzhxW1KSe/7tNu80ZOmBY5jl41bVu+ML5LnW6h57fveGHTimCdcmshAsQ9iEuaZoF4Tth4QXFqFKKHw2Hzy3ccQTCufcdRIF3XvSlHsAW870gmLDR9yc/Oef+a/mw0kJw==
+           code : |1-
+            
+            	AnAppointment is an Appointment
+            	tTime 		 is time = Now
+            	dDate		 is date  = OrganizerPosition(ORG_ORGANIZER)
+            	dtDateTime	 is datetime
+            	nAptSubscript	 is int
+            	duDuration		 is duration
+            	
+            	//
+            	// Pastes the appointment that was previously copied into the organizer.
+            	//
+            	// - If a period was selected, redefines the beginning and the end of the copied event with this period
+            	// or
+            	// - If another appointment was selected, redefine the beginning of the copied event with the beginning of the selected event. Its duration is unchanged.
+            	// or
+            	// - If no other appointment was selected AND if no period was selected, paste the appointment at the current date and at the current time. Its duration is unchanged.
+            	//
+            
+            	// If an appointment was copied
+            	IF AppointmentClipboard <> Null THEN
+            		
+            		// Copies the appointment
+            		AnAppointment = AppointmentClipboard
+            		
+            		// Erases the ID and the pictograms
+            		AnAppointment..ID = ""
+            		AnAppointment..Image = ""
+            		
+            		// Calculates the duration of the appointment
+            		duDuration = AnAppointment..EndDate - AnAppointment..StartDate
+            				
+            		// If no period is selected
+            		IF ORG_ORGANIZER..StartDate = "" _AND_ ORG_ORGANIZER..EndDate = "" THEN
+            			
+            			// If not other appointment is selected
+            			IF MySelectedAppointment = Null THEN
+            					
+            				// Erases the seconds/milliseconds
+            				tTime..Millisecond = 0
+            				tTime..Second 	 = 0
+            				
+            				// Between xxH00 and xxH29, use the hour
+            				// ex.: 14:08 -> 14:00
+            				IF tTime..Minute < 30 THEN
+            					tTime..Minute = 0
+            					
+            				// Between xxH30 and xxH59, use the hour and half
+            				// ex.: 14:45 -> 14:30
+            				ELSE
+            					tTime..Minute = 30
+            				END
+            				
+            				// Creates a DateTime
+            				dtDateTime = dDate + tTime
+            				
+            				// Modifies the date of the appointment
+            				AnAppointment..StartDate = dtDateTime
+            				
+            				// Applies the initial duration
+            				dtDateTime += duDuration
+            				AnAppointment..EndDate   = dtDateTime
+            			ELSE
+            							
+            				// Give the same start date as the selected appointment
+            				AnAppointment..StartDate = MySelectedAppointment..StartDate
+            				
+            				// Calculates the end date from the initial duration of the appointment
+            				dtDateTime = AnAppointment..StartDate
+            				dtDateTime += duDuration
+            				
+            				// Applies the end date
+            				AnAppointment..EndDate   = dtDateTime			
+            			END
+            		ELSE
+            		
+            			// Applies the selected period to the appointment
+            			AnAppointment..StartDate = ORG_ORGANIZER..StartDate
+            			AnAppointment..EndDate   = ORG_ORGANIZER..EndDate
+            			
+            			// Re-initializes the selected period
+            			ORG_ORGANIZER..StartDate = ""
+            			ORG_ORGANIZER..EndDate = ""
+            		END
+            		
+            		// Adds the appointment
+            		nAptSubscript = OrganizerAddAppointment(ORG_ORGANIZER, AnAppointment)
+            		
+            		// Starts the 'Adding an appointment' process
+            		OnEventAdd(ORG_ORGANIZER[nAptSubscript])
+            	END
+           type : 32
+     -
+       name : OPT_Splitter3
+       identifier : 0x286d09da304cf2bb
+       internal_properties : CAAAAAgAAADafiW6Mt9xvm0OYV/cvmdAkplOyM5Gpd/A6u4wqJBrMfJSXMOlB1lz6sje3mDOWn90sktyPHkEdXo8Ug47A+M2II2aG8Y6Nkmwv/YjWfjElzDYnytHO+bpA2/wtFlXPk6F3d+z/AnIgRbqug8L8veCFbhci27jv9Jw45KDCSLCV9qUMgm3s35ca8Rp5RHDj9/uvEH6mWrFec2hkPulYeFjvcZ3iXJHBVQahZzOqABU+zBPNUQuwZwpVAwH0BH5y5A/x045wJ8Y1ptccBfs5vfhOR1uxV3gZnI+XD0goP+wwKW5P90yiNlVBgiD1/UjFlOjPMM0p8G4N9pYr7Zxw9KGVyRLjsFGpD1fj8yeinHxkOIyeGooIsn4tb6gxaeCBZudJeaMKYapj3oi9Ve/
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_ModifyAppointment
+       identifier : 0x286d09da304df2bb
+       internal_properties : CAAAAAgAAABn2EBdgP1VAyXHBJDd8pJmBf/l3+as7cA/fJk7TXBzOBb2XwNe9qK7/tAnmAVE2jxWKIjuFBOKmWpIyqaH3d7nH1njdEEQDcbZrglEm1Q+asBbeTlk8N1hPsfo/SIyZACSR9RSJ3Eq8nOOxiilzPGAyUs0gmjupAhYVwQnr448U3nL2Js0V55uWptBa9i8Td8/umjQJKXvT3SOlCpPJLX/Xx+IRvGxfRKiJurAVFUed0OWDXuTpKyPiFj3miZrWNtEo2tX3/OhBqy/ZN2HyJRMYgfopKE2eIziscrQES5zV363JLmJz4u7eTeqwtgoWxrQzcBTbO/s7URSSRp8HDeH8inKqoXADm85bqmU33dR8Lfpdsb06tF+oDBDv1iIB9BLpEb06PUeiy1/QQCk9vmiOP4F5XzX2KUyuRUNYwll/MwIxA==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            	// Opens the form of the appointment
+            	IF Open(WIN_FormAPT, MySelectedAppointment) THEN
+            		
+            		// Refresh
+            		DisplayEvents()
+            	END
+           type : 32
+     -
+       name : OPT_ExportAppointment
+       identifier : 0x286d09da304ef2bb
+       internal_properties : CAAAAAgAAADrqixFsh4FN45iI7idiEwOqz9Zzm0HNiQOD4gzMXB1k9UV0ctD2m/3ucUYknpw5U+Ymbv2L/3rqObhxgOMhzh4oJFq+Z4z0Vc1VuAiqfetycdvSjkt7wBv1r9ocMG2vPZ1FlE1RG413bjB/cGW/MJk3fcZ+uBsLyxJ8WSN3e00fiEpmz+JsHDVijOiM/SmZm57gUVEBYt8vqpJQzd1Kd08etxSZIpQI2hFyQyHMkOe/mZNfGW2X27XIZGenV2KBLhakHClv9vCeWQefm6Eh+kFpbsSmZRoHPCtrFSrfNXxUpcAJZuF/smt+4KCjFkl+pxWd0ZfhEFNhdnYvmJ1k2pTd/Tt//xFsIOiGz5CPYuy9aROkzdKKMPUKuq0QaPMoUpBfFu4MsRvXXBMxBw3+N9iDQ3uaZ7N/sqqqB8eRueDLTrcPL8SjQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            // If an appointment was selected
+            IF MySelectedAppointment <> Null THEN
+            	
+            	sCAL 		is string ANSI
+            	sFile 	is string
+            	
+            	// Opens the file picker
+            	sFile = fSelect("", "", "Export the appointment to...", "iCalendar (*.ICS)" + TAB + "*.ICS", "*.ICS", fselCreate + fselExist)
+            	
+            	IF sFile <> "" THEN
+            	
+            		// Exports the appointment
+            		arrAPT is array of Appointment = [MySelectedAppointment]
+            		sCAL = AppointmentToiCalendar(arrAPT)
+            				
+            		// Saves
+            		fSaveText(sFile, sCAL)		
+            	END	
+            END
+           type : 32
+     -
+       name : OPT_Separator9
+       identifier : 0x286d09da304ff2bb
+       internal_properties : CAAAAAgAAACC66lv5WLzllnsyd1BXO3BxdJkSOdUxIAMD2ZgmzhD2fPXBiTT9DAcToDsrU/1Jfu3g56s1yDZmTzDrRS3BlxrY3ByetDlwN35xG7Z3ZRawEk6uxK+i/At3WnTv6oEyauvQs0tR6yEbY+Bc8VJHS2cYt00x8FdsF++h6WPbmocjAHQ0cN8xxikbn7XJ7Yo8ASlXhJyH2K0z7XiXhPGAhwbTA/NU2omdkkbs0QUVf3IGiIH6ldT9vRVC5XJqEP6kAvfr2TKUE0cMNPXjIo0UQvhnhTQoz+af6RRFAKNN3vp1MrCJXTP6UxVdHOgkq0HgPFskvmOjlJuwo+xsnZd8NoJIYFXJ9Qs8Md0tDRZNUXsGzeb29FbUReCw3AjXJaZNHVX0Wz18M2hh9CTMjj5rg==
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_ImportAppointment
+       identifier : 0x286d09da3050f2bb
+       internal_properties : CAAAAAgAAABypSBc6MsxXHH8kzn9d5BawTbqCI113Q6TOE8ly+YViFZzVdFAU8vD1ukUKWWJsFte128RSkG+di6iDf0Sp3v9o0r9xyuFn7vZbTldeC5qC7D863bR7TM0OQr9sLO+jmm4xTj2n0QYNrRnpfsji01ZTKfL6+yUqHqSzCuOPtrXKqUm6fte28y/sGL4WwdJQGmOigUZmWgvDpu1CO8U2lGMC66BWID4Wt7c1aTkeHM4kQ2E5xF4ihcl9I6L818tXuaY+85U1nlWvV+brvlJUMn8II5saf++W2KKjSKa5pH61AYg9pPkVsyLFFHej0W77fwnjVRm5XckHtmMJM98xgmXGtwRJHBbRlVDrBZKDHoIO9EqSlIehsUg/BtT8ReldINAfmGEP3SbYjpHeuWc/x60ap9wRqi50bmHHCNGh84R1mJ5KeFV
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            sCAL 		is string ANSI
+            sFile 	is string
+            
+            // Opens the file picker
+            sFile = fSelect("", "", "Import the appointments from...", "iCalendar (*.ICS)" + TAB + "*.ICS", "*.ICS", fselOpen)
+            
+            IF sFile <> "" THEN
+            
+            	// Loads the content
+            	sCAL = fLoadText(sFile)
+            
+            	// Retrieves the appointments
+            	arrApt is array of Appointment = iCalendarToAppointment(sCAL)
+            	
+            	// Transfers the events to the organizer
+            	FOR EACH anApt of arrApt
+            		OnEventAdd(anApt)
+            	END
+            	
+            	// Update
+            	TableDisplay(TABLE_CATEGORIES, taReExecuteQuery)
+            	
+            	// Prepares the popup menu
+            	PreparePopupMenu()
+            	
+            	// Refresh
+            	DisplayEvents()
+            END
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAAAmDmDzT0AGF/jdbVNnnQmTiAzEEfAMBSoLoNisKG+ODu0+pfQtGeFTGpTsDD1++EUvWu6PJxKSQRoPUhN/X+prsUMg08moq9PpmE9XcxEo0xLHqbNgWoYbJll6YQ==
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAADXaznUrKZ1+RX/o1xgOukXa6NLZD2FpgLe/D6SzI26EOwi/t0lFgLvu/Qx6JWbmq7dM4LWVuuQ7DrN7OSx1I0g1U9AcYwf9GJMRA5RFDXQ9uIVP8NHd8A=
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      EXTERN "WINCONST.WL"
+      
+      // Structure facilitating the management of periods
+      APeriod is Structure
+      	StartDate	is datetime		// Beginning
+      	EndDate 	is datetime		// End
+      END
+      
+      CONSTANT
+      	AptAddition	= 1			// An appointment was added
+      	AptEdition	= 2			// An appointment was modified
+      END
+      
+      MySelectedAppointment is an Appointment 
+      AppointmentClipboard	 is an Appointment <- Null
+      AppointmentSubscript		 is int
+      SelectedPeriod		 is APeriod
+      ModeAppointmentEdition	 is int
+      ListCategories			 is string
+      
+      // Prepares the popup menu
+      PreparePopupMenu()
+      
+      // Imports the new events and the events possibly modified and/or deleted
+      ImportEvents()
+      
+      // Loads the previous parameters
+      ORG_ORGANIZER..WorkingHourStart 		= LoadParameter("OrganizerStartWorkingTime", 	ORG_ORGANIZER..WorkingHourStart)
+      ORG_ORGANIZER..WorkingHourEnd 		= LoadParameter("OrganizerEndWorkingTime", 		ORG_ORGANIZER..WorkingHourEnd)
+      ORG_ORGANIZER..Num1stDayOfTheWeek	= LoadParameter("OrganizerFirstDay", 		ORG_ORGANIZER..Num1stDayOfTheWeek)
+      
+      IF In64bitMode() THEN
+      	MyWindow..Title += " (x64)"
+      END
+   -
+     code : |1-
+      
+      // Update the AAF captions
+      AAFChangeCaption(ORG_ORGANIZER, aafOgiEditApt, "Edit the caption")
+      
+      // Display today's date
+      OrganizerPosition(ORG_ORGANIZER, Today)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+      // Synchronizes the events
+      SynchronizeEvents()
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : DisplayEvents
+     internal_properties : CAAAAAgAAAAwuIGZvN8ADa6JZmxZsqV+E5YBn42tWZfMrELGNfMkZY5Gfh6/0iKagoDzrAgzQbcAyd8CN4XvFg8iRL7aisBG//ussfIlqyvs20sDDWuxvUyH1ENDxrPAQm9qsOPstt99tMNpkjX5ImTfyo0c9hW0WznNdJKLbgX8scB+ZdWTgmGzU+GSBygF+ZZ4sHUR0Imt3HXQI8+hSQz7wWXirVnoCibWTsbT
+     procedure_id : 1760073861357892252
+     type_code : 14
+     code : |1-
+      // Summary: Displays the events of the period currently displayed
+      PROCEDURE DisplayEvents()
+      
+      	AnAppointment is an Appointment
+      	dtStartDate	 is datetime
+      	dtEndDate	 is datetime
+      
+      	HourGlass(True)
+      
+      	// Clears the organizer
+      	OrganizerDeleteAll(ORG_ORGANIZER)
+      	
+       	// Retrieves the selected period
+       	dtStartDate = OrganizerPosition(ORG_ORGANIZER)
+       	dtEndDate	= OrganizerPosition(ORG_ORGANIZER, orgEndDate)
+      	
+      	// Configure the query
+      	QRY_Events.pStartDate 		= dtStartDate
+      	QRY_Events.pEndDate   		= dtEndDate
+      	QRY_Events.pListCategories	= (ListCategories = "" ? Null ELSE ListCategories)
+      	
+      	// Run the query
+      	HExecuteQuery(QRY_Events)
+      	IF ErrorOccurred THEN Error()
+      
+      	FOR EACH QRY_Events 
+      				
+      		// Copies the appointment data
+      		AnAppointment..Author 					= QRY_Events.Author
+      		AnAppointment..Content					= QRY_Events.Content
+      		AnAppointment..StartDate					= QRY_Events.StartDate
+      		AnAppointment..EndDate					= QRY_Events.EndDate
+      		AnAppointment..ID						= QRY_Events.OrganizerEventID
+      		AnAppointment..Guest					= QRY_Events.Guests
+      		AnAppointment..Location						= QRY_Events.Locations
+      		AnAppointment..Title						= QRY_Events.Title
+      		AnAppointment..WholeDay			= QRY_Events.WholeDay
+      		AnAppointment..Category					= QRY_Events.CategoryCaption
+      		AnAppointment..WithRepetition			= (QRY_Events.RepetitionType <> -1)
+      		AnAppointment..BackgroundColor				= (QRY_Events.CategoryCaption = "" _or_ QRY_Events.Color < 0 ? RGB(191, 210, 234) else QRY_Events.Color)
+      		
+      		// Recurrence of the event
+      		IF AnAppointment..WithRepetition THEN
+      			AnAppointment..Repetition..Type		  	= QRY_Events.RepetitionType
+      			AnAppointment..Repetition..TypeEnd	  	= QRY_Events.RepetitionEndType			
+      			AnAppointment..Repetition..NbOccurrence 	= QRY_Events.RepetitionOccurrence
+      			AnAppointment..Repetition..EndDate	  	= QRY_Events.RepetitionEndDate
+      		END
+      		
+      		AnAppointment..Image = ""
+      						
+      		// Exclusive Google Calendar event
+      		IF QRY_Events.GoogleCalendarID <> 0 THEN AnAppointment..Image += [CR] + IMG_GOOGLEPIC
+      				
+      		// Exclusive Outlook event
+      		IF QRY_Events.OutlookCalendarID <> 0 THEN AnAppointment..Image += [CR] +  IMG_OUTLOOKPIC
+      				
+      		// Exclusive Lotus Notes event
+      		IF QRY_Events.NotesCalendarID <> 0 THEN AnAppointment..Image += [CR] +  IMG_NOTESPIC							
+      		
+      		// Adds the appointment
+      		OrganizerAddAppointment(ORG_ORGANIZER, AnAppointment)		
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : OnEndEventEdition
+     procedure_id : 1760073861357957788
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run at the end of event edition
+      PROCEDURE OnEndEventEdition(MyAppointment is an Appointment)
+      
+      	// If we are in addition mode
+      	IF ModeAppointmentEdition = AptAddition THEN
+      		
+      		// Check whether the appointment has a title
+      		IF MyAppointment..Title = "" THEN
+      			
+      			// Searches for the appointment
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, MyAppointment..ID)
+      			dbgAssert(HFound(OrganizerEvent))
+      			
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Delete it
+      				HDelete(OrganizerEvent)
+      			END
+      			
+      			// Erases in the organizer
+      			OrganizerDeleteAppointment(ORG_ORGANIZER, ORG_ORGANIZER)
+      			MySelectedAppointment <- Null
+      			RETURN
+      		END		
+      	END
+      
+      	// Searches for the event
+      	HReadSeekFirst(OrganizerEvent, OrganizerEventID, MyAppointment..ID)
+      	dbgAssert(HFound(OrganizerEvent))
+      	
+      	IF HFound(OrganizerEvent) THEN
+      		
+      		// Keeps the new title
+      		OrganizerEvent.Title = MyAppointment..Title
+      		
+      		// Saves the modifications
+      		HModify(OrganizerEvent)		
+      	END
+      	
+      	// Keeps the "selected" event
+      	OnEventSelection(MyAppointment)
+      	
+      END:
+      	ModeAppointmentEdition = 0
+     type : 458752
+   -
+     name : OnEventSelection
+     procedure_id : 1760073861358023324
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when selecting an event
+      PROCEDURE OnEventSelection(MyAppointment is an Appointment)
+      
+      	STOP IF MyAppointment = Null
+      
+      	// Keeps the "selected" appointment
+      	MySelectedAppointment <- MyAppointment
+      	
+      	// Reset the selected period
+      	SelectedPeriod.StartDate 	= ""
+      	SelectedPeriod.EndDate 	= ""
+     type : 458752
+   -
+     name : OnEventMove
+     procedure_id : 1760073861358088860
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when moving an event
+      PROCEDURE OnEventMove(MyAppointment is an Appointment)
+      
+      	// Searches for the event in the database
+      	HReadSeekFirst(OrganizerEvent, OrganizerEventID, MyAppointment..ID)
+      	dbgAssert(HFound(OrganizerEvent))
+      	
+      	IF HFound(OrganizerEvent) THEN
+      		
+      		// Modify the period of the event
+      		OrganizerEvent.StartDate 	= MyAppointment..StartDate
+      		OrganizerEvent.EndDate 	= MyAppointment..EndDate
+      		
+      		// Saves the modifications
+      		HModify(OrganizerEvent)
+      	END
+      	
+      	// Keeps the "selected" event
+      	OnEventSelection(MyAppointment)
+     type : 458752
+   -
+     name : OnEventResizing
+     procedure_id : 1760073861358154396
+     type_code : 14
+     group : 5
+     code : |1+
+      // Summary: Run when resizing an event
+      PROCEDURE OnEventResizing(MyAppointment is an Appointment)
+      
+      	// The management of the resize operation is identical to the move
+      	OnEventMove(MyAppointment)
+     type : 458752
+   -
+     name : OnDeleteEvent
+     internal_properties : CAAAAAgAAADyy1WlH0nmK0BySJIMACrbbpqR8UXlRpizeA3sJUZciDal9TsX1P0vV9gZxR2W6eee4S/uIBU6CqgUY3/t/43Uap9Sabgy29297gspR6Z1xh045VW5KST/YEK0khUnZjWokOccdrhNzXkY71Zl+nzG+KkluuAH+7pzt8Zpdm92tn2cMW+yZYjIcD1w247JKtdF4tSo4eusBaX/Vb6qwCPoZ06blltDzwaeenmgKYjBOzKYcCFBOyfCzOgrlKIDnpSK+oTPiYiML6MkeeoY7d+DC1pgst8t2KXHoY5CJogKfnVFG7F6MXGASg==
+     procedure_id : 1760073861358219932
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when deleting an event
+      PROCEDURE OnDeleteEvent(MyAppointment is an Appointment)
+      
+      	sListExternalOrganizer is string
+      
+      	// Disables the triggers temporarily
+      	HDeactivateTrigger()
+      
+      	// Searches for the event in the database
+      	HReadSeekFirst(OrganizerEvent, OrganizerEventID, MyAppointment..ID)
+      	dbgAssert(HFound(OrganizerEvent))
+      	
+      	IF HFound(OrganizerEvent) THEN
+      		
+      		// If the event is linked to an external organizer
+      		IF OrganizerEvent.GoogleCalendarID <> 0 _OR_ OrganizerEvent.NotesCalendarID <> 0 _OR_ OrganizerEvent.OutlookCalendarID <> 0 THEN
+      			
+      			// If the event is linked to a Google calendar
+      			IF OrganizerEvent.GoogleCalendarID <> 0 THEN
+      				
+      				// Searches for the organizer
+      				HReadSeekFirst(GoogleCalendar, GoogleCalendarID, OrganizerEvent.GoogleCalendarID)
+      				IF HFound(GoogleCalendar) THEN
+      					
+      					// Fills the list of external calendars
+      					sListExternalOrganizer += [CR] + "- " + GoogleCalendar.Name + " (Google)"
+      				END
+      			END
+      			
+      			// If the event is linked to an Outlook calendar
+      			IF OrganizerEvent.OutlookCalendarID <> 0 THEN
+      				
+      				// Searches for the organizer
+      				HReadSeekFirst(OutlookCalendar, OutlookCalendarID, OrganizerEvent.OutlookCalendarID)
+      				IF HFound(OutlookCalendar) THEN
+      					
+      					// Fills the list of external calendars
+      					sListExternalOrganizer += [CR] + "- " + OutlookCalendar.Name + " (Outlook)"
+      				END
+      			END
+      			
+      			// If the event is linked to a Notes calendar
+      			IF OrganizerEvent.NotesCalendarID <> 0 THEN
+      				
+      				// Searches for the organizer
+      				HReadSeekFirst(NotesCalendar, NotesCalendarID, OrganizerEvent.NotesCalendarID)
+      				IF HFound(NotesCalendar) THEN
+      					
+      					// Fills the list of external calendars
+      					sListExternalOrganizer += [CR] + "- " + NotesCalendar.Name + " (Lotus)"
+      				END
+      			END
+      			
+      			//1: &Delete
+      			//2: Do&n't delete
+      			SWITCH Dialog(<§?1B03C0D9005353F1§>, sListExternalOrganizer)
+      				// Do&n't delete
+      				CASE 2
+      					ReturnToCapture()			
+      			END
+      			
+      			// Flags the event as deleted
+      			OrganizerEvent.IsDeleted = True		
+      			
+      			// Saves the modifications
+      			HModify(OrganizerEvent)
+      		ELSE
+      			
+      			// Don't ask for confirmation
+      			// Delete directly
+      			HDelete(OrganizerEvent)
+      		END
+      	END
+      	
+      	// Re-enables the triggers
+      	HActivateTrigger()
+      
+      	// No selected appointment
+      	MySelectedAppointment <- Null
+      	ModeAppointmentEdition = 0
+      	
+      	SelectedPeriod.StartDate 	= ""
+      	SelectedPeriod.EndDate 	= ""
+     type : 458752
+   -
+     name : ImportEvents
+     internal_properties : CAAAAAgAAABufsoCoRfQKoawt6n+upRSmp2KCrYiGKIlqhX5W0/33x+NG5UIUUP6WlOExkwtPM60RzJkzeOmKZDv/igYpoz4Tt86+JzAclqv28+8DIN9N0a4Q1wZFwIWgFGFdFYLoEAPDxO6CQ+YVKYCuXsvMXmuhxABhQnj0WV46sUMhkA5qhoUDU8eP0S/sdzzdn03VgqhB126W34deqtSNU3/jq78QgO9EcyF8piotWIJCipb1yeibmRD/9+z4K+O2RQUjXbp
+     procedure_id : 1760073861358285468
+     type_code : 14
+     code : |1-
+      // Summary: Retrieves the new events
+      PROCEDURE ImportEvents()
+      
+      	nPosHF is int
+      
+      	// Opens the progress window
+      	OpenChild(WIN_SynchroInfo)
+      	
+      	// Disable the DDW temporarily to avoid the flickering effects
+      	// with the conflict window
+      	WinActivateDDW(WIN_Organizer, False)
+      	WinActivateDDW(WIN_SynchroInfo, False)
+      	
+      	// Bound of the progress bar
+      	WIN_SynchroInfo.PROGBAR_PROCESS..MaxValue = HNbRec(OutlookCalendar) * 2 + HNbRec(NotesCalendar) * 2 + HNbRec(GoogleCalendar) * 2
+      		
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the Outlook calendars...")
+      
+      	////////////////////////////////////////////////////
+      	// Outlook calendars
+      	//////////////////////////
+      
+      	FOR EACH OutlookCalendar 
+      		
+      		WIN_SynchroInfo.Process(1, "Synchronizing the Outlook calendars...", OutlookCalendar.Profile)
+      					
+      		// Save the context 
+      		nPosHF = HSavePosition(OutlookCalendar)
+      		
+      		// Imports the new events
+      		OutlookImportCalendar(OutlookCalendar.Profile, OutlookCalendar.OutlookCalendarID, False)
+      		
+      		WIN_SynchroInfo.Process(1)
+      		OutlookCheckDeletions(OutlookCalendar.Profile, OutlookCalendar.OutlookCalendarID)
+      		
+      		// Restore the context
+      		HRestorePosition(nPosHF)		
+      	END
+      	
+      	WIN_SynchroInfo.Process(0, "Synchronizing the Google calendars...")
+      	
+      	////////////////////////////////////////////////////
+      	// Google calendars
+      	//////////////////////////
+      
+      	FOR EACH GoogleCalendar 
+      		
+      		WIN_SynchroInfo.Process(1, "Synchronizing the Google calendars...", GoogleCalendar.Name)
+      		
+      		// Save the context 
+      		nPosHF = HSavePosition(GoogleCalendar)
+      				
+      		MyConnection is a gglConnection
+      		MyConnection = GoogleConnectCalendar()
+      		
+      		// Imports the new events
+      		GoogleImportCalendar(MyConnection, GoogleCalendar.Identifier, GoogleCalendar.GoogleCalendarID, False)
+      		
+      		WIN_SynchroInfo.Process(1)
+      		GoogleCheckDeletions(MyConnection, GoogleCalendar.Identifier, GoogleCalendar.GoogleCalendarID)
+      		
+      		// Restore the context
+      		HRestorePosition(nPosHF)		
+      	END
+      	
+      	WIN_SynchroInfo.Process(0, "Synchronizing the Notes calendars...")
+      	
+      	////////////////////////////////////////////////////
+      	// Notes Organizers
+      	//////////////////////////
+      	
+      	FOR EACH NotesCalendar 
+      		
+      		WIN_SynchroInfo.Process(1, "Synchronizing the Notes calendars...", NotesCalendar.Name)
+      		
+      		// Save the context 
+      		nPosHF = HSavePosition(NotesCalendar)
+      		
+      		// Imports the new events
+      		NotesImportCalendar(NotesCalendar.NotesCalendarID, False)
+      		
+      		WIN_SynchroInfo.Process(1)
+      		NotesCheckDeletions(NotesCalendar.NotesCalendarID)
+      		
+      		// Restore the context
+      		HRestorePosition(nPosHF)		
+      	END
+      	
+      	Close(WIN_SynchroInfo)
+      	
+      	// Re-enables the DDW
+      	WinActivateDDW(WIN_Organizer, True)
+     type : 458752
+   -
+     name : CalendarPeriod
+     procedure_id : 1760073861358351004
+     type_code : 14
+     code : |1-
+      // Summary: Displays the selected period
+      PROCEDURE CalendarPeriod(dDate is date)
+      
+      	// Re-selects the date, this is used to cancel the selection in the calendar
+      	CAL_CALENDAR = dDate
+      	
+      	// According to the zoom of the organizer
+      	SWITCH OrganizerZoom(ORG_ORGANIZER)
+      		
+      		// Daily
+      		CASE orgzDay
+      			CalendarSelectPlus(CAL_CALENDAR, dDate)				
+      		
+      		// Monthly
+      		CASE orgzMonth
+      			
+      			nMonth is int = dDate..Month
+      			dDate..Day = 1
+      			
+      			// Selects the period
+      			WHILE dDate..Month = nMonth			
+      				CalendarSelectPlus(CAL_CALENDAR, dDate)	
+      				dDate..Day ++
+      			END		
+      			
+      		// Weekly
+      		CASE orgzWeek
+      			
+      			// Week starting on Monday
+      			dDate..Day -= (DateToDay(dDate) - 1)
+      			
+      			// Selects the period
+      			FOR i = 1 _TO_ 7
+      				CalendarSelectPlus(CAL_CALENDAR, dDate)	
+      				dDate..Day ++
+      			END
+      			
+      		// Weekly (working week)
+      		CASE orgzWeekOn5
+      			
+      			// Week starting on Monday
+      			dDate..Day -= (DateToDay(dDate) - 1)
+      			
+      			// Selects the period
+      			FOR i = 1 _TO_ 5
+      				CalendarSelectPlus(CAL_CALENDAR, dDate)	
+      				dDate..Day ++
+      			END
+      			
+      	END
+     type : 458752
+   -
+     name : OnEventAdd
+     procedure_id : 1760073861358416540
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Triggered when an appointment is created
+      PROCEDURE OnEventAdd(MyAppointment is an Appointment)
+      
+      	nColor	is int
+      
+      	HReset(OrganizerEvent)
+      	
+      	OrganizerEvent.Author 		= MyAppointment..Author
+      	OrganizerEvent.Content 		= MyAppointment..Content
+      	OrganizerEvent.StartDate		= MyAppointment..StartDate
+      	OrganizerEvent.EndDate		= MyAppointment..EndDate
+      	OrganizerEvent.CategoryID 	= CategoryImport(MyAppointment..Category, *, nColor)
+      	OrganizerEvent.Guests		= MyAppointment..Guest
+      	OrganizerEvent.Locations			= MyAppointment..Location
+      	OrganizerEvent.Title			= MyAppointment..Title
+      	OrganizerEvent.WholeDay	= MyAppointment..WholeDay
+      	
+      	HAdd(OrganizerEvent)
+      	MyAppointment..ID 				= OrganizerEvent.OrganizerEventID
+      	MyAppointment..BackgroundColor		= (nColor < 0 ? RGB(191, 210, 234) else nColor)
+      	
+      	// Keeps the "selected" appointment
+      	ModeAppointmentEdition = AptAddition
+      	OnEventSelection(MyAppointment)
+     type : 458752
+   -
+     name : OnBeginningEventEdition
+     procedure_id : 1760073861358482076
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when editing an event
+      PROCEDURE OnBeginningEventEdition(MyAppointment is an Appointment)
+      
+      	// Keeps the "selected" appointment
+      	ModeAppointmentEdition = AptEdition
+      	OnEventSelection(MyAppointment)
+     type : 458752
+   -
+     name : OrganizerGiveFocus
+     procedure_id : 1760073861358547612
+     type_code : 14
+     group : 2
+     code : |1-
+      // Summary: Gives focus to the organizer
+      PROCEDURE OrganizerGiveFocus(Organizer, LOCAL nMouseXPos is int = MouseXPos, LOCAL nMouseYPos is int = MouseYPos)
+      
+      	AppointmentClick is an Appointment <- Null
+      	nSubscript		   is int
+      
+      	// Gives focus
+      	SetFocus(Organizer)
+      	
+      	nSubscript = OrganizerInfoXY(Organizer, oriAppointment, nMouseXPos, nMouseYPos)
+      	IF nSubscript > 0 THEN
+      
+      		// Simulates a click if an event is hovered, to select it
+      		EmulateMouse(Organizer, emLeftClick, nMouseXPos, nMouseYPos)
+      		
+      		// Retrieves the selected appointment
+      		AppointmentClick <- Organizer[nSubscript]
+      	END	
+      	
+      	// If we have a copied appointment
+      	IF AppointmentClipboard <> Null THEN
+      		
+      		// If no period was defined
+      		IF AppointmentClick = Null AND SelectedPeriod.StartDate = "00000000000000000" THEN
+      		
+      			// Calculates the duration of the event
+      			duDuration	is duration = (AppointmentClipboard..EndDate - AppointmentClipboard..StartDate)			
+      			
+      			// Retrieves the start period hovered
+      			dtDateTime is datetime = OrganizerInfoXY(Organizer, oriDateTime, nMouseXPos, nMouseYPos)
+      			
+      			// Defines the beginning of the period
+      			Organizer..StartDate = dtDateTime
+      			
+      			// Assigns the same duration as the event				
+      			dtDateTime = duDuration + dtDateTime
+      				
+      			// Defines the end of the period		
+      			Organizer..EndDate = dtDateTime
+      		END
+      	ELSE
+      		
+      		// If no period is selected
+      		IF AppointmentClick = Null _AND_ Organizer..StartDate = "" THEN
+      			
+      			// Simulates a click to select a period
+      			EmulateMouse(Organizer, emLeftClick, nMouseXPos, nMouseYPos)
+      		END
+      	END
+     type : 458752
+   -
+     name : PreparePopupMenu
+     internal_properties : CAAAAAgAAADU8fFgyvvJ+Jxc7eMaijWeBWw93ltQS+Ewfi3ZSXa4qhS8hDhsZu6VjD2sEXLxg3WHSMBKtJoZVPavDGZmtIKeveR9UTrEjjpToPq1IaKXfTwun2I98bSnBvkPNJe1x/IaTd9yvHw8S4wthc3ynTJTdqiXW7b+3d7Ev0PG5frWYyQaKfqE0BfeRci3ZP0KBoHk+SKqEqdOWtmOiECnk2649HBZLg==
+     procedure_id : 1760073861358613148
+     type_code : 14
+     code : |1-
+      // Sumary: Prepares the popup menu
+      PROCEDURE PreparePopupMenu()
+      
+      	nSubscript is int
+      	sOptName	is string
+      
+      	// Grays the clipboard options
+      	OPT_PasteAppointment..State = (AppointmentClipboard = Null ? Grayed ELSE Active)
+      	OPT_CopyAppointment..State = (MySelectedAppointment = Null ? Grayed ELSE Active)
+      				
+      	// Creates the menu options for the categories
+      	FOR EACH OrganizerCategory FromEnd
+      		
+      		nSubscript ++
+      		
+      		// Creates the name of the option
+      		sOptName = "OPT_CAT" + OrganizerCategory.OrganizerCategory
+      		
+      		// If the option already exists
+      		IF MenuExist(OPT_ClassifyCategory, sOptName) THEN
+      		
+      			WHEN EXCEPTION IN 
+      				MenuDelete(sOptName)
+      			DO
+      				//
+      			END
+      		END
+      			
+      		// Creates the menu option
+      		MenuInsertOption(OPT_ClassifyCategory, OPT_SeparatorCategories, sOptName, OrganizerCategory.Caption, OnEventClassification, OrganizerCategory.OrganizerCategory)				
+      		
+      		// Modifies the image of the option
+      		{OPT_ClassifyCategory..FullName + "." + sOptName, indControl}..Image = CreateCategoryImage(sOptName, OrganizerCategory.Color)
+      		
+      		// Display 5 elements in the menu only
+      		IF nSubscript > 5 THEN
+      			BREAK
+      		END
+      	END
+      	
+      	nSubscript = 0
+      	
+      	// Creates the menu options for the external Outlook calendars
+      	FOR EACH OutlookCalendar 
+      		
+      		// Creates the name of the option
+      		sOptName = "OPT_OUTLOOK_" + OutlookCalendar.OutlookCalendarID
+      		nSubscript ++
+      		
+      		WHEN EXCEPTION IN 
+      			MenuDelete(sOptName)
+      		DO
+      			//
+      		END
+      		
+      		// Creates the menu option		
+      		MenuInsertOption(OPT_LinkOutlook, OPT_Outlook_Sep, sOptName, OutlookCalendar.Name, OnLinkOutlookEvent, OutlookCalendar.OutlookCalendarID)	
+      	END
+      		
+      	MENU_Organizer.OPT_Link.OPT_LinkOutlook.OPT_Outlook_Sep..Visible = (nSubscript > 0)
+      	nSubscript = 0
+      	
+      	// Creates the menu options for the external Notes calendars
+      	FOR EACH NotesCalendar 
+      		
+      		// Creates the name of the option
+      		sOptName = "OPT_NOTES_" + NotesCalendar.NotesCalendarID
+      		nSubscript ++
+      		
+      		WHEN EXCEPTION IN 
+      			MenuDelete(sOptName)
+      		DO
+      			//
+      		END
+      		
+      		// Creates the menu option
+      		MenuInsertOption(OPT_LinkLotus_Notes, OPT_LinkLotus_Sep, sOptName, NotesCalendar.Name, OnLinkNotesEvent, NotesCalendar.NotesCalendarID)	
+      	END
+      	
+      	MENU_Organizer.OPT_Link.OPT_LinkLotus_Notes.OPT_LinkLotus_Sep..Visible = (nSubscript > 0)
+      	nSubscript = 0
+      	
+      	// Creates the menu options for the external Google calendars
+      	FOR EACH GoogleCalendar
+      		
+      		// Creates the name of the option
+      		sOptName = "OPT_GOOGLE_" + GoogleCalendar.GoogleCalendarID
+      		nSubscript ++
+      		
+      		WHEN EXCEPTION IN 
+      			MenuDelete(sOptName)
+      		DO
+      			//
+      		END
+      		
+      		// Creates the menu option
+      		MenuInsertOption(OPT_LinkGoogle, OPT_LinkGoogle_Sep, sOptName, GoogleCalendar.Name, OnLinkGoogleEvent, GoogleCalendar.GoogleCalendarID)	
+      	END
+      	
+      	MENU_Organizer.OPT_Link.OPT_LinkGoogle.OPT_LinkGoogle_Sep..Visible = (nSubscript > 0)
+     type : 458752
+   -
+     name : OnEventClassification
+     procedure_id : 1760073861358678684
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when selecting a menu option for the classification
+      PROCEDURE OnEventClassification(LOCAL nCategoryID is int)
+      
+      	// If an appointment was selected
+      	IF MySelectedAppointment <> Null THEN
+      
+      		// Searches for the event
+      		HReadSeekFirst(OrganizerEvent, OrganizerEventID, MySelectedAppointment..ID)
+      		IF HFound(OrganizerEvent) THEN
+      			
+      			IF nCategoryID > 0 THEN
+      			
+      				// Searches for the category assigned
+      				HReadSeekFirst(OrganizerCategory, OrganizerCategory, nCategoryID)
+      				IF HFound(OrganizerCategory) THEN
+      			
+      					// Assigns the category
+      					OrganizerEvent.CategoryID = nCategoryID
+      
+      					// Applies the category and the color of the category
+      					MySelectedAppointment..Category 	= OrganizerCategory.Caption
+      					MySelectedAppointment..BackgroundColor	= OrganizerCategory.Color = -1 ? RGB(191, 210, 234) else OrganizerCategory.Color	
+      
+      				END
+      				
+      			ELSE
+      
+      				// Cancels the association
+      				OrganizerEvent.CategoryID = 0
+      				
+      				// Applies the category and the color of the category by default
+      				MySelectedAppointment..Category 	= ""
+      				MySelectedAppointment..BackgroundColor	= RGB(191, 210, 234)
+      			END
+      			
+      			// Saves the association
+      			HModify(OrganizerEvent)
+      		END		
+      	END
+     type : 458752
+   -
+     name : CreateCategoryImage
+     internal_properties : CAAAAAgAAABa1UaQ5AaqAXQEGxGGWJPaPQLWAr71iRaGeOiZ0VZK35B1O0LpQGQB7pZySFb0QapmXj57toQZ83ZyOda0YoQlhc7QvEBEO8aEDO7hKeYlVvuAYF7ypzTDUT7p0UypyaxYv1DkGcqWQXW4k/yNhdj5HnR6V6H6/ZJ1evktIgqyq2eJsRNQY8q3rQJ0lKnVQKBCVOeGmTI=
+     procedure_id : 1760073861358744220
+     type_code : 14
+     code : |1-
+      // Summary: Creates an image for a category
+      PROCEDURE CreateCategoryImage(LOCAL sNameOption is string, LOCAL nColor is int)
+      
+      	nColorEnd 	is int
+      	nDarkColor	is int
+      	iCat			is an Image
+      	sImage			is string = DirectoryTemporaryData + ["\"] + sNameOption + ".gif"
+      	
+      	// Lightens the color
+      	nColorEnd 	= HSL(ColorHue(nColor), ColorSaturation(nColor), Min(100, ColorLightness(nColor) + 10))
+      	nDarkColor 	= HSL(ColorHue(nColor), Max(0, ColorSaturation(nColor) - 20), Max(0,   ColorLightness(nColor) - 20))
+      	
+      	iCat..Width = 16
+      	iCat..Height = 16
+      	
+      	// Start the drawing
+      	dStartDrawing(iCat, dErase + dWithOpacity)
+      	dRectangle(0, 0, 15, 15, LightMagenta, LightMagenta)
+      	
+      	// Border
+      	dLine( 2,  1, 13,  1, nDarkColor, 1)
+      	dLine( 2, 14, 13, 14, nDarkColor, 1)
+      	dLine( 1,  2,  1, 13, nDarkColor, 1)
+      	dLine(14,  2, 14, 13, nDarkColor, 1)
+      	
+      	// Gradient
+      	dRectangleGradient(2, 2, 14, 14, nColorEnd, nColor)
+      		
+      	// Backup
+      	dSaveImageGIF(iCat, sImage)
+      	
+      RESULT iCat
+     type : 458752
+   -
+     name : OnEventLink
+     internal_properties : CAAAAAgAAAAkA8I4wKxfNsWx9BX2+lioBVnUO4K5b3S1ndmdhOk9xPscLZX/GmP1KXRPJR703K/4tw4NrcoEkhio3kPKKHgLuXMwxdZUV3Obis4yviDnXpIwaaVpD9swZ/3Uk+7GTfxMv1M3n2YSqYtysFETH0wZTgi5biMeHZY9ZmAodN6ocbFwQZ4ejHC65vg+ZMkNUytxmuUj0x+142L2SLOfvOcVr2PzAN017mUf160H1t7uAnpVQJOQjrsmPvcIcHdQ
+     procedure_id : 1760073861358809756
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when linking an event to an external organizer
+      PROCEDURE OnEventLink(LOCAL nSource is int, LOCAL nOrganizerID is int)
+      
+      	// If an appointment was selected
+      	IF MySelectedAppointment <> Null THEN
+      
+      		// Searches for the appointment
+      		HReadSeekFirst(OrganizerEvent, OrganizerEventID, MySelectedAppointment..ID)
+      		IF HFound(OrganizerEvent) THEN
+      
+      			// According to the organizer
+      			SWITCH nSource
+      				
+      				// Outlook
+      				CASE fromOutlook
+      					
+      					// Cancels the link
+      					IF nOrganizerID = -1 THEN
+      						
+      						// Deletes the event from the Outlook calendar
+      						OutlookDeleteEvent(OrganizerEvent.OutlookCalendarID, OrganizerEvent.OutlookIdentifier)
+      						
+      						OrganizerEvent.OutlookCalendarID = 0
+      						OrganizerEvent.OutlookIdentifier = ""						
+      					ELSE
+      						OrganizerEvent.OutlookCalendarID = nOrganizerID
+      					END
+      					
+      				// Notes
+      				CASE fromNotes
+      					
+      					// Cancels the link
+      					IF nOrganizerID = -1 THEN
+      						
+      						// Deletes the event from the Lotus calendar
+      						NotesDeleteEvent(OrganizerEvent.NotesCalendarID, OrganizerEvent.NotesIdentifier)
+      						
+      						OrganizerEvent.NotesCalendarID = 0
+      						OrganizerEvent.NotesIdentifier = ""
+      					ELSE
+      						OrganizerEvent.NotesCalendarID = nOrganizerID
+      					END
+      					
+      				// Google
+      				CASE fromGoogle
+      					
+      					// Cancels the link
+      					IF nOrganizerID = -1 THEN
+      						
+      						// Deletes the event from the Google calendar
+      						GoogleDeleteEvent(OrganizerEvent.GoogleCalendarID, OrganizerEvent.GoogleIdentifier)
+      												
+      						OrganizerEvent.GoogleCalendarID = 0
+      						OrganizerEvent.GoogleIdentifier = ""
+      					ELSE
+      						OrganizerEvent.GoogleCalendarID = nOrganizerID
+      					END
+      			END
+      			
+      			// Saves the modifications
+      			HModify(OrganizerEvent)
+      		END
+      		
+      		MySelectedAppointment <- Null
+      				
+      		// Refreshes the events
+      		DisplayEvents()
+      		
+      		// Re-selects the appointment
+      		OrganizerSelectPlus(ORG_ORGANIZER, AppointmentSubscript)
+      	END
+     type : 458752
+   -
+     name : OnLinkOutlookEvent
+     internal_properties : CAAAAAgAAACuyUosnkJmAThYp+HGtPsOCfZu6kaBfWZ6rHTRYcq6u8xJS4oJVAD5cirm2G6I6d6aYnZjRrjVc3Je/bZMDsTh+XpInKiIzz6QyMILs5j3nA3iwmTkWUZV0/A7mza7WwKyESJCC+zQ+w8K5abvL7Lf6F7kpSMUv+TvpNNPFASEuRnL86ESjZQB75zeBjtfel58eIN6lT4=
+     procedure_id : 1760073861358875292
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when linking an event to an external organizer
+      PROCEDURE OnLinkOutlookEvent(LOCAL nOrganizerID is int)
+      
+      	// If an organizer was linked, or if we delete the link with the organizer and if the user validates this deletion
+      	if nOrganizerID > 0 _or_ (nOrganizerID = -1 _and_ Dialog(<§?1B0A978B025FC9C8§>) = 1) then
+      
+      		// Rebound
+      		OnEventLink(fromOutlook, nOrganizerID)
+      	END
+     type : 458752
+   -
+     name : OnLinkNotesEvent
+     procedure_id : 1760073861358940828
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when linking an event to an external organizer
+      PROCEDURE OnLinkNotesEvent(LOCAL nOrganizerID is int)
+      
+      	// If an organizer was linked, or if we delete the link with the organizer and if the user validates this deletion
+      	if nOrganizerID > 0 _or_ (nOrganizerID = -1 _and_ Dialog(<§?1B0A97DB028E037D§>) = 1) then
+      
+      		// Rebound
+      		OnEventLink(fromNotes, nOrganizerID)
+      	END
+     type : 458752
+   -
+     name : OnLinkGoogleEvent
+     procedure_id : 1760073861359006364
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when linking an event to an external organizer
+      PROCEDURE OnLinkGoogleEvent(LOCAL nOrganizerID is int)
+      
+      	// If an organizer was linked, or if we delete the link with the organizer and if the user validates this deletion
+      	if nOrganizerID > 0 _or_ (nOrganizerID = -1 _and_ Dialog(<§?1B0A97120231F116§>) = 1) then
+      
+      		// Rebound
+      		OnEventLink(fromGoogle, nOrganizerID)
+      	END
+     type : 458752
+   -
+     name : SynchronizeEvents
+     procedure_id : 1760073861359071900
+     type_code : 14
+     code : |1-
+      // Summary: Synchronizing the events with the external organizers
+      PROCEDURE SynchronizeEvents()
+      
+      	// Opens the progress window
+      	OpenChild(WIN_SynchroInfo)
+      	
+      	// Disable the DDW temporarily to avoid the flickering effects
+      	// with the conflict window
+      	WinActivateDDW(WIN_Organizer, False)
+      	WinActivateDDW(WIN_SynchroInfo, False)
+      	
+      	// Bound of the progress bar
+      	WIN_SynchroInfo.PROGBAR_PROCESS..MaxValue = 3
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the organizers...")
+      
+      	// Start to synchronize the deletions
+      	SynchronizeEventDeletions()
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(1, "Synchronizing the organizers...")
+      	
+      	// Then, synchronize the new links
+      	SynchronizeEventAdditions()	
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(2, "Synchronizing the organizers...")
+      
+      	// Finally, synchronize the modifications
+      	SynchronizeEventModifications()
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(3, "Done")
+      	
+      	Close(WIN_SynchroInfo)
+      	
+      	// Re-enables the DDW
+      	WinActivateDDW(WIN_Organizer, True)
+     type : 458752
+   -
+     name : SynchronizeEventDeletions
+     internal_properties : CAAAAAgAAABN0haV+MwPNfiTrgB0G9iCX99SrR3tjlGAiYs8tawQPM4iJxbwa4eJCAZt5je5+hbtjAN3WAV/+otvRP34wEPQIxLPOgZh/TFa5IIijS5idOb+7iREKqB9dgMVuZaqIyhZ+Vqk1wjx7m3A49m69iUFH/Yb6hhfGmrOxCMUYbpwdmTW06oTVEBBjD+yoSzxKbt8HZJIhwfD9hyelCfJoz+TNK6nbaoK2pbUbzZB8GDQOxMVLGEX2r/j1u5ahINB+lO+eaqSSUk7up69Dv8T/BktGT1rXxWWdg/s2A00RDiy
+     procedure_id : 1760073861359137436
+     type_code : 14
+     code : |1-
+      // Summary: Synchronizes the deletions
+      PROCEDURE SynchronizeEventDeletions()
+      
+      	ArrayOfArray is Structure
+      		Elements is array of strings
+      	END
+      	
+      	aaOutlookDeletions 	is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaNotesDeletions 	is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaGoogleDeletions	is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	AnArrayOfArray		is ArrayOfArray
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the organizers...", "Gathering the deleted events...")
+      	
+      	// Disables the triggers temporarily
+      	HDeactivateTrigger()
+      	
+      	// For each event flagged as 'Deleted'
+      	FOR EACH OrganizerEvent WHERE OrganizerEvent.IsDeleted = True
+      		
+      		// If the event is linked to a Google calendar
+      		IF OrganizerEvent.GoogleCalendarID <> 0 _AND_ OrganizerEvent.GoogleIdentifier <> "" THEN
+      			
+      			// Retrieves the list of events to delete
+      			IF aaGoogleDeletions[OrganizerEvent.GoogleCalendarID] = Null THEN
+      				VariableReset(AnArrayOfArray)
+      			ELSE
+      				AnArrayOfArray = aaGoogleDeletions[OrganizerEvent.GoogleCalendarID]
+      			END
+      			
+      			// Adds the event to the list
+      			Add(AnArrayOfArray:Elements, OrganizerEvent.GoogleIdentifier)
+      			
+      			// Keeps the new list
+      			aaGoogleDeletions[OrganizerEvent.GoogleCalendarID] = AnArrayOfArray			
+      		END
+      			
+      		// Erases the association
+      		OrganizerEvent.GoogleCalendarID 		= 0
+      		OrganizerEvent.GoogleIdentifier 	= ""
+      		
+      		// If the event is linked to a Notes calendar
+      		IF OrganizerEvent.NotesCalendarID <> 0 _AND_ OrganizerEvent.NotesIdentifier <> "" THEN
+      			
+      			// Retrieves the list of events to delete
+      			IF aaNotesDeletions[OrganizerEvent.NotesCalendarID] = Null THEN
+      				VariableReset(AnArrayOfArray)
+      			ELSE
+      				AnArrayOfArray = aaNotesDeletions[OrganizerEvent.NotesCalendarID]
+      			END
+      			
+      			// Adds the event to the list
+      			Add(AnArrayOfArray:Elements, OrganizerEvent.NotesIdentifier)
+      			
+      			// Keeps the new list
+      			aaNotesDeletions[OrganizerEvent.NotesCalendarID] = AnArrayOfArray		
+      		END	
+      		
+      		// Erases the association
+      		OrganizerEvent.NotesCalendarID 		= 0
+      		OrganizerEvent.NotesIdentifier 	= ""	
+      		
+      		// If the event is linked to a Notes calendar
+      		IF OrganizerEvent.OutlookCalendarID <> 0 _AND_ OrganizerEvent.OutlookIdentifier <> "" THEN
+      			
+      			// Retrieves the list of events to delete
+      			IF aaOutlookDeletions[OrganizerEvent.OutlookCalendarID] = Null THEN
+      				VariableReset(AnArrayOfArray)
+      			ELSE
+      				AnArrayOfArray = aaOutlookDeletions[OrganizerEvent.OutlookCalendarID]
+      			END
+      			
+      			// Adds the event to the list
+      			Add(AnArrayOfArray:Elements, OrganizerEvent.OutlookIdentifier)
+      			
+      			// Keeps the new list
+      			aaOutlookDeletions[OrganizerEvent.OutlookCalendarID] = AnArrayOfArray				
+      		END
+      			
+      		// Erases the association
+      		OrganizerEvent.OutlookCalendarID 		= 0
+      		OrganizerEvent.OutlookIdentifier 		= ""		
+      		
+      		// If no association
+      		IF OrganizerEvent.OutlookCalendarID = 0 _AND_ OrganizerEvent.NotesCalendarID = 0 _AND_ OrganizerEvent.GoogleCalendarID = 0 THEN
+      			HDelete(OrganizerEvent)
+      		ELSE
+      			
+      			// Saves the modifications
+      			HModify(OrganizerEvent)
+      			
+      			// Erases the history of this event
+      			FOR EACH OrganizerEventHistory WHERE OrganizerEventID = OrganizerEvent.OrganizerEventID
+      				HDelete(OrganizerEventHistory)
+      			END
+      		END
+      	END
+      	
+      	// Re-enables the triggers
+      	HActivateTrigger()
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the organizers...", "Deleting events from the Outlook calendars...")
+      	
+      	// Performs the Outlook deletions
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaOutlookDeletions
+      		OutlookDeleteMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the organizers...", "Deleting events from the Lotus calendars...")
+      	
+      	// Performs the Lotus deletions
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaNotesDeletions
+      		NotesDeleteMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(0, "Synchronizing the organizers...", "Deleting events from the Google calendars...")
+      	
+      	// Performs the Google deletions
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaGoogleDeletions
+      		GoogleDeleteMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+     type : 458752
+   -
+     name : SynchronizeEventAdditions
+     internal_properties : CAAAAAgAAAC2FpKlq+jI16/Mm60Bg043UTsADqRjThI7k9KrGq2yRXPbqzfGKR3O4Lu8bqKdt0hpYV4yK7tY2WKDGpC+DgDuREVm4qIQpD59T1/sYsNV+UQyp55LE4h2Xi3lZBz7HF5KzNB/PvJ9pflzElzo/nqV2gUOmr72pk47A+7Vf3HmkYGd9mj3ZmFkND2Uv+bcS73v9UaznM0++zqvWup8u8Nvw4LxCVcWqi8lFEXnyrpprz5GemdTSV9pPZ+g1KlsNZ6x
+     procedure_id : 1760073861359202972
+     type_code : 14
+     code : |1-
+      // Summary: Synchronizes the new events
+      PROCEDURE SynchronizeEventAdditions()
+      
+      	ArrayOfArray is Structure
+      		Elements is array of int
+      	END
+      	
+      	aaOutlookAdditions 	is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaNotesAdditions 		is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaGoogleAdditions		is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	AnArrayOfArray	is ArrayOfArray
+      	
+      	// Disables the triggers temporarily
+      	HDeactivateTrigger()
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(1, "Synchronizing the organizers...", "Gathering the added events...")
+      	
+      	// Finds the events linked to a Google calendar but for which we have no Google identifier
+      	FOR EACH OrganizerEvent WHERE "GoogleCalendarID <> 0 AND GoogleIdentifier = ''"
+      		
+      		// Retrieves the list of additions
+      		IF aaGoogleAdditions[OrganizerEvent.GoogleCalendarID] = Null THEN
+      			VariableReset(AnArrayOfArray)
+      		ELSE
+      			AnArrayOfArray = aaGoogleAdditions[OrganizerEvent.GoogleCalendarID]
+      		END
+      		
+      		// Adds the event to the list
+      		Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      		
+      		// Keeps the new list
+      		aaGoogleAdditions[OrganizerEvent.GoogleCalendarID] = AnArrayOfArray
+      		
+      		// Erases the history of this event
+      		FOR EACH OrganizerEventHistory WHERE OrganizerEventID = OrganizerEvent.OrganizerEventID
+      			HDelete(OrganizerEventHistory)
+      		END
+      	END
+      	
+      	// Searches for the events linked to an Outlook calendar but for which we have no Outlook identifier
+      	FOR EACH OrganizerEvent WHERE "OutlookCalendarId <> 0 AND OutlookIdentifier = ''"
+      		
+      		// Retrieves the list of additions
+      		IF aaOutlookAdditions[OrganizerEvent.OutlookCalendarID] = Null THEN
+      			VariableReset(AnArrayOfArray)
+      		ELSE
+      			AnArrayOfArray = aaOutlookAdditions[OrganizerEvent.OutlookCalendarID]
+      		END
+      		
+      		// Adds the event to the list
+      		Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      		
+      		// Keeps the new list
+      		aaOutlookAdditions[OrganizerEvent.OutlookCalendarID] = AnArrayOfArray
+      		
+      		// Erases the history of this event
+      		FOR EACH OrganizerEventHistory WHERE OrganizerEventID = OrganizerEvent.OrganizerEventID
+      			HDelete(OrganizerEventHistory)
+      		END
+      	END
+      	
+      	// Searches for the events linked to a Notes calendar but for which we have no Notes identifier
+      	FOR EACH OrganizerEvent WHERE "NotesCalendarID <> 0 AND NotesIdentifier = ''"
+      		
+      		// Retrieves the list of additions
+      		IF aaNotesAdditions[OrganizerEvent.NotesCalendarID] = Null THEN
+      			VariableReset(AnArrayOfArray)
+      		ELSE
+      			AnArrayOfArray = aaNotesAdditions[OrganizerEvent.NotesCalendarID]
+      		END
+      		
+      		// Adds the event to the list
+      		Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      		
+      		// Keeps the new list
+      		aaNotesAdditions[OrganizerEvent.NotesCalendarID] = AnArrayOfArray
+      		
+      		// Erases the history of this event
+      		FOR EACH OrganizerEventHistory WHERE OrganizerEventID = OrganizerEvent.OrganizerEventID
+      			HDelete(OrganizerEventHistory)
+      		END
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(1, "Synchronizing the organizers...", "Exporting the added events toward the Outlook calendars..")
+      	
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaOutlookAdditions
+      		OutlookAddMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(1, "Synchronizing the organizers...", "Exporting the added events toward the Lotus calendars..")
+      	
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaNotesAdditions
+      		NotesAddMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(1, "Synchronizing the organizers...", "Exporting the added events toward the Google calendars..")
+      	
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaGoogleAdditions
+      		GoogleAddMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)
+      	END
+     type : 458752
+   -
+     name : SynchronizeEventModifications
+     internal_properties : CAAAAAgAAADLZYPGi99IG4Gu/YtJ0+3d+ix1DriCHr9+Y2EJ5RENY1veARIh4SlNPDSPV1wgKADht3qXPU16tKLdxt5WXooe9W0EkKu57KXUDOGpPcTEz4X1deBSewIhXexCXja7N/OhxLbvXqA21AWZyDUDRWD4NEeYsHz64W+lsQT46P6KBkbD5DTDNB6dNCeGWMHpfezYigXI7ZUIwb0w2wQw7TadB3rvw9W6acP1vCclSljfSq50L3W5VoTwxj8Y1j1rCpYNtOlnFdcQ
+     procedure_id : 1760073861359268508
+     type_code : 14
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      PROCEDURE SynchronizeEventModifications()
+      
+      	ArrayOfArray is Structure
+      		Elements is array of int
+      	END
+      	
+      	aaOutlookModifs 	is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaNotesModifs 		is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	aaGoogleModifs		is ASSOCIATIVE ARRAY (*, *, wlInt) of ArrayOfArray 
+      	AnArrayOfArray	is ArrayOfArray
+      
+      	// Messages
+      	WIN_SynchroInfo.Process(2, "Synchronizing the organizers...", "Gathering the modified events...")
+      
+      	FOR EACH OrganizerEvent 
+      		
+      		// Search for an history for this event
+      		HSeekFirst(OrganizerEventHistory, OrganizerEventID, OrganizerEvent.OrganizerEventID)
+      		IF HFound(OrganizerEventHistory) THEN
+      						
+      			// If an history was found, these modifications must be updated
+      			IF OrganizerEvent.GoogleCalendarID <> 0 _OR_ OrganizerEvent.NotesCalendarID <> 0 _OR_ OrganizerEvent.OutlookCalendarID <> 0 THEN
+      				
+      				// The event is linked to a Google calendar
+      				IF OrganizerEvent.GoogleCalendarID <> 0 THEN
+      					
+      					// Retrieves the list of modifications
+      					IF aaGoogleModifs[OrganizerEvent.GoogleCalendarID] = Null THEN
+      						VariableReset(AnArrayOfArray)
+      					ELSE
+      						AnArrayOfArray = aaGoogleModifs[OrganizerEvent.GoogleCalendarID]
+      					END
+      					
+      					// Adds the event to the list
+      					Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      					
+      					// Keeps the new list
+      					aaGoogleModifs[OrganizerEvent.GoogleCalendarID] = AnArrayOfArray
+      				END
+      				
+      				// The event is linked to an Outlook calendar
+      				IF OrganizerEvent.OutlookCalendarID <> 0 THEN
+      					
+      					// Retrieves the list of modifications
+      					IF aaOutlookModifs[OrganizerEvent.OutlookCalendarID] = Null THEN
+      						VariableReset(AnArrayOfArray)
+      					ELSE
+      						AnArrayOfArray = aaOutlookModifs[OrganizerEvent.OutlookCalendarID]
+      					END
+      					
+      					// Adds the event to the list
+      					Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      					
+      					// Keeps the new list
+      					aaOutlookModifs[OrganizerEvent.OutlookCalendarID] = AnArrayOfArray
+      				END
+      				
+      				// The event is linked to a Notes calendar
+      				IF OrganizerEvent.NotesCalendarID <> 0 THEN
+      					
+      					// Retrieves the list of modifications
+      					IF aaNotesModifs[OrganizerEvent.NotesCalendarID] = Null THEN
+      						VariableReset(AnArrayOfArray)
+      					ELSE
+      						AnArrayOfArray = aaNotesModifs[OrganizerEvent.NotesCalendarID]
+      					END
+      					
+      					// Adds the event to the list
+      					Add(AnArrayOfArray:Elements, OrganizerEvent.OrganizerEventID)
+      					
+      					// Keeps the new list
+      					aaNotesModifs[OrganizerEvent.NotesCalendarID] = AnArrayOfArray
+      				END
+      			END
+      		END
+      	END
+      	
+      	// Messages
+      	WIN_SynchroInfo.Process(2, "Synchronizing the organizers...", "Modifying events in the Outlook calendars...")
+      	
+      	// Performs the Outlook modifications
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaOutlookModifs
+      		OutlookModifyMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+      
+      	// Messages
+      	WIN_SynchroInfo.Process(2, "Synchronizing the organizers...", "Modifying events in the Lotus calendars...")
+      
+      	// Performs the Notes modifications
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaNotesModifs
+      		NotesModifyMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)	
+      	END
+      
+      	// Messages
+      	WIN_SynchroInfo.Process(2, "Synchronizing the organizers...", "Modifying some events in the Google calendars...")
+      
+      	// Performs the Google modifications
+      	FOR EACH AnArrayOfArray, nOrganizerID of aaGoogleModifs
+      		GoogleModifyMultipleEvents(nOrganizerID, AnArrayOfArray:Elements)
+      	END
+      	
+      	// Erases the history of events
+      	HDeleteAll(OrganizerEventHistory)
+     type : 458752
+   -
+     name : OnOrganizerZoom
+     procedure_id : 1760073861359334044
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when changing the zoom of the organizer
+      PROCEDURE OnOrganizerZoom()
+      
+      	dDate is date
+      	dDate = OrganizerPosition(ORG_ORGANIZER)
+      	
+      	AnimationPrepare(MyWindow)
+      	
+      	// According to the initial zoom of the organizer
+      	SWITCH OrganizerZoom(ORG_ORGANIZER)
+      	
+      		// -> full week
+      		CASE orgzWeek
+      			
+      			// Makes the week picker visible
+      			RADIO_WEEKTYPE..Visible = True
+      			STC_WEEKNUM..Visible = True
+      			RADIO_WEEKTYPE = 1
+      			
+      			STC_WEEKNUM = "Week " + DateToWeekNumber(dDate) + "/" + dDate..Year
+      			
+      			// Menu options
+      			OPT_Display.OPT_Day..Checked = False
+      			OPT_Display.OPT_Month..Checked = False
+      			OPT_Display.OPT_Week.OPT_Working_week..Checked = False
+      			OPT_Display.OPT_Week.OPT_Entire_week..Checked = True
+      			
+      			BTN_Day..Pushed = False
+      			BTN_Month..Pushed = False
+      			BTN_Week..Pushed = True
+      			
+      			// Restores the selected period
+      			ORG_ORGANIZER..StartDate = SelectedPeriod.StartDate
+      			ORG_ORGANIZER..EndDate = SelectedPeriod.EndDate
+      			
+      			
+      		// -> week on 5 days
+      		CASE orgzWeekOn5
+      			
+      			// Makes the week picker visible
+      			RADIO_WEEKTYPE..Visible = True
+      			STC_WEEKNUM..Visible = True
+      			RADIO_WEEKTYPE = 2
+      
+      			STC_WEEKNUM = "Week " + DateToWeekNumber(dDate) + "/" + dDate..Year
+      
+      			// Menu options
+      			OPT_Display.OPT_Day..Checked = False
+      			OPT_Display.OPT_Month..Checked = False
+      			OPT_Display.OPT_Week.OPT_Working_week..Checked = True
+      			OPT_Display.OPT_Week.OPT_Entire_week..Checked = False
+      			
+      			
+      			BTN_Day..Pushed = False
+      			BTN_Month..Pushed = False
+      			BTN_Week..Pushed = True
+      			
+      			// Restores the selected period
+      			ORG_ORGANIZER..StartDate = SelectedPeriod.StartDate
+      			ORG_ORGANIZER..EndDate = SelectedPeriod.EndDate
+      			
+      			
+      		// -> day
+      		CASE orgzDay
+      			
+      			// Hides the week picker
+      			RADIO_WEEKTYPE..Visible = False
+      			STC_WEEKNUM..Visible = False
+      			
+      			// Menu options
+      			OPT_Display.OPT_Day..Checked = True
+      			OPT_Display.OPT_Month..Checked = False
+      			OPT_Display.OPT_Week.OPT_Working_week..Checked = False
+      			OPT_Display.OPT_Week.OPT_Entire_week..Checked = False
+      			
+      			
+      			BTN_Day..Pushed = True
+      			BTN_Month..Pushed = False
+      			BTN_Week..Pushed = False
+      			
+      			// Restores the selected period
+      			ORG_ORGANIZER..StartDate = SelectedPeriod.StartDate
+      			ORG_ORGANIZER..EndDate = SelectedPeriod.EndDate
+      			
+      		// -> month
+      		CASE orgzMonth
+      			
+      			// Hides the week picker
+      			RADIO_WEEKTYPE..Visible = False
+      			
+      			// Menu options
+      			OPT_Display.OPT_Day..Checked = False
+      			OPT_Display.OPT_Month..Checked = True
+      			OPT_Display.OPT_Week.OPT_Working_week..Checked = False
+      			OPT_Display.OPT_Week.OPT_Entire_week..Checked = False
+      						
+      			BTN_Day..Pushed = False
+      			BTN_Month..Pushed = True
+      			BTN_Week..Pushed = False
+      			
+      			// Disables the selected period
+      			ORG_ORGANIZER..StartDate = ""
+      			ORG_ORGANIZER..EndDate = ""
+      	END
+      
+      	AnimationPlay(animFadeIn)
+     type : 458752
+   -
+     name : OnCategorySelection
+     procedure_id : 1760073861359399580
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Run when selecting a category
+      PROCEDURE OnCategorySelection()
+      
+      	// Reset the list of selected categories
+      	ListCategories = ""
+      
+      	FOR ALL ROW of TABLE_CATEGORIES
+      		IF COL_Selection THEN
+      			ListCategories += [";"] + COL_OrganizerCategory
+      		END
+      	END
+      	
+      	// Update the appointments
+      	DisplayEvents()
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b03b7a000124be5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+ dialogs :
+  -
+    identifier : 0x1b03c0d9005353f1
+    internal_properties : CAAAAAgAAACqSxqAj2y6VUfi5dDo78XmI61VHdjoh+gpsDYm3UIVqcUStybdrpRejgtXwGqv5ULp+SjLyGXzKsZcG2WkzRlgpRBDgRKUISjC
+    label :
+     fr-FR : "Cet événement est lié à un ou plusieurs agendas externe :\r\n%1\r\n\r\nCet événement sera supprimé dans tous les agendas externes.\r\nÊtes-vous sûr de vouloir supprimer cet événement ?"
+     en-GB : "This event is linked to one or more external organizers:\r\n%1\r\n\r\nThis event will be deleted from all the external organizers.\r\nDo you want to delete this event?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer"
+        en-GB : "&Delete"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+  -
+    identifier : 0x1b0a978b025fc9c8
+    internal_properties : CAAAAAgAAAAKK/ogr0yaNafChTBIj+XGQ811fTgIpwipcHZmXYIVqcUSd2Z9TnR+rqv3YIpPheIJmUgraIUTyqZ8OwUEbflAhXAjofL0gYhi
+    label :
+     fr-FR : "Cette action va supprimer l'événement dans votre agenda Outlook.\r\n\r\nEtes-vous sûr de vouloir supprimer la liaison de cet événement ?"
+     en-GB : "This action will delete the event from your Outlook calendar.\r\n\r\nDo you want to delete the link from this event?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer"
+        en-GB : "&Delete"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+  -
+    identifier : 0x1b0a97db028e037d
+    internal_properties : CAAAAAgAAAB6G0pQP9wqpbcyFaD4H1V2832FLYiYN7jJ0DYGnUJVaQVyV8atnqQuvhvncNo/dXKZKdib+DXDehbsq5WU/WkwlQCzEYJk8XgS
+    label :
+     fr-FR : "Cette action va supprimer l'événement dans votre agenda Lotus.\r\n\r\nEtes-vous sûr de vouloir supprimer la liaison de cet événement ?"
+     en-GB : "This action will delete the event from your Lotus calendar.\r\n\r\nDo you want to delete the link from this event?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer"
+        en-GB : "&Delete"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+  -
+    identifier : 0x1b0a97120231f116
+    internal_properties : CAAAAAgAAAAdMu0r2rmfDprHGrvzIn49jgwwuHNFVN0clQvZ2XwzLTlwk7JOs//LwRwIbd+68G+0zHt4HchQiWGn1qKZ+HQ9gGsmruf/lp91
+    label :
+     fr-FR : "Cette action va supprimer l'événement dans votre agenda Google.\r\n\r\nEtes-vous sûr de vouloir supprimer la liaison de cet événement ?"
+     en-GB : "This action will delete the event from your Google calendar.\r\n\r\nDo you want to delete the link from this event?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer"
+        en-GB : "&Delete"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Organizer.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

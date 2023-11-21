@@ -1,0 +1,876 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pSynchro
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1b041c88001b7232
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACoV1QyK1UuaCNO8zZSB8RvS1iJdYw1zFbBu/+DfRe2F+8o/Lk9padPbhoLcUXiN+TH+IdnW2kZkHOMbllzDBffNB9mk2ZaFyypBV5MaXwtoVpxEOkRmem3axlrWhCr8rUO1Yd7gtnCS5hxmQ==
+     code : |1-
+      
+      // Describe a trigger on the modification of an event
+      HDescribeTrigger(OrganizerEvent, "HModify", OnModificationOrganizerEvent, hTriggerBefore)
+     type : 720896
+  procedures :
+   -
+     name : OnModificationOrganizerEvent
+     internal_properties : CAAAAAgAAADA4iRlJPfTT93c1EbZPFe7NiwpiiiLv8uDoJ79kZ2I1Doto0b4F7dxmR1f9rcOHMbTvKLZPd7RxUTAs9RjUOiiEdE38V6TeJdfLh9Tv1IuwDBgz/F6ycsbBqcIaZpFJqBvc4sf5d7Xv2xD5GxpZ8uLdRYbqBdgbsRq04hZemxVEbwzzBKUO63X1jdHUq9xZOv4YZBN5Q==
+     procedure_id : 1946712459697782299
+     type_code : 15
+     code : |1-
+      // Summary: Trigger released when modifying an event
+      PROCEDURE PRIVATE OnModificationOrganizerEvent()
+      
+      	HReset(OrganizerEventHistory)
+      
+      	// Copies the data
+      	HCopyRecord(OrganizerEventHistory, OrganizerEvent)
+      	
+      	// Saves the history
+      	OrganizerEventHistory.HistoryDate = Today + Now
+      	HAdd(OrganizerEventHistory)
+     type : 458752
+   -
+     name : OutlookCheckDeletions
+     internal_properties : CAAAAAgAAADe7xLe7KwlxMBQ6QeiNp3mOaBuBiDCb6lYjq0ZleYcniw80EgMVmoNPE3swRZBJ0GHMORCRPotpDanBMZCHN7aHVQxeRJk4hI7sDLlNYqDacQmFdCnXxIFQLeVotmrfcREfzX4RhrK4eZ7MzMcQxiVOIIlgZCke7TeXUEkH7AkPQYEbyBuru10v5YFym8gKiLFx7xUYJEotIfAomLFST/Pv3pTJA==
+     procedure_id : 1946977218662405111
+     type_code : 15
+     code : |1-
+      // Summary: Checks the deletions in the Outlook calendar
+      PROCEDURE OutlookCheckDeletions(LOCAL sProfile is string, LOCAL nOrganizerID is int)
+      
+      	nSessionID 			is int
+      	arrIDDeletion	is array of int
+      	
+      	HourGlass(True)
+      	
+      	// Starts a session
+      	nSessionID = OutlookStartSession(sProfile)
+      	
+      	// Searches for all the events with an Outlook identifier
+      	FOR EACH OrganizerEvent WHERE OutlookCalendarID = nOrganizerID
+      		
+      		IF OrganizerEvent.IsDeleted THEN CONTINUE
+      		
+      		AppointmentReset()
+      		
+      		// Tries to read the event
+      		IF NOT AppointmentRead(nSessionID, OrganizerEvent.OutlookIdentifier) THEN
+      			
+      			// If we are outside the appointments
+      			IF mAppointment.Out THEN
+      				
+      				// The event was deleted, save it
+      				Add(arrIDDeletion, OrganizerEvent.OrganizerEventID)				
+      			END
+      		END
+      	END
+      
+      	// End of session
+      	CloseSession(nSessionID)
+      	HourGlass(False)
+      	
+      	// Open the conflict window
+      	if arrIDDeletion..Count > 0	
+      		Open(WIN_Conflict, cftDeletionMode, fromOutlook, Null, arrIDDeletion)
+      	END
+     type : 458752
+   -
+     name : NotesCheckDeletions
+     procedure_id : 1946978799211196283
+     type_code : 15
+     code : |1-
+      // Summary: Checks the deletions in the Notes calendar
+      PROCEDURE NotesCheckDeletions(LOCAL nOrganizerID is int)
+      
+      	nSessionID 			is int
+      	nConnectionID		is int
+      	arrIDDeletion	is array of int
+      	
+      	HourGlass(True)
+      	
+      	// Positions on the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      		END
+      	
+      		// Searches for all the events with a Notes identifier
+      		FOR EACH OrganizerEvent WHERE NotesCalendarID = nOrganizerID
+      			
+      			IF OrganizerEvent.IsDeleted THEN CONTINUE
+      			
+      			AppointmentReset()
+      			
+      			// Tries to read the event
+      			IF NOT AppointmentRead(nConnectionID, OrganizerEvent.NotesIdentifier) THEN
+      				
+      				// If we are outside the appointments
+      				IF mAppointment.Out THEN
+      					
+      					// The event was deleted, save it
+      					Add(arrIDDeletion, OrganizerEvent.OrganizerEventID)				
+      				END
+      			END
+      		END
+      			
+      		// End of session
+      		NotesCloseDatabase(nSessionID)
+      		CloseSession(nConnectionID)
+      	END
+      		
+      	HourGlass(False)
+      	
+      	// Open the conflict window
+      	if arrIDDeletion..Count > 0	
+      		Open(WIN_Conflict, cftDeletionMode, fromNotes, Null, arrIDDeletion)
+      	END
+     type : 458752
+   -
+     name : GoogleCheckDeletions
+     internal_properties : CAAAAAgAAAD6dSZwY17LiWQEWwkWGNOatQKuspZVoaauALBZ6c4yp5DNO3qZyPQJ7oZiUJYEYcruHva7rjRxw16qEbbc2nw9VaZQ9FAMCz40TP713SohCi+M/PqO85indRqVZUCtFbAs6wywdXZaBRkE37DRSaTN4lDWsx1mQdaJdnWBZr6uX1uFPd/s7/7rge6QeL35jCX3tEcm+ZI=
+     procedure_id : 1946979306017913962
+     type_code : 15
+     code : |1-
+      // Summary: Checks the deletions in the Google calendar
+      PROCEDURE GoogleCheckDeletions(AConnection is a gglConnection, LOCAL sIdentifier is string, LOCAL nOrganizerID is int)
+      
+      	arrIDDeletion	is array of int
+      	AnOrganizer			is a gglCalendar
+      		
+      	HourGlass(True)
+      	
+      	// Retrieves the organizer
+      	AnOrganizer = GglGetCalendar(AConnection, sIdentifier, "19700101")
+      	
+      	// Searches for all the events with a Google identifier
+      	FOR EACH OrganizerEvent WHERE GoogleCalendarID = nOrganizerID
+      		
+      		IF OrganizerEvent.IsDeleted THEN CONTINUE
+      		
+      		// Asks to read the event
+      		IF Seek(AnOrganizer..Event, asLinear, "Identifier", OrganizerEvent.GoogleIdentifier) <= 0 THEN
+      				
+      			// The event was deleted, save it
+      			Add(arrIDDeletion, OrganizerEvent.OrganizerEventID)				
+      		END
+      	END
+      
+      	HourGlass(False)
+      	
+      	// Open the conflict window
+      	if arrIDDeletion..Count > 0	
+      		Open(WIN_Conflict, cftDeletionMode, fromGoogle, Null, arrIDDeletion)
+      	END
+     type : 458752
+   -
+     name : FillAppointment
+     procedure_id : 1946984601715330961
+     type_code : 15
+     code : |1-
+      // Summary: Converting an event into appointment
+      PROCEDURE FillAppointment()
+      
+      	// Reset
+      	AppointmentReset()
+      
+      	// Copy the data
+      	mAppointment.Subject 			= OrganizerEvent.Title
+      	mAppointment.Notes 			= OrganizerEvent.Content
+      	mAppointment.StartDate 		= OrganizerEvent.StartDate
+      	mAppointment.EndDate 		= OrganizerEvent.EndDate
+      	mAppointment.Location 			= OrganizerEvent.Locations
+      	mAppointment.FullDay	= OrganizerEvent.WholeDay
+      	mAppointment.Repeat	= (OrganizerEvent.RepetitionType <> -1)
+      	
+      	// Rebuilds the category
+      	HReadSeekFirst(OrganizerCategory, OrganizerCategory, OrganizerEvent.CategoryID)
+      	IF HFound(OrganizerCategory) THEN
+      		mAppointment.Category = OrganizerCategory.Caption
+      	ELSE
+      		mAppointment.Category = ""
+      	END
+      		
+      	mAppointment.NbParticipant = 0
+      	
+      	// Rebuilds the participants
+      	FOR EACH string sGuest of OrganizerEvent.Guests SEPARATED BY CR
+      		mAppointment.NbParticipant ++
+      		mAppointment.Participant[mAppointment.NbParticipant] = ExtractString(sGuest, 1) + ["<"] + Replace(ExtractString(sGuest, 2), EOT, "") + [">"]
+      	END
+     type : 458752
+   -
+     name : FillGglEvent
+     internal_properties : CAAAAAgAAABgiwzaXMztidqa9y1KNpui70SMnMJjDZ4I8mwVrfTSw3Zb0cwxipAVwIhq8D6W1S7k3NTlTl4Nw5BchR5MnIQlR7AKujyyzzKm3vpcrk+w22hlw0s3eCWyTiOOgAXWSGWFXGM5DsOXUFLFsMfWMltGf8VJgIrX0mkSxzboZ9N55KBiHJA5uOdSPlP1w2YuH7Tiiq1A0/g=
+     procedure_id : 1946985009737253128
+     type_code : 15
+     code : |1-
+      // Summary: Converting an event into gglEvent
+      PROCEDURE FillGglEvent(AnEvent is a gglEvent)
+      
+      	AnEvent..Title			= OrganizerEvent.Title
+      	AnEvent..Content 		= OrganizerEvent.Content
+      	AnEvent..StartDate		= OrganizerEvent.StartDate
+      	AnEvent..EndDate		= OrganizerEvent.EndDate
+      	AnEvent..WholeDay	= OrganizerEvent.WholeDay
+      		
+      	DeleteAll(AnEvent..Location)
+      	DeleteAll(AnEvent..Guest)
+      	
+      	// Rebuilds the locations
+      	FOR EACH string sLocation of OrganizerEvent.Locations SEPARATED BY CR
+      		ALocation is a gglLocation
+      		ALocation..Value = sLocation
+      		Add(AnEvent..Location, ALocation)
+      	END
+      	
+      	// Rebuilds the participants
+      	FOR EACH string sGuest of OrganizerEvent.Guests SEPARATED BY CR
+      		AGuest is a gglPerson
+      		AGuest..Email 	= Replace(ExtractString(sGuest, 2), EOT, "")
+      		AGuest..Caption	= ExtractString(sGuest, 1)
+      		
+      		IF AGuest..Email = "" THEN
+      			AGuest..Email = "guest@"
+      		END
+      		
+      		Add(AnEvent..Guest, AGuest)
+      	END
+      	
+     type : 458752
+   -
+     name : OutlookDeleteEvent
+     internal_properties : CAAAAAgAAABcDXb4UMPxU5YHTwSGZWxgP4gfL7aVa4IX8BrdrGVVHPjeHhq7Zydfs8QO/KVjnuufUXHZqHO+7SLCKdqKgztJ8hlxaMrFZGCcOIkIsI4zi+Ap9xsYAtTkist1EyOPl20L/vc5kSu8ZrKJlwquX0PDAFMV/KFGROcMrVqpq+HVlZejN9bk8EClucYsQELofdLRcwzny9klxA==
+     procedure_id : 1948521843542460602
+     type_code : 15
+     code : |1-
+      // Summary: Deletes an event from the Outlook calendar
+      PROCEDURE OutlookDeleteEvent(LOCAL nOrganizerID is int, LOCAL sIdentifier is string)
+      
+      	nSessionID 			is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(OutlookCalendar, OutlookCalendarID, nOrganizerID)
+      	IF HFound(OutlookCalendar) THEN
+      	
+      		// Starts a session
+      		nSessionID = OutlookStartSession(OutlookCalendar.Profile)
+      
+      		// Position on the appointment
+      		AppointmentFirst(nSessionID)
+      		WHILE mAppointment.Out = False
+      			
+      			// If the identifier corresponds
+      			IF mAppointment.ID = sIdentifier THEN
+      				
+      				// Delete it
+      				AppointmentDelete(nSessionID)
+      				BREAK
+      			END
+      			
+      			AppointmentNext(nSessionID)
+      		END
+      			
+      		// End of session
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : NotesDeleteEvent
+     internal_properties : CAAAAAgAAAC0PajzxDgY0s9w4As8H138nLK+S3Ega9OAo8zot+wVt9Ad7kHfoXNSn9/GNn30opdFGhBH5AUruy+jIPp3y/yK8qtaE0ktdeG0aJfUcNva4RUlHZqs7Rb19ieEAz/KBLCbK+MNYQydA9fqBaLJRJMCdSSO3z2lTDGsIYuq4UpMPhUld7I7QA==
+     procedure_id : 1948522363233624163
+     type_code : 15
+     code : |1-
+      // Summary: Deletes an event from the Lotus calendar
+      PROCEDURE NotesDeleteEvent(LOCAL nOrganizerID is int, LOCAL sIdentifier is string)
+      
+      	nSessionID 			is int
+      	nConnectionID		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      		END
+      		
+      		// Position on the appointment
+      		AppointmentFirst(nConnectionID)
+      		WHILE mAppointment.Out = False
+      			
+      			// If the identifier corresponds
+      			IF mAppointment.ID = sIdentifier THEN
+      				
+      				// Delete it
+      				AppointmentDelete(nConnectionID)
+      				BREAK
+      			END
+      			
+      			AppointmentNext(nConnectionID)
+      		END
+      	
+      		// End of session
+      		IF nSessionID <> 0 THEN NotesCloseDatabase(nSessionID)
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : GoogleDeleteMultipleEvents
+     internal_properties : CAAAAAgAAADYifMaWs27n3rzhWKsC5gmCYLv/2DDMd57ZKDDkltZAvLARuKhgUm/F5DsFrc92rmZP01t4slsBZ5mV6RMVQsDzB8JUHwboliUCGcOcd0M7IES7hSb74NT+3yk5LxC0B4w2+LubLCH0c8WIsdDzshAxdiQAaxrV/YFpkGCrBCaOoDc7p8njduMnkuvDce7ros24DcAUF2hQA==
+     procedure_id : 1948522659586437163
+     type_code : 15
+     code : |1+
+      // Summary: Deletes events from the Google calendar
+      PROCEDURE GoogleDeleteMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * string)
+      
+      	AnOrganizer			is a gglCalendar
+      	AConnection		is a gglConnection
+      	nSubscript				is int
+      	sIdentifier		is string
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(GoogleCalendar, GoogleCalendarID, nOrganizerID)
+      	IF HFound(GoogleCalendar) THEN
+      	
+      		// Prepares the connection
+      		AConnection = GoogleConnectCalendar()
+      				
+      		// Retrieves the organizer
+      		AnOrganizer = GglGetCalendar(AConnection, GoogleCalendar.Identifier, "19700101")
+      				
+      		FOR EACH sIdentifier of arrIdentifiers 
+      				
+      			// Searches for the event
+      			nSubscript = Seek(AnOrganizer..Event, asLinear, "Identifier", sIdentifier)
+      			IF nSubscript > 0 THEN
+      				
+      				// Deletes the event
+      				Delete(AnOrganizer..Event, nSubscript)
+      				
+      			END
+      		END
+      		
+      		// Update
+      		GglWrite(AConnection, AnOrganizer)		
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : GoogleDeleteEvent
+     internal_properties : CAAAAAgAAABcDXb4UMPxU5YHTwSGZWxgP4gfL7aVa4IX8BrdrGVVHPjeHhq7Zydfs8QO/KVjnuufUXHZqHO+7SLCKdqKgztJ8hlxaMrFZGCcOIkIsI4zi+Ap9xsYAtTkist1EyOPl20L/vc5kSu8ZrKJlwquX0PDAFMV/KFGROcMrVqpq+HVlZejN9bk8EClucYsQELofdLRcwzny9klxA==
+     procedure_id : 1948531700499942842
+     type_code : 15
+     code : |1+
+      // Summary: Deletes an event from the Google calendar
+      PROCEDURE GoogleDeleteEvent(LOCAL nOrganizerID is int, LOCAL sIdentifier is string)
+      
+      	AnOrganizer			is a gglCalendar
+      	AConnection		is a gglConnection
+      	nSubscript				is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(GoogleCalendar, GoogleCalendarID, nOrganizerID)
+      	IF HFound(GoogleCalendar) THEN
+      	
+      		// Prepares the connection
+      		AConnection = GoogleConnectCalendar()
+      				
+      		// Retrieves the organizer
+      		AnOrganizer = GglGetCalendar(AConnection, GoogleCalendar.Identifier, "19700101")
+      				
+      		// Searches for the event
+      		nSubscript = Seek(AnOrganizer..Event, asLinear, "Identifier", sIdentifier)
+      		IF nSubscript > 0 THEN
+      			
+      			// Deletes the event
+      			Delete(AnOrganizer..Event, nSubscript)
+      	
+      			// Update
+      			GglWrite(AConnection, AnOrganizer)		
+      		END		
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : OutlookDeleteMultipleEvents
+     internal_properties : CAAAAAgAAADYifMaWs27n3rzhWKsC5gmCYLv/2DDMd57ZKDDkltZAvLARuKhgUm/F5DsFrc92rmZP01t4slsBZ5mV6RMVQsDzB8JUHwboliUCGcOcd0M7IES7hSb74NT+3yk5LxC0B4w2+LubLCH0c8WIsdDzshAxdiQAaxrV/YFpkGCrBCaOoDc7p8njduMnkuvDce7ros24DcAUF2hQA==
+     procedure_id : 1948531880888676992
+     type_code : 15
+     code : |1-
+      // Summary: Deletes some events from the Outlook calendar
+      PROCEDURE OutlookDeleteMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array * string)
+      
+      	nSessionID 			is int
+      	sIdentifier		is string
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(OutlookCalendar, OutlookCalendarID, nOrganizerID)
+      	IF HFound(OutlookCalendar) THEN
+      	
+      		// Starts a session
+      		nSessionID = OutlookStartSession(OutlookCalendar.Profile)
+      
+      		// For each identifier
+      		FOR EACH sIdentifier of arrIdentifiers
+      
+      			// Position on the appointment
+      			AppointmentFirst(nSessionID)
+      			WHILE mAppointment.Out = False
+      				
+      				// If the identifier corresponds
+      				IF mAppointment.ID = sIdentifier THEN
+      					
+      					// Delete it
+      					AppointmentDelete(nSessionID)
+      					BREAK
+      				END
+      				
+      				AppointmentNext(nSessionID)
+      			END	
+      		END
+      		
+      		// End of session
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : NotesDeleteMultipleEvents
+     internal_properties : CAAAAAgAAAC0PajzxDgY0s9w4As8H138nLK+S3Ega9OAo8zot+wVt9Ad7kHfoXNSn9/GNn30opdFGhBH5AUruy+jIPp3y/yK8qtaE0ktdeG0aJfUcNva4RUlHZqs7Rb19ieEAz/KBLCbK+MNYQydA9fqBaLJRJMCdSSO3z2lTDGsIYuq4UpMPhUld7I7QA==
+     procedure_id : 1948532404874742968
+     type_code : 15
+     code : |1-
+      // Summary: Deletes some events from the Lotus calendar
+      PROCEDURE NotesDeleteMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * string)
+      
+      	nSessionID 			is int
+      	nConnectionID		is int
+      	sIdentifier 		is string
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      		END
+      		
+      		FOR EACH sIdentifier of arrIdentifiers
+      			
+      			// Position on the appointment
+      			AppointmentFirst(nConnectionID)
+      			WHILE mAppointment.Out = False
+      				
+      				// If the identifier corresponds
+      				IF mAppointment.ID = sIdentifier THEN
+      					
+      					// Delete it
+      					AppointmentDelete(nConnectionID)
+      					BREAK
+      				END
+      				
+      				AppointmentNext(nConnectionID)
+      			END
+      		END
+      	
+      		// End of session
+      		IF nSessionID <> 0 THEN NotesCloseDatabase(nSessionID)
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : GoogleAddMultipleEvents
+     internal_properties : CAAAAAgAAABcDXb4UMPxU5YHTwSGZWxgP4gfL7aVa4IX8BrdrGVVHPjeHhq7Zydfs8QO/KVjnuufUXHZqHO+7SLCKdqKgztJ8hlxaMrFZGCcOIkIsI4zi+Ap9xsYAtTkist1EyOPl20L/vc5kSu8ZrKJlwquX0PDAFMV/KFGROcMrVqpq+HVlZejN9bk8EClucYsQELofdLRcwzny9klxA==
+     procedure_id : 1948541806570698371
+     type_code : 15
+     code : |1+
+      // Summary: Adds events into the Google calendar
+      PROCEDURE GoogleAddMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * int)
+      
+      	AnOrganizer			is a gglCalendar
+      	AConnection		is a gglConnection
+      	AnEvent			is a gglEvent
+      	nIdentifier		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(GoogleCalendar, GoogleCalendarID, nOrganizerID)
+      	IF HFound(GoogleCalendar) THEN
+      	
+      		// Prepares the connection
+      		AConnection = GoogleConnectCalendar()
+      				
+      		// Retrieves the organizer
+      		AnOrganizer = GglGetCalendar(AConnection, GoogleCalendar.Identifier, "19700101")
+      				
+      		FOR EACH nIdentifier of arrIdentifiers 
+      		
+      			// Searches for the event		
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Filling
+      				FillGglEvent(AnEvent)
+      				Add(AnOrganizer..Event, AnEvent)
+      						
+      				// Update
+      				GglWrite(AConnection, AnOrganizer)		
+      								
+      				// Reads the identifier again
+      				OrganizerEvent.GoogleIdentifier = AnOrganizer..Event[AnOrganizer..Event..Count]..Identifier
+      				HModify(OrganizerEvent)
+      			END		
+      		END
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : NotesAddMultipleEvents
+     internal_properties : CAAAAAgAAAC0PajzxDgY0s9w4As8H138nLK+S3Ega9OAo8zot+wVt9Ad7kHfoXNSn9/GNn30opdFGhBH5AUruy+jIPp3y/yK8qtaE0ktdeG0aJfUcNva4RUlHZqs7Rb19ieEAz/KBLCbK+MNYQydA9fqBaLJRJMCdSSO3z2lTDGsIYuq4UpMPhUld7I7QA==
+     procedure_id : 1948543803730496518
+     type_code : 15
+     code : |1-
+      // Summary: Adds some events into the Lotus calendar
+      PROCEDURE NotesAddMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * int)
+      
+      	nSessionID 			is int
+      	nConnectionID		is int
+      	nIdentifier 		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      		END
+      		
+      		FOR EACH nIdentifier of arrIdentifiers
+      		
+      			// Position on the event
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      		
+      				// Prepares the appointment
+      				FillAppointment()
+      	
+      				// Adds the appointment
+      				AppointmentAdd(nConnectionID)
+      				
+      				// Read the identifier
+      				OrganizerEvent.NotesIdentifier = mAppointment.ID
+      				HModify(OrganizerEvent)
+      			END	
+      		END
+      	
+      		// End of session
+      		IF nSessionID <> 0 THEN NotesCloseDatabase(nSessionID)
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : OutlookAddMultipleEvents
+     internal_properties : CAAAAAgAAABcDXb4UMPxU5YHTwSGZWxgP4gfL7aVa4IX8BrdrGVVHPjeHhq7Zydfs8QO/KVjnuufUXHZqHO+7SLCKdqKgztJ8hlxaMrFZGCcOIkIsI4zi+Ap9xsYAtTkist1EyOPl20L/vc5kSu8ZrKJlwquX0PDAFMV/KFGROcMrVqpq+HVlZejN9bk8EClucYsQELofdLRcwzny9klxA==
+     procedure_id : 1948544370666311925
+     type_code : 15
+     code : |1-
+      // Summary: Adds some events into the Outlook calendar
+      PROCEDURE OutlookAddMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array * int)
+      
+      	nSessionID 			is int
+      	nIdentifier		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(OutlookCalendar, OutlookCalendarID, nOrganizerID)
+      	IF HFound(OutlookCalendar) THEN
+      	
+      		// Starts a session
+      		nSessionID = OutlookStartSession(OutlookCalendar.Profile)
+      		
+      		FOR EACH nIdentifier of arrIdentifiers
+      			
+      			// Position on the event
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Prepares the appointment
+      				FillAppointment()
+      				
+      				// Adds the appointment
+      				AppointmentAdd(nSessionID)
+      				
+      				// Read the identifier
+      				OrganizerEvent.OutlookIdentifier = mAppointment.ID
+      				HModify(OrganizerEvent)
+      			END	
+      		END
+      				
+      		// End of session
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : GoogleModifyMultipleEvents
+     internal_properties : CAAAAAgAAAA8bRc+oHmnm+a/reYYH3Qm2fZrm2xfzVoPiIBHlq81cuoEwpat3VXjG4wE2ithrvlBk9FZLk1YCdryR3AoOS/LXCO1DJhHZqS4FDfif2veNncIWKqJKQUx4RLe4sI4OuhWQfzUCuKBn6U8NPUx7JKyE2Yah6JlCczDZIs46n5UFNZq2EX1J73ihGFZG+VJGGVM/vE0LLkFJA==
+     procedure_id : 1948841393392600076
+     type_code : 15
+     code : |1+
+      // Summary: Modifies events in the Google calendar
+      PROCEDURE GoogleModifyMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * int)
+      
+      	AnOrganizer			is a gglCalendar
+      	AConnection		is a gglConnection
+      	AnEvent			is a gglEvent
+      	nIdentifier		is int
+      	nSubscript				is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(GoogleCalendar, GoogleCalendarID, nOrganizerID)
+      	IF HFound(GoogleCalendar) THEN
+      	
+      		// Prepares the connection
+      		AConnection = GoogleConnectCalendar()
+      				
+      		// Retrieves the organizer
+      		AnOrganizer = GglGetCalendar(AConnection, GoogleCalendar.Identifier, "19700101")
+      				
+      		FOR EACH nIdentifier of arrIdentifiers 
+      		
+      			// Searches for the event		
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      					
+      				// Searches for the event
+      				nSubscript = Seek(AnOrganizer..Event, asLinear, "Identifier", OrganizerEvent.GoogleIdentifier)
+      				IF nSubscript > 0 THEN
+      				
+      					// Reloads the event
+      					AnEvent <- AnOrganizer..Event[nSubscript]
+      				
+      					// Modifications
+      					FillGglEvent(AnEvent)
+      				END				
+      			END		
+      		END
+      		
+      		// Update
+      		GglWrite(AConnection, AnOrganizer)		
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : NotesModifyMultipleEvents
+     internal_properties : CAAAAAgAAAC0PajzxDgY0s9w4As8H138nLK+S3Ega9OAo8zot+wVt9Ad7kHfoXNSn9/GNn30opdFGhBH5AUruy+jIPp3y/yK8qtaE0ktdeG0aJfUcNva4RUlHZqs7Rb19ieEAz/KBLCbK+MNYQydA9fqBaLJRJMCdSSO3z2lTDGsIYuq4UpMPhUld7I7QA==
+     procedure_id : 1948841393392665705
+     type_code : 15
+     code : |1-
+      // Summary: Modifies some events in the Lotus calendar
+      PROCEDURE NotesModifyMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array of * int)
+      
+      	nSessionID 			is int
+      	nConnectionID		is int
+      	nIdentifier 		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(NotesCalendar, NotesCalendarID, nOrganizerID)
+      	IF HFound(NotesCalendar) THEN
+      		
+      		// If a certificate was specified or not
+      		IF NotesCalendar.Certificate = "" THEN
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server)
+      		ELSE
+      			nConnectionID = NotesOpenConnection(NotesCalendar.Password, NotesCalendar.Server, NotesCalendar.Certificate)
+      		END
+      		
+      		// Specifies the database
+      		IF NotesCalendar.Database <> "" THEN
+      			
+      			// Opens the database
+      			nSessionID = NotesOpenDatabase(nConnectionID, NotesCalendar.Database)
+      		END
+      		
+      		FOR EACH nIdentifier of arrIdentifiers
+      			
+      			// Position on the event
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Position on the appointment
+      				AppointmentFirst(nConnectionID)
+      				WHILE mAppointment.Out = False
+      					
+      					// If the identifier corresponds
+      					IF mAppointment.ID = OrganizerEvent.NotesIdentifier THEN
+      						
+      						// Prepares the appointment
+      						FillAppointment()
+      						
+      						// Modifies the appointment
+      						AppointmentModify(nConnectionID)
+      						BREAK
+      					END
+      					
+      					AppointmentNext(nConnectionID)
+      				END					
+      			END	
+      		END
+      	
+      		// End of session
+      		IF nSessionID <> 0 THEN NotesCloseDatabase(nSessionID)
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+   -
+     name : OutlookModifyMultipleEvents
+     internal_properties : CAAAAAgAAAA8bRc+oHmnm+a/reYYH3Qm2fZrm2xfzVoPiIBHlq81cuoEwpat3VXjG4wE2ithrvlBk9FZLk1YCdryR3AoOS/LXCO1DJhHZqS4FDfif2veNncIWKqJKQUx4RLe4sI4OuhWQfzUCuKBn6U8NPUx7JKyE2Yah6JlCczDZIs46n5UFNZq2EX1J73ihGFZG+VJGGVM/vE0LLkFJA==
+     procedure_id : 1948841393392731335
+     type_code : 15
+     code : |1-
+      // Summary: Modifies some events in the Outlook calendar
+      PROCEDURE OutlookModifyMultipleEvents(LOCAL nOrganizerID is int, LOCAL arrIdentifiers is array * int)
+      
+      	nSessionID 			is int
+      	nIdentifier		is int
+      	
+      	HourGlass(True)
+      	
+      	// Searches for the organizer
+      	HReadSeekFirst(OutlookCalendar, OutlookCalendarID, nOrganizerID)
+      	IF HFound(OutlookCalendar) THEN
+      	
+      		// Starts a session
+      		nSessionID = OutlookStartSession(OutlookCalendar.Profile)
+      		
+      		FOR EACH nIdentifier of arrIdentifiers
+      			
+      			// Position on the event
+      			HReadSeekFirst(OrganizerEvent, OrganizerEventID, nIdentifier)
+      			IF HFound(OrganizerEvent) THEN
+      				
+      				// Position on the appointment
+      				AppointmentFirst(nSessionID)
+      				WHILE mAppointment.Out = False
+      					
+      					// If the identifier corresponds
+      					IF mAppointment.ID = OrganizerEvent.OutlookIdentifier THEN
+      						
+      						// Prepares the appointment
+      						FillAppointment()
+      						
+      						// Modifies the appointment
+      						AppointmentModify(nSessionID)
+      						BREAK
+      					END
+      					
+      					AppointmentNext(nSessionID)
+      				END					
+      			END	
+      		END
+      				
+      		// End of session
+      		CloseSession(nSessionID)
+      	END
+      	
+      	HourGlass(False)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x1b041c8400196556
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

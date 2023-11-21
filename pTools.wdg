@@ -1,0 +1,312 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pTools
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x186d09e304d915f3
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAADyOKfEA3OsX+Z8t+rvjMxN/NRcWlzQfDa3fulHEyqUvB/mkA3U6SLqyLo7T1L7JQ0yB4p/NyA5UyvtMmiY6VjRwzIL7yHD4ujlDf0BenuqWWXeby1lyPzQv6lSVrH5VimjpUaZnZpwiX6ipPXh5JazK6oZ+TI9FQ/9b50s2CGqLe15JDyMVoI1JOkRqd0=
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      Colors is array fixed of 25 int
+      
+      Colors[1]  = RGB(229,105,111)
+      Colors[2]  = RGB(244,152,90)
+      Colors[3]  = RGB(255,204,83)
+      Colors[4]  = RGB(255,249,91)
+      Colors[5]  = RGB(136,210,127)
+      Colors[6]  = RGB(127,211,183)
+      Colors[7]  = RGB(179,195,142)
+      Colors[8]  = RGB(119,158,218)
+      Colors[9]  = RGB(150,125,210)
+      Colors[10]  = RGB(197,135,165)
+      Colors[11]  = RGB(199,206,222)
+      Colors[12]  = RGB(75,89,120)
+      Colors[13]  = RGB(168,168,168)
+      Colors[14]  = RGB(82,82,82)
+      Colors[15]  = RGB(7,7,7)
+      Colors[16]  = RGB(171,29,36)
+      Colors[17]  = RGB(177,79,13)
+      Colors[18]  = RGB(171,123,5)
+      Colors[19]  = RGB(153,148,0)
+      Colors[20]  = RGB(53,121,43)
+      Colors[21]  = RGB(46,125,100)
+      Colors[22]  = RGB(95,108,58)
+      Colors[23]  = RGB(42,81,145)
+      Colors[24]  = RGB(80,50,143)
+      Colors[25]  = RGB(130,55,95)
+     type : 720896
+   -
+     code : |1-
+      
+     type : 720898
+  procedures :
+   -
+     name : DateTimeToString
+     internal_properties : CAAAAAgAAACySOcCSzEuTejRb7GQbqhIuUGULdBmFUgV2/p+/UOZTFlnF6sm936cHzP9L4yKcN6m3NtSme4ehSRNDnObu3Lj315yEHxXDyLR7Ck/fW31hEUog1CQ9jt2EwO+ZMrWk9PZTYIewbJh08UHlBQt9xCw09ObItCnoLe+O7q0MeeDsuwm2FRpBAlkGL3v0cZO6dT/g2H2cx+72uyDUM4CMgm65uVbBRVwKX4Pje8CIqOruSkpyaCHAEhmYHVht7PmZvkFaCEGuOj8uGKZ8bFtEs9PGYpOWcDH6IZ++Wc5gXvg+klMz6VLVA==
+     procedure_id : 1760073900015359475
+     type_code : 15
+     code : |1-
+      PROCEDURE DateTimeToString(LOCAL dtDateTime is datetime, LOCAL sSeparator is string = " to ")
+      
+      	sDateTime is string
+      	
+      	// Conversion
+      	sDateTime = DateToString(dtDateTime..Date) + [" "] + sSeparator + [" "] + TimeToString(dtDateTime..Time, "HH:MM")	
+      	
+      RESULT sDateTime
+     type : 458752
+   -
+     name : CreateDefaultCategories
+     procedure_id : 1760073900015425011
+     type_code : 15
+     code : |1-
+      // Summary: Creates the default categories
+      PROCEDURE CreateDefaultCategories()
+      	
+      	// Clears the file
+      	HDeleteAll(OrganizerCategory)
+      
+      	// Creates 10 categories by default
+      	FOR i = 1 _TO_ 10
+      				
+      		HReset(OrganizerCategory)
+      		
+      		// Default caption and color
+      		OrganizerCategory.Caption = "Category " + i
+      		OrganizerCategory.Color = Colors[i]
+      		
+      		// Saves
+      		HAdd(OrganizerCategory)		
+      	END
+      	
+     type : 458752
+   -
+     name : __OrganizerAddEvent
+     procedure_id : 1760073900015490547
+     type_code : 15
+     group : 2
+     code : |1-
+      // Summary: (System) Adds an appointment into the organizer
+      PROCEDURE __OrganizerAddEvent(Organizer)
+      
+      	// Sends the message used to add an event
+      	ExecuteAAF(Organizer,aafOgiAddApt)	
+     type : 458752
+   -
+     name : __OrganizerEditEvent
+     procedure_id : 1760073900015556083
+     type_code : 15
+     group : 2
+     code : |1-
+      // Summary: (System) Switches to edit mode in the organizer
+      PROCEDURE __OrganizerEditEvent(Organizer)
+      
+      	// Sends the message used to switch to edit mode for editing an event
+      	ExecuteAAF(Organizer, aafOgiEditApt)
+     type : 458752
+   -
+     name : __OrganizerDeleteEvent
+     procedure_id : 1760073900015621619
+     type_code : 15
+     group : 2
+     code : |1-
+      // Summary: (System) Deletes an appointment from the organizer
+      PROCEDURE __OrganizerDeleteEvent(Organizer)
+      
+      	// Sends the message used to delete an event
+      	ExecuteAAF(Organizer, aafOgiDeleteApt)
+     type : 458752
+   -
+     name : Outlook64Bits
+     internal_properties : CAAAAAgAAADUb//gvIqZfaBtBmK8zIq1EWRi4opvUP+jpniINhBp3wuuhsOlu0BxuKB8qdLu86bSYSev7q03LtnRIqZrpvzppKr+jhZ7qKoI5SqSnXZrKZSn7iMm1tJcqOxbsD2iPByEffJNyHjaLSL2THOyUlu+WxkXgkz1/pVShzYE4y/ZDG5ZtwLX0fvjjZPmlohInk9IAq2WGd6ySPko/rBRcj4KjFBgmI3NAgT71xxOhjv1TRKJcaBG09lgDFlYZ3NHKvbINA7i5ZveSe5EJgr1Fk7GqwFo0COo
+     procedure_id : 1760073900015687155
+     type_code : 15
+     code : |1-
+      // Summary: (System) Defines whether the Outlook version is in 64 bits
+      PROCEDURE Outlook64Bits()
+      
+      	sPath		is string = RegistryQueryValue("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\OUTLOOK.EXE", "Path") + ["\"] + "Outlook.exe"
+      	nHandle		is int = fOpen(sPath, foRead)
+      	nAddress	is int
+      	nComputer	is 2-byte int
+      	b64Bits		is boolean
+      	
+      	IF nHandle > 0 THEN
+      		
+      		// Position at the 0x3c offset (address of PE HEADER)
+      		fSeek(nHandle, 60, fpBeginning)
+      		
+      		// Retrieves the address of PE HEADER
+      		fRead(nHandle, 4, &nAddress)
+      		
+      		// Position at the specified address + 4 ('P''E''0''0' header)
+      		fSeek(nHandle, nAddress + 4, fpBeginning)
+      		
+      		// Retrieves the computer code
+      		fRead(nHandle, 2, &nComputer)
+      	
+      		// Close the file
+      		fClose(nHandle)
+      	ELSE
+      		
+      		// By default: IMAGE_FILE_MACHINE_I386 (x86, 32bits)
+      		nComputer = 0x014c
+      		ErrorThrow(1, "Outlook is not installed on this computer")
+      	END
+      		
+      	// 32-bit format -> IMAGE_FILE_MACHINE_I386 (x86, 32bits)?
+      	IF (nComputer & 0xffff) = 0x014c THEN
+      		b64Bits = False
+      		
+      	// 64-bit format -> IMAGE_FILE_MACHINE_IA64 / IMAGE_FILE_MACHINE_AMD64 (Itanium, x64, 64bits)
+      	ELSE IF (nComputer & 0xffff) = 0x8664 _OR_ (nComputer & 0xffff) = 0x0200 THEN
+      		b64Bits = True
+      		
+      	ELSE
+      		
+      		// We don't know
+      		b64Bits = False
+      	END
+      	
+      RESULT b64Bits
+     type : 458752
+   -
+     name : GoogleConnectCalendar
+     procedure_id : 1760073900015752691
+     type_code : 15
+     code : |1-
+      // Summary: Permanent connection to the Google calendar
+      // Syntax:
+      //[ <Result> = ] GoogleConnectCalendar ([<nGoogleCalendarID> is int])
+      //
+      // Parameters:
+      //	nGoogleCalendarID (integer - default value=-1): ID of the calendar
+      // Return value:
+      // 	gglConnection:  Established connection
+      //
+      procédure GoogleConnectCalendar(local nGoogleCalendarID is int = -1) : gglConnection
+      
+      	AConnection is a gglConnection
+      	bufConnection is buffer
+      	
+      	// Loads the information for configuring the organizer
+      	IF nGoogleCalendarID > 0 THEN
+      		HReadSeekFirst(GoogleCalendar, GoogleCalendarID, nGoogleCalendarID)
+      	END
+      	
+      	IF Length(GoogleCalendar.BufferConnection) = 0 THEN
+      		
+      		AConnection..Email		= GoogleCalendar.User
+      		AConnection..ClientID		= GoogleCalendar.ClientID
+      		AConnection..ClientSecret	= GoogleCalendar.ClientSecret
+      		
+      	ELSE
+      		
+      		// Retrieves the data
+      		bufConnection = GoogleCalendar.BufferConnection
+      		Deserialize(AConnection, bufConnection, psdBinary)
+      	END
+      
+      	// Connection
+      	IF GglConnect(AConnection) THEN
+      		
+      		// Serializes the connection
+      		Serialize(AConnection, bufConnection, psdBinary)
+      		
+      		GoogleCalendar.BufferConnection = bufConnection
+      		HModify(GoogleCalendar)
+      	END
+      	
+      RESULT AConnection
+     type : 458752
+   -
+     name : CreateExampleEvents
+     procedure_id : 1760073900015818227
+     type_code : 15
+     code : |1-
+      // Summary: Creates a set of "sample" events
+      // Syntax:
+      // CreateSampleEvents ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE CreateExampleEvents()
+      
+      	// If sample records have already been generated
+      	IF LoadParameter(P_CreateSampleEvents, False) = True THEN
+      		RETURN
+      	END
+      
+      	dDate is date = CurrentYear() + "0101"
+      	TypeEvents is array of strings = ["Appointment", "Reunion", "Mission"]
+      	
+      	HourGlass(True)
+      
+      	// Clears the file
+      	HDeleteAll(OrganizerEvent)
+      
+      	LOOP (200)
+      	
+      		// Reset
+      		HReset(OrganizerEvent)
+      		
+      		dtEvtDate is datetime = dDate + "000000"
+      		dtEvtEndDate is datetime = dDate + "235959"
+      		
+      		// At random for the whole day
+      		IF Random(5, 15) = 10 THEN
+      			OrganizerEvent.WholeDay = True
+      			
+      			// End Date
+      			dtEvtEndDate..Day += Random(1, 4) - 1
+      		ELSE
+      			
+      			// End Date
+      			dtEvtEndDate..Day += Random(1, 2) - 1
+      			
+      			dtEvtDate..Hour = Random(8, 19)
+      			dtEvtEndDate..Hour = dtEvtDate..Hour + Random(1, 3)
+      			dtEvtEndDate..Minute = Random(5, 15) = 10 ? 0 ELSE 30
+      			dtEvtEndDate..Second = 0
+      		END
+      	
+      		// Creates the data of the event
+      		OrganizerEvent.StartDate		   	= dtEvtDate
+      		OrganizerEvent.EndDate		 	  	= dtEvtEndDate
+      		OrganizerEvent.CategoryID			= Random(0, HNbRec(OrganizerCategory))
+      		OrganizerEvent.Title				= TypeEvents[Random(1, 3)] + " (Generated)"
+      		
+      		// Saves the event
+      		HAdd(OrganizerEvent)
+      		
+      		dDate = dtEvtEndDate..Date
+      		dDate..Day += Random(1, 5)
+      	END
+      
+      	SaveParameter(P_CreateSampleEvents, True)	
+      	HourGlass(False)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x1b04249b003affa2
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

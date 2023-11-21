@@ -1,0 +1,326 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Organizer
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAACDZPR7reUf8/3mgXZw1U8cf6LqP83nnzp5/GZI89dsa+8EvVWDwsNSV+miappW1GpjGll88gRtB71XpM9MnZ9IMJ2jom5xjbX2ePKJtvNdwMDKoRIDgzPkrV+XfDjh7SOv9IeuNfXbRfU0rrAi18wrP/zu7jq2zxdEeR8t03REeNPy4JzN1OE7HtGi95gy5Y0bhWomAP45Sp3POKS92i7+RiBuBfPDf8Krs/faUzWnRN8J0FG012ejVR3Bh4aQ9aLEGvgdwgEQNMa130AfSy6rmeTtdll0oDDGrbH2tdJaiU90daAInG2JAJccZHR2lFc2MMxgyTsV+sgTGfus7iGdNe2DiSz58vVbLX82r/GAiT2naOAYbZxRw/irPqmZCuJTh3nsRUomJtd7+zygYxcJx5sISLzxLVJCXd379hi9xxRaIG4M+NeB5vrtM7JS8rcuG/7zZ56PMUgpFl3uYpuOA7h0ujoMsMX/FcYREwvhWWA7bUPJagyBCN3bP6P14osqbqO/J+bkYvIXaX3oc4o1yZHB4FzR8zLuMwx6CVcmtp/3NPnsaRc6Pl5fF8JtxjZUZItXNJZDzHfN91Ce1EptBERlMqOXhGnLNVF+mIxEbSZ/NI0igQ2H0MGxxLl8MWOERGaQ0hqQ3iBP1wR0Xs34niTKIZEG8PTrApTDuNFgpxIjVmFJqdVsg1Tjp5ALQoxTsRt1jpS4IT89OB/8AgCPX0nP78JgzyUA4a84DgKqngHoLCFW5GbAmtK4p54wezm1xp1Hb6+So6PS7FRNFgd2G8+vqcqfROO9mLwH2iL28zQis2/DnKCvpFDSY7yXdKLqgI2299F8SHjAFp4DYACZ0pInhK7iDgKovUcpfNGWKVtII9L915ETdiHBrvpwObBojyZKAmTzsK9VDbGMUQP8pwd7Fgwfc/byk7W7KzBJ0mR2dIU77oMjkozh+8n1C1Cp48bh6EuLMKxRDn/ovV6/4CLHxonzn/l4Q6VU6nTgeaPU0+JrjuxLNg5mzKP+o8YM1vIoVdynQ8WZwZZHXlxnkotuRCbfY/36Sr8zvTmL418zfGRu7D/KyExhbkob51R8k3mRkaS98y8oPqG8qq5rLRXB+2jWSKXJ7P+uSKu+rLbm7EGRUwNnmOvdbxOt6WW+pFtZ7BI9OvepytLDM0o5zj59Ghs51VnFkmfI3kD8yGptxpKPwsneFlyNbWerpamA5sAPw765420kzeko2c8rjbrC5rkBI7fp8eenK9bSjczdPyl4WjPkiep///1gFvLXvlAaZevfPrdtMrZ9U1jm/lWc7cStjZ4LSdH0TFC3nakOalUfBmKY6XO7P8dkBE38SH65xvW9Jn3F0J6tsjPh0Tt8+OZJ6oXiBuq3XHq3njqO3BNSlAyJHAU2T/AdB2gvZ4djkGJVgMVHgrAzUzgkBQew18WDybQaUVuTaXfYVZaO9qkmQcAsplsaThHw/rM7mEkbukofKNlQ1MyLHPljH3ciixJzecDbQmvmyQB6Q30w9vSxXaSbGDsBRn3TQWdJuH+0TufXAAOun5RDPzbV3JPTzUvYyFxg8svPZqN28l040ZPwdEZ6KTh2XBTL3CbbmflgIj2ubjobeBan+ksyXksjJ3ZLPD38ZaV5yBeuj7tMEN2CUjdr2DY137kRsY1xz+qsnBzr5VYioHoMVLnpDd5Swj6RcuDVriGMBjDg3BKwDCu+FANPyU9+0RLnHLz3HQG7Z89Lk90pYvaE73KE3Lz+St1W3hdFVeovNH/xV1GQvbcPJ9JJMyoQMvej+zpbc9vNr1fVbeEAd83TUrgv7Rku+H6WZ2+Ci/vrFAGVYBnexDxRUhxCbabBqJFupT9AsPtcZ8/LA0MqfP96OItarVtmFpVSxHoLOdvResnt+N9F/u6WftNXJ0trHByn51fcewArHDlMIdOfhGqYSup6wMT9l6YWFLM/sKUaKEaAPAxnmEN6qngmWRWt76nd5Be0nKUwHZ5OcEYR+8iNU7+K1wZ2+rfUgTa0AQaktPLGigqokG70RcO5kAcsSa+yN1vrsZ+h9HJTUSZCKsYX4Leke9iv3knhPEfJGwUlpSwssokWERAtioFlZyfUMDnNwNewO+ZZZMiO1TW5AFFFcynfDomFbDAESKUJioI=
+ configurations :
+  -
+    name : Windows 32
+    internal_properties : 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
+    configuration_id : 14946668003493900124
+    type : 1
+    generation_directory : .\Exe\Windows 32
+    generation_name : WD Organizer.exe
+    version :
+     major_version : 22
+     minor_version : 37
+     internal_generation_version : 1
+     autoincrement_version : false
+    icon_filename : .\Organizer.ico
+    language : 2
+    telemetry :
+     status : disabled
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAAAsSNQcoXy/6GC3Nr/cD/9Q7FpyIEkHaS4YEvUQwsMGMJFIm0d3rlA9cOgdyiOdkelSmnQHCaavpetF
+  -
+    name : Windows 64
+    internal_properties : CAAAAAgAAAA4BN9OvMnPjpSvXPSs5QHH02kiWh83iI++WgfR2qa/I6Nn6S7Gh7e3Wdy6Nb+x2ctrvxjiCmBh5C9l1k7hjrboYszLVlERK08514hGlZv9orCstDyPT2NdKE4XsMzq8fcT1gtYdqRl3cVF1P24H+LKpgb0lpoMXqbXuJIuT145yqsfOoWpbo7mUHHV5zStQeb58kCtVGZXBJKs1guFYVUP44zACMJ927MG0bm+mNttIwcKOYgyncARL0uZhhyHBY2NU0fmU2Py0SnZLtWnQVLl0vE2NKrxsKo6h/GsWOPDA9Nf0zAlGH6WkwZrfH3R9TS5vndoUx5Ih/bEPUCLEwdjFpDGTuH+1cASZr3DaVTubE0p4r38y7U0xEJ6mv9jd+LY4D0tIuKi/dX3O6Qwjz0BvEnJQ14VIExleRGF73K9T69Zr9A4014eoUU+veZn17s1aTJNMKCUBYLU8n/L2mKpYmaxIOfag9DEIt/PmM5U+YbZAsGKVxUSbPl5vGriZ/+coJ+o2CZOwRUWKh3+pRYMlhbRlV9tXq07Hd42txbY0qzfxFVmQkcny0dHcozxU0CfAe+izTF9zg3u9QrP8VSjd+y9Ub/tqf/1+poVCzVhRCVb/oZ4Xf3OrZCATySq+b4WqlpVgRXj9j3i3YnZtr+lBX9yWNDNSGqWsoTbMGwWf99nBVhqIdPoSjD9CfmjndEUf4EKoUsgDrbwVlXOziHaCq4qdIaNurKd63A1SBd5gZZQNmz/ygjyUR0MrMz9NIkBiHIkEifSX/UUF+Z9MV4/K2xB/o+pjAb7hWsTU6TQ2PZRSpIxmslrwJbbfYa2sA/GaTOt/KZWRc3dwKHv+gfMn8q+0Yu9OfiwO/AL/cl8zmgWBvCej3OO6PBFCUjs/10sOSuZNc/UvWCKAle/3etNM+Sfm9Jt8naSfjNs4mu6m0c5IOkPFfTMyxUvMsHeToiz4krq8gst/cKyAHi5FVWbfG/q3NzJ+IyoLKtXj08IXwses73kKb45kBszH3iaBHTN5FJ977DAwLjalKMr7C/aZ8BoMReQ+0oG4gRNwaAE3gu9DBMSqmYII993wLr5F5Xlysu2v+M5sQgsPT670hdYx0JglGCCdxbxTnvuS4Wx4cB3e6yeJJrojsAJd4UMOKvzGUbgXLrBUQLVOFeVpfkFt9nxb/sNJ5vzCCqE5ncx7xZwWSNZmeMEWEjPZOluIyj9Ho2Ds5MsTTyWtNukqAdENTSovcROEgynKWcutSX9cM2OGnJws1Ul9SFhoklZFFIOTV1evvk/ng9qBINAN91ZnHKcageac5z2oO6Gj2u2j32m7/bGY5QVnddrL1pKSNq/dMQZJXOTmFa+bz116qN3kDLKm0I16qACax2W/+71eo6VJB1KKIEmecet8TL00XH6TMxy3CESNMc13hHP3pEiluAhfptaJngx05tJGf/OW4R4x1TqpB8V4/4L23mVcoldRcsipTZbiH0mhTzbDkTHYGaeuys8/dlBd1s0Z5X2Rad/5nEzciI0RVIrXGYc7N5wCa3fVnffkI5/P0aHCazjr36KUqFhEx8h8ekN8d+1WSlJAEs696Y9uKiGFjr8HIB8oethv7ITFN9l6mTkL/ZkUKK3ZuZCB6eemFlXxng18bewkbLM135drDbk2VzVutEyzNPjUvxsHFJb4ywxjeomL2tRuhuH9sH3UQ==
+    configuration_id : 2582915566035937729
+    type : 1
+    generation_directory : .\Exe\Windows 64
+    generation_name : WD Organizer.exe
+    version :
+     major_version : 22
+     minor_version : 37
+     internal_generation_version : 1
+     autoincrement_version : false
+    icon_filename : .\Organizer.ico
+    language : 2
+    telemetry :
+     status : disabled
+    64bits : true
+ elements :
+  identifier : 0x4b0138e000553bc8
+  elements :
+   -
+     name : pSynchro
+     identifier : 0x4b041ca70013ed3a
+     internal_properties : CAAAAAgAAAB/21dLeCWNnqk8614AnDVXmeRQwHD9xIROrz/lv0zGKu7ScRA6xgtTBjCqFp5SLqJq6g==
+     physical_name : .\pSynchro.wdg
+     type : 7
+   -
+     name : WIN_ListCalendar_Outlook
+     identifier : 0x4b029b8600118bd7
+     internal_properties : CAAAAAgAAACvq4ebKFXdjlksG25wftE7gZC4sJz/9E2K1PatVda8DDz07wJK9jsD9iCaZi6iXlK6ug==
+     physical_name : .\WIN_ListCalendar_Outlook.wdw
+     type : 2
+   -
+     name : WIN_ParamCalendar_Notes
+     identifier : 0x4b014e24000b4d95
+     internal_properties : CAAAAAgAAABr51O3dDF5oq0w36I0M6WH9eaQ0Pq8ecVO5zHdpHcf8QfFOreGsv9HCjSuCopGMqZu9g==
+     physical_name : .\WIN_ParamCalendar_Notes.wdw
+     type : 2
+   -
+     name : TEST_Organizer
+     identifier : 0x4b1e900e001e2734
+     internal_properties : CAAAAAgAAACutIaaKVbekV4tHGN1ddhKfCl7U2X8oJinnkoOPv2fWedrevdF8z4E9yGbZS2jX1G7uw==
+     physical_name : .\TEST_Organizer.wxt
+     type : 17
+   -
+     name : WinDevMessageBox
+     identifier : 0x46d98e8002752641
+     internal_properties : CAAAAAgAAAC8mpSAP2RMX2qRrlANq4mejI3bw/xr3zyE9KrsT6f149016D4m3CSqN+/p11+RaV+pqQ==
+     physical_name : .\WinDevMessageBox_1.WDW
+     type : 2
+   -
+     name : WIN_ListCalendar_Google
+     identifier : 0x4b029eae000ee147
+     internal_properties : CAAAAAgAAACjn5uPPGlBWmX4l5r87r1HTQwUDLiTWwFWbTmlfb5chLxUb5K+esePQvzm0lKOal6mrg==
+     physical_name : .\WIN_ListCalendar_Google.wdw
+     type : 2
+   -
+     name : WIN_FormAPT
+     identifier : 0x4b0be3ab00311f9f
+     internal_properties : CAAAAAgAAAA4FmC8izB4o6w/0qU/Ko4U1ml1pZ0B3zd3qhuIBea2Yp68wcCDvQRKCTOtC4tFPbMdJQ==
+     physical_name : .\WIN_FormAPT.wdw
+     type : 2
+   -
+     name : QRY_Events
+     identifier : 0x4b03bd7d001a34cd
+     internal_properties : CAAAAAgAAACQbsjU04iguwTHin1nQ8pglqvlxYzlxrdOq3NWFXMZz2X5iPlb5SxyYdvFM/PtlQv1fQ==
+     physical_name : .\QRY_Events.WDR
+     type : 5
+   -
+     name : WIN_Conflict
+     identifier : 0x4b041f7c0015fdce
+     internal_properties : CAAAAAgAAACrp5P3NHE5Ym3wn+L06UnrBULYWGYLqKhK7LluBgWRv3mLFH3Gcr+HSvTuykqGcmautg==
+     physical_name : .\WIN_Conflict.wdw
+     type : 2
+   -
+     name : WIN_ListCalendar_Notes
+     identifier : 0x4b02a9780010030a
+     internal_properties : CAAAAAgAAAAwDmi0cyiAm6Qn6l0HdcY0jj91rRNeZD22WcPmvk3HaesL9hs7xQxSATulE5NNNasVHQ==
+     physical_name : .\WIN_ListCalendar_Notes.wdw
+     type : 2
+   -
+     name : WIN_SynchroInfo
+     identifier : 0x4b0506aa001502df
+     internal_properties : CAAAAAgAAABk4kxoVwwkx5BjRqkzMoJ4Sm0JqRF/bcy2tdtipUbOcpZEudh/ufi+vWdRr3dpEYdx8Q==
+     physical_name : .\WIN_SynchroInfo.wdw
+     type : 2
+   -
+     name : WIN_Organizer
+     identifier : 0x4b03b7cc0018f859
+     internal_properties : CAAAAAgAAAAT70tfbNlRCtWoh2psRNHTJUD8/EwI7AdWbTOEDxz+ymaaCQhO6jd/cqwW4qJeGo52/g==
+     physical_name : .\WIN_Organizer.wdw
+     type : 2
+   -
+     name : IW_WinDevViewAPT
+     identifier : 0x4b06d04500207d41
+     internal_properties : CAAAAAgAAADTLwsfrJmRShXoxyqshRGLfXowYF3LHm92qZs3CRGFq61XSEkOKnc/MuzWIuIe2s42Pg==
+     physical_name : .\IW_WinDevViewAPT.wdw
+     type : 8
+   -
+     name : WIN_Categories
+     identifier : 0x4b0a6bf800199750
+     internal_properties : CAAAAAgAAADrZ9M39LH5Ii2wXyK0vhX/JXTMBLCDYs6q0NZdXa5spKy0L0IGMn/HirQuigrGsibudg==
+     physical_name : .\WIN_Categories.wdw
+     type : 2
+   -
+     name : WIN_ParamCalendar_Outlook
+     identifier : 0x4b014e2c000d6bfe
+     internal_properties : CAAAAAgAAAAgHhgEo5iQSxQX2q03OoZsrvFNnRUnleOKGAhOBTbmIi48odCLtfxCMevVI+Md5dslLQ==
+     physical_name : .\WIN_ParamCalendar_Outlook.wdw
+     type : 2
+   -
+     name : WIN_Options
+     identifier : 0x4b0c00c1001dbbc1
+     internal_properties : CAAAAAgAAABAPrjkw7jwKzT3uo3XW9pghsuF1ee0Sp22FYq2oIsBBw0RkPFrldyiUcs1gwP9hXtFzQ==
+     physical_name : .\WIN_Options.wdw
+     type : 2
+   -
+     name : pImport
+     identifier : 0x4b01619a00105380
+     internal_properties : CAAAAAgAAAAmLA4Skc5mCdbV9HsdihASzJPLA7fx0mNOT1fCXa5uqlLcxTwd2yZsb6kT7bUr18kzMw==
+     physical_name : .\pImport.wdg
+     type : 7
+   -
+     name : pTools
+     identifier : 0x4b0424ae001849cb
+     internal_properties : CAAAAAgAAAAS6EpebdpSDSqpmO/xwFAaYFPf1/98A5JSSgkTd6To2CyCX5LJd7qAc60X4aFfG413/w==
+     physical_name : .\pTools.wdg
+     type : 7
+   -
+     name : WIN_ParamCalendar_Google
+     identifier : 0x4b014e1a000925f9
+     internal_properties : CAAAAAgAAAD5VSFlQj93eMeGSbgiCq8F45ay2gpkqp5ObwAMwVo4kLxgR7qQqOmxoJoE/IR8BPTcZA==
+     physical_name : .\WIN_ParamCalendar_Google.wdw
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x46d98e83027d3351
+     internal_properties : CAAAAAgAAAAnIw8TkM1lBtNaa5jyIO+LmZjAmDfuGp6sFk0BxHKgaICwgyBulN/ncKgS7rYq1soyMg==
+     physical_name : .\WinDevDialogBox_1.WDW
+     type : 2
+   -
+     name : QRY_CategoriesUsed
+     identifier : 0x4b0bf2de00337f6c
+     internal_properties : CAAAAAgAAABp5VG1ci+HqLd2OQhSx2/1K5gm7lk68GJKjDGYRVND3SeJGlfgGFkh0Eq0DJRMNKRs9A==
+     physical_name : .\QRY_CategoriesUsed.WDR
+     type : 5
+  other_elements : []
+  analysis : .\WD Organizer.ana\WD Organizer.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ languages :
+  - en-GB
+ code_elements :
+  internal_properties : CAAAAAgAAABUqZYZZUU6wOkKT9qYi9jBoZDpoIOuytM5PTktHs+2GdTkDUK/J7mP/tlfx0sM+v8Bc7HoyGSw29ddta++9FV1Gtwn7zkYJle7hsufZ/2ySAEF
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADTpYrx1Rt3Ng8MPzqkbxDpo/3s/GjNg1uPMtMAqDVvL3E8jlgz0PHN2MMj9GhGPd632tqwIFTCFG7NOG1AkH7U3SGk66XMuKg0PtIMNnJYqnuZ6MMaC6YXUDgdtPdh1wRFJZcBguR+Gtz+L3Q=
+     code : |1-
+      
+      CONSTANT
+      	GGL_PASS = "cuaf2747"
+      END
+      
+      <COMPILE IF Configuration="Windows 32">
+      CONSTANT P_CreateSampleEvents = "CreateSampleEventsX86"
+      <ELSE>
+      CONSTANT P_CreateSampleEvents = "CreateSampleEventsX64"
+      <END>
+      
+      DirectoryTemporaryData is string = fDataDirUser()
+      
+      // HFSQL initialization
+      HPass(GoogleCalendar, GGL_PASS)
+      HCheckStructure("*", hCompatible)
+      HChangeDir("*", fDataDir)
+      HModifyStructure("*", hmsNoCheck)
+      HCreationIfNotFound("*")
+      
+      // Creating the temporary directory
+      IF fDirectoryExist(DirectoryTemporaryData) THEN 
+      	fRemoveDir(DirectoryTemporaryData, frRecursive + frReadOnly)
+      END
+      fMakeDir(DirectoryTemporaryData)
+      
+      IF HNbRec(OrganizerCategory) = 0 THEN
+      	CreateDefaultCategories()
+      END
+      
+      IF HNbRec(OrganizerEvent) = 0 THEN	
+      	CreateExampleEvents()	
+      END
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Windows 32
+     identifier : 0x4b0138e000563bc8
+     code_elements :
+      type_code : 159
+      p_codes : []
+   -
+     name : Windows 64
+     identifier : 0x4def9f1f0022a38f
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : External organizers
+       explorer_type : custom_folder
+       children :
+        -
+          name : Outlook
+          explorer_type : custom_folder
+          children :
+           -
+             name : WIN_ListCalendar_Outlook
+             explorer_type : element
+             type : 2
+           -
+             name : WIN_ParamCalendar_Outlook
+             explorer_type : element
+             type : 2
+        -
+          name : Lotus
+          explorer_type : custom_folder
+          children :
+           -
+             name : WIN_ListCalendar_Notes
+             explorer_type : element
+             type : 2
+           -
+             name : WIN_ParamCalendar_Notes
+             explorer_type : element
+             type : 2
+        -
+          name : Google
+          explorer_type : custom_folder
+          children :
+           -
+             name : WIN_ListCalendar_Google
+             explorer_type : element
+             type : 2
+           -
+             name : WIN_ParamCalendar_Google
+             explorer_type : element
+             type : 2
+        -
+          name : WIN_Conflict
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_SynchroInfo
+          explorer_type : element
+          type : 2
+     -
+       name : Preset windows
+       explorer_type : custom_folder
+       children :
+        -
+          name : IW_WinDevViewAPT
+          explorer_type : element
+          type : 8
+        -
+          name : WinDevDialogBox
+          explorer_type : element
+          type : 2
+        -
+          name : WinDevMessageBox
+          explorer_type : element
+          type : 2
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

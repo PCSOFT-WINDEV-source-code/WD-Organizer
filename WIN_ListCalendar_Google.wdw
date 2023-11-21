@@ -1,0 +1,352 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_ListCalendar_Google
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_ListCalendar_Google
+ identifier : 0x286d09d62eabe53e
+ internal_properties : CAAAAAgAAADnueuJEIYL1A/ZRgvN4kS5Q0XImNz89gupaQucmfrTE9ilz0rPHKy8ftGwRYEhxp41VN63szqQ2q+RpHvpYTXPppnckMUkbj+P5pkLyzkmuLSlAoAuS6QDm/lHB/E52q/J58f5xO4r0tKvA8wdqZaClPcD8kMIOdDCbiW79/x9UcHvvAxCZmqR9ulIaug6LS4ka8Y4T4cUmZ8Lc1y7Bm4JIiy6HGRYUEh5PR+LkxmWiuVeCCfIz87RX8DkU23GIJRTmHJSGK4yazYLbUKFO9U+VK1f+DRsID+B1giLYKYqQBdNxwZXmkO+DrYvVwUhGCDnct8Mq+JTrbhrQbK7fGSANKcc8I3c85ynssnI+3kciEH9VzCAzl03l+WGRYDzVlv973rooL2URmSYet9wo8u044NLoyEOidT1R1ir6vas2mff2NVVx812CdT2h+BKK0Ck9UIL1povF+4RG42MN+Zai31cwcuAK/x9x6/oAAMXopLtDei/na26Tuk6uua1Ze9pPCJ1v0B0Djt/sEeEzit04nq19kTLxSxNtBtTNomZD7slXAF4YmU20ti0LNFQXwIozpDf+2r0uTb4/svDxNFBizi90uzsoxSC+ce5D+8qm8NqN6uKSPDioaFy1VZCbwJbQUjPWh9HrNHVuIWr4GWKE2OGw8V3kkpZ2fGpw0AGeGQ+U1i2L+xDmPiqL8f+yYZmnS4h+lhSe31kn1nL7mcGmDjkuVf8oGncmjGlKchsEd1GjGoeWxMUWNhzyF0EB1pjylVYktGgqlpx+Y9XFk9FjdkYReRY0wN/uk1jxj3liKadK9l+5nQs+HqWbJvAVO9pxIZ92XqafeGpFnDFmDnLeEoUuyuo6biWQP/r1HVL7tVx6B2QLlSw+8JY8mQWOhiFtacI8Yr1c0KDJpj8
+ properties :
+  width : 372
+  height : 339
+  widthClient : 370
+  heightClient : 307
+ controls :
+  -
+    name : STC_BCKGRD
+    identifier : 0x286d09d62eade53e
+    internal_properties : CAAAAAgAAADQ/fopE5nch0tQpayhFnu0TRpta6uv+tZ1S+LpY316WvRlMlX398Wa61iFglCT4J2C0berqO3dcTIKodPgzfYiAAjmht0fgrE4QklmZkH+aMnzK46NB11j6b7yRq6COGWfX3BMnWn71uUfSzIXHj2aE1EVlijNx0vOMuTAnxUVYzSBDnxo64P4jc7CzdkxsEjPNd1FWJZQKr6mQbmf3b7pTquwDkEgx/vpk99u7P1rR6KpL5DArm1S3HtfIRQuuQhliruCtua7LDTTc52xgBAL6kvdDaUvJR4883l7MaFbE64wlIqzh1RUDxdlZYIfDb+6wMrAXVXC0CW2pw5ash47Z+do/wSXMHC0sjBZTorjQH1FLAzr2YBy/YCwx3ED83WnTSpwWCt8gTJKvBXHtKP0laqo5QdVkNKfcMTeUnRKFKMa/sW/GIVEvY54NVpcduIFWbT6HW6jjaDbn1/bG8vRDt0XfDeTHYm0uSNGxolM3i48xaI=
+    properties :
+     width : 370
+     height : 253
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : IMG_ICON
+    identifier : 0x286d09d62eaee53e
+    internal_properties : CAAAAAgAAABsSjGkcNavaUP2JHGK7KI3AjXuiQJUGOTQIDGRMKAMDQuxU0mqucs3oVOLVclZtxiR4IUTV/1G1q3+cAtMKdXDfCCipkS81tR+thKaruD5o/0GClGlCQqupFLFmpvcjuvVITV//qUe1Qk8HfO6tB/HOGUBnkrp9AnHwuZ9tiKF3ZcpE15OzA57voLEAJ5d9IHhRv54nv/YaMdxlKAlxAiAhY9IM9ITVSy7CZ/Gyu3E0HrGX/RZGXQpQZXAxOT6YrxPIlRY3qPksguJb6Pal+viJGVDWV8IxNSw8M0WCxPiKAEWfWAxBFvEINAjWUb30GsIiTXROxYHEN2uNp0x2bjxDHRvENnJOfuPZxx6paocpOwmrfaauNOhrXqsutWE11iNFCu3ZbxH7lVA38GR4XK6azjObJ+/a9r175hBTDrFv2pfu+9Tr4ptaECzsK8jaMUvM/WYkXmaI+DCbIbatXm+NFNGXB1fJUOEZTZHodYaI0dWoRWHMJ6j9Ph7+gbFACqNJCGHldPlyyXwG7o0p+nQuEqZkIiLGPJayuMpMppQj+t075uNh7rkaTFkaTXY0XTAyQ63NVBD/VoksaR2LPwOF1pYDrj2YpY6mbNuhCLTZbG0NEn/YBTaniID26TEkjlYeyLaFMV1vwatdnpKi/9y9YSXcYne/7BtC7OrwVxMC4k6qyzAZUzACWrvhPJ0rnvd3LYEoxV7OE2yf7qDYzzIx+4JWBWhIGOr3drDhvn+JQdtf1YIyJnX9UKToYd/bzS1Jw1xxE3Te1fuuuftZ7Gc+yKKbjUEfPaJh8/J/ETeyxACWq/lCsVLML723F4a8LRMv94V9S4+1X7xttTOM+HsXkckfZcXAVU9D6eG1XyQ1jSdaPmbd0b/4k7QADluat/Piy9VJ0rtV6Km4GnGe6D7wtyCNbZgTwB1uzVOYvfglXr5YuvtGLQeqC2/+28=
+    properties :
+     x : 8
+     y : 8
+     width : 50
+     height : 50
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_BOTMBCKGRD
+    identifier : 0x286d09d62eace53e
+    internal_properties : CAAAAAgAAACWh5imvnwaOlGH/b9f8fl/vxjVgMCMZfs7sBfSuvS6OUAwQJI8PXyZOo7l/piTbr5XPgjEYfz3cgC6sCkhfQGe+LI5gQkw4XBX8P625TBZXCq4I6zml9eJwm2MMRpsrzltVufaruCc8GWtuK+1rB55elw8tkfZcSsGy0V0vYtnqGvue6TOxvqyKyt4mMrZSb/twyOiyn+FBGPVK5GAACOIZntrH3wJ+42P85c4985xlbOPilM1gBAIFx5uh2wTo2uxNDlSSxgYTEBoUuyNJX2r0beYRkCDy9tBmCZ+d5jvyXzqixpLDEXBZb/8xA30LxQ8YcTFWnU1XIvyzl7zT0BRusX1igBZCGaxGI9J6Uoqrc4FFlXVKXxXJH+scJp2nW2e0otiYMUnL93rOWsxKoMJ5FAUbNh93WkrRTSEdepri9E4mEoMGiTFVSyQXZh22sIcgZGl8toxld3R60QFog==
+    properties :
+     y : 252
+     width : 370
+     height : 55
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_Close
+    identifier : 0x286d09d62eafe53e
+    internal_properties : CAAAAAgAAAAAQQhiS9Au/3fSVG7xFDG+UUDbRw9twFcgaR8XZt6lKu4SywDq1xVICLViIct93ZPsxnL0tMt9nYVT7e8Ol8pt0aojHk49+tI/bcmLAn7LKYtDiRnAqFoOkYNtN+Mj+/qjUEZscRrWmhpqXROPv1mx9y5yxPVcWP9ab/dpGdFI/WIJSvJELCwMmwImYx/bMSlgcFT2MGSKVoQtefAmK+qXy+wY+igS0xvWoL9hnrOedu2UYMLxZ/gMMjUG1G7fEQFmXi3gFOGacQDqTh4/JtEzOwE6zv/AeNVi+QhYktSu4inb31bMz34H/JVzHGWG/5iu0CU213UiQfqx7G7f2UH2B4XCK0E+f8wCGqdRlD1q2BNNOJS2uIOg+XAMUSqm8TD2dFRUO51jRuRv2C81Z6rRBUwYnh/SJyst7Lbok2kqkPB3zd7xbp7T0j52ZDkY+5cfcGZViZOyHR7LCv8On8VnK78KYqk0IY5SWomjPAonScion9GN4Q+3PaQwCMCu3CTQNiGwy3aAWKJvzaW6Ss0xTtLEcnH7++CF+4bgmkTzT3L3QWx7uuDBJ+fPMCZpBkf1VFViCv8/ZAG9MFxdooMzDYgvbmJgCbOYPFOgX2nYN0lxtk1v7Eiv0g6cO1SA5oNrqGRmFmG9ilbNbCrtAHGf/mKMPwqFLZ5I60YpMn/00gaiBYDdWuCDOD8XufTCinjtq/ng2KakIgjoaOlfwPQiND4W8ufExQBGO342KP/BMaKE9U3UeMkuzFLx2YYGjhG7yb4rakTUQ4VpAuv9xPX/QSH05xRLYyMD0+Os7K+SCgDr4kKhJcP2fTeo226qEsQdre3ii114btD2GRUi8v0PAg==
+    properties :
+     x : 284
+     y : 267
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MyWindow..ReturnedValue = False
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_INFOTITLE
+    identifier : 0x286d09d62eb0e53e
+    internal_properties : CAAAAAgAAAAd4yhVyt0RB+QhYXwCCGajwBuQOEgLc/x8esI3SNimzy3qijG+a88GkbadsHzpDBlp8v5FhKimR3/ZtDQbvhChrNMIHzOZxbEwFYbF1LbG6KIp9Z2a5ezmUJcPAz2Uq+frULZMiaHi0YDk3XenOHpeDIm5XXfv0/ukSEjYt7jd5FLiyWFRT0bnSuzI3K80hswXZOHiHPyim3z7fjN3yUWNa74FnwYYXuNB3LpxYKvTxUHXpXOM6z0sXk3CeUrZVY/LzVvtiLaEhiLynLjWUaSA8ON4sDzpFW8OuzAlk42VefhipRJir40pZVHs1Mcir1GYBvokt0c7FUuw9VSczhNVephgIDIvpklhXyz22UiuzdKQLShOAxE5T73VXuxXMbm1VGlmAYXBy0ivgvh59pcIy3o0pSC3CKJsoZXOzPafnodWoaIsja4TYfCqlWaZAyFEp86bBlpxgmwj/USM358AI0IXE5LNRcvV8egp1h+yLyd6JThbSL3hGBL0dC2VCNvUoztdA/DkMxcYAKDQ29VZYnjOCIY4Q101BEoYuzl6hjZCU8kEkkRgokEL/xZUgLVeeFnsArwzT6vsIq58Jw==
+    properties :
+     x : 66
+     y : 8
+     width : 298
+     height : 50
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : LIST_CALENDARS
+    identifier : 0x286d09d62eb1e53e
+    internal_properties : CAAAAAgAAAB0OQVs0Mfbqb4V4HPaI9lyVMYC6PAZjni0dLCYoYQr5IZqwtE9VLDxrKmLr9AP8KFftNy+majTWKT6L0FzPkqr7hSEhfObSAfj7ykva9tR9X01VvpTrbvqVQL86GGGL7+nx+0kZPvxfAKULiUqawe7xj6ZqZf9fBSD143sIDfhbaYXMrdyahm1wgvGrowkrOUT/HmeaZ0wP3WxBYmn2kNQ/kr0apvU7z0U3gRNM2bY6HrwrOqSC7iyVPC9LphsUsPXZ9IEJ6VRsZy+41i27q6HzQP7ZAWjxOi5G7FhFXNVEkXsJDSPhzMr71aFyGV0aZucjOKVD/4Y4TKnJVLvl5XS9bkneeFSY/3sf1b0xS/9k7x7PJiOCyqX/9PXx5QfiZWdBPdarPiizr8emXtohj+EJCOudSDz2LGbMo01m4Rh0XN8Q0h76VjduElf0Mgmb//0aweve9btdAqrFtDoBg9O7nxcVCiAPmYLVTUIsTFHXCydLXyzItnhVAWCF9h5eH9hAKPAjULszXrC1lDVgkVPp48/+2jKbMqXPQeA7l5QNaY0lZltuMdno9NeM5dDRIVKal5ouapt6QGL2EYYEPWS5mnBjnGXQioqzGhGH+j1civlZK9sqpk5EzUwoF/Wr+ZtRWnbOI66JCXydusrKpDoEaNCQzDYYtWtpk8fRvunzJWISfCjAHLt7enhDGH4vW0BAglvAzuh9hjtYc7purz4bSxnrSh4A6870tCkAvOjKbyofss9h6dWZS2f7+Kn/q/8muC+0ggX6P9Mc3ed69Tl9iv93zaJ+2VZfbdCl786JT5LcAqQwMLJIiOmfsOAUWGP/hHghEoIDdgi5NkUjB2vdLGTi6TQ+FrVrKJQzCGKBu7euFv20UZHDnpCOI4esInuFNYolMrY2mWxOWUzMV+mIyL1cpp2I5egzMk9ht79OGv6Mbsq82qa6NMwwN0kzhM5N2sWLPjG+ZRz1l79RxQKSIfqynaxeO0uDhNndyoyRUVyfNbyVuAbkMMvGiwghmnxkrRQZZB/64+QAQa2eP6MqOxGjN7ZeFWlaOS0tLd8FOtlBAmq1c83tp4=
+    properties :
+     x : 8
+     y : 64
+     width : 272
+     height : 184
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        code : |1-
+         
+         STC_EMPTY..Visible = (LIST_CALENDARS..Count = 0)
+         ExecuteProcess(LIST_CALENDARS, trtSelection)
+        type : 35
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        code : |1-
+         
+         IF ListSelect(LIST_CALENDARS) > 0 THEN
+         
+         	// Enables the deletion/modification button
+         	ControlEnabled(GR_MODIFICATION, animFadeIn)
+         ELSE
+         	
+         	// Grays the deletion/modification button
+         	ControlGrayed(GR_MODIFICATION, animFadeIn)
+         END
+        type : 33
+  -
+    name : BTN_New
+    identifier : 0x286d09d62eb2e53e
+    internal_properties : CAAAAAgAAACQIHvjTW82iTwAG7RTl0dqcYZ+aAuKlYbEDXIk2Ory8z+fsuChV6rS8zSOvpsNHKjhlrJWuw/xruCIaSnZkHfr3tTnLZnsBznzDldKoD15wjd7Jxk4Frc2xjMF0IY/33vljW+l/FTWWTqdBurf6lFWqZoGBw7oYNyn8x84FzulOwtCsX6zkjaInMZsgTSWqaLeugmGw3fLSjkYVIkFQ6j66mhQs2phgi8FkrDpBpWNMMElfFEunCS8niKClp3aTedMvwwvcJdkWUT7dcTGLcNM0oUpre4jcGUIUC3GTVuZx8g3CPpfTeUaihpQZT0Jfw1vUuiNsOoXrkW6KtLcY7E6gkOmQMlujCdtsq0ne4bArsCVbP5LcsubzttQZ80EoKIImBEpvWr+T35pnhhYM/uOii/Vl7RWZwDsLSZLuqO8CLoGE3EwCz/F3XiBDRhqqIiSQdVV8m5P65Up++3H7v7er4IhEouZ/y0G5nJWsF2jtHtaXdAQgKwfVLB3s1QctXXPchBkZRZkjLJBN81Q/NngW6PDJ0hL/6FH8h3E/6hCa+tGurICYXnmenFMcaNJuQj1osrGERU/llDfDqFiHbhHXrmeHdG/Z0rDLptnJai2wS71N7Z/d1e9mrSV5/JwxrLPxmwttyVkpry556g4HRk7AFNDGVPhXwJK1afi+XafRAi3t0xrYcGuEO94mXXfHj5B/oBh8ZvTn0zWkfUzlzE92e03waoHuAszrYPC4bdhp4+mAkah62++SA4Wypw9RSDWmtuwqpXI+HqRFXI0skybS0GtI3cTjNfnFdwQKU3HzbufkWKuNOCJ6AsYofTsCn5B/MOJQHpURO1cu0lQml7BNkFeVhNCuXg=
+    properties :
+     x : 284
+     y : 64
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABQHwz6r71+uPMO0y5i14zv+4ARTWTVNB5ZY6cT1Z+GD2c4fBkNrTfvPqrbucWCb2R34D+PU6Vd3Ke4yuXH2AtTkNuy/wJ2O1hNMerYbXgx1SbtjFXttQ3TrwVXdmRHVhl6oSP3HsV6g8ApwQ==
+        code : |1-
+         
+         // Opens the window for importing a Google calendar
+         IF Open(WIN_ParamCalendar_Google) THEN
+         	
+         	// Refreshes the list
+         	ListDisplay(LIST_CALENDARS, taInit)
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Modify
+    identifier : 0x286d09d62eb3e53e
+    internal_properties : CAAAAAgAAADfCaSZEtUTDA1iw3PxLNhOOkHj1y0X3MtuzKl2x9Ey7ClkSVIzZyG/PBXQpd/oZpSRsbdFpnIuU24DoDvTWgivLB+qtaThSteARrIZjwVXPC98agWTnZskXkl8ksuWI6JplsNQXesR9pD68FbgQ1LvpdWe/ga5li4KESP1e+4mjUde9ynUaDyT13o9KDdXNXv5fdHlMlTdN9a88bz+hk0dJMcjGeUXyjoLYTpkpY+h7Qkzt3HT81sQJGwFAanK4fjygkELw7+YI3x6W+4JsDPHii0fnmLDcynY+M7yghkY9Rwyj5iVCcbqQxRciUiRdmCBsEC/ysCQlYu5TQnfZrGWP9byhF0/nsv2U/b+2ULHc2LzhvAShYncR9sS9tWqkVyUUy1VMHz3B+2e9tRond59kWYLILd7hY//5JnqQ90/m5OXzQYltgVBenQDvY9ZPxUffzxVjAy9C+wVZrgPW2jpoW4O/O0EnziKvDpGvdCf1MndAc8/6EPULNeo2HQTFTFU5QPcTZFKT8cYtNtRHl7v7ORGXCecB1Wa91pTQm8ra0oE6A6H4eJ7bG46tBgAotJa/Rby8WeYAWaTRRTBwdLjyjIAdNHCIZpaHiw/hlCA/6q/iiMBVQcXQlrR8RjTvXQm62rNSZTUSotUh4lxBSPesjqFKT/E8xVVknW9UzOxNONyCHSaXc6DM2MGrBjaapEFA9Z1GFxwbq5klagqVjU6IiDVxXJZQrFmgbJFKlDZ/iTcITbzsNbtZhiczEW0mPy6owzJpxQn7B5gOg9ONJwW3QQg0ylmWzi1gpHGePuLVLUPRg19pyIbt2isIq0j98QsjALIQrH8TwBfim2ijYMSIOwImv36/GX/ugVVDqYWNaiXxjCtp69MlqyYFLNlt0d/1udkBGvDpsz5TAeLyiA=
+    properties :
+     x : 284
+     y : 94
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABQHwz6r71+uPMO0y5i14zv+4ARTWTVNB5ZY6cT1Z+GD2c4fBkNrTfvPqrbucWCb2R34D+PU6Vd3Ke4yuXH2AtTkNuy/wJ2O1hNMerYbXgx1SbtjFXttQ3TrwVXdmRHVhl6oSP3HsV6g8ApwQ==
+        code : |1+
+         
+         // Opens the window for importing a Google calendar
+         IF Open(WIN_ParamCalendar_Google, LIST_CALENDARS..StoredValue) THEN
+         	
+         	// Refreshes the list
+         	ListDisplay(LIST_CALENDARS, taInit)
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_EMPTY
+    identifier : 0x286d09d62eb4e53e
+    internal_properties : CAAAAAgAAAC9erB64fRPpx01mmr6xiI6wG9HZHKPGJBAF7FH72/YvIQqNyDjlBNRIgqhScQZFtupY/Puy0SEz+fSRDnnnVTk/TbVJMgYZCD55U1wcSryn9pObDmhfqOqEKAeKC3ueHYsXNtCGSi4gJ0g2vc7h2/oBQhjtZfztn8CrpsitniIDwi2ptSpd3k9AICEhsb9Ytb7pM2yMhg9Be2JQrmBa0+TNMba5nZHHc+O69KjJzvQQwlSwNjLPtgV0dCNwb3jN1UpKq3leS2qgwO7q+qHUZ277nXsnQzOrudjqVGkatjikJwoxcG2KKZCph+rjTMLtvJtmXrgVxIRQbdqajnffUgnBI0JXKTxoHW3bGtxzGa+9g+R34IBmbldulWUK5JcHdSRbEupJTUk4y9Wcw5pqL5+QvAgzpgd22x8sVusZCj0UAxRHM6VjIVyTkPFr/2lsAQHh5KzCivZOAtwG7rv0lc+zwLkbRNNJ+AhZ0YW30CJ8TeDSXo77BQBmo+/cj0gVLraQlUCZrP+Ezemn0uXspS6l3dPz5Vo2hWF4//kyfG7LBJtLa4K6ciZwBUZuO9WTMjkasy/QeADwstUnA==
+    properties :
+     x : 13
+     y : 64
+     width : 259
+     height : 182
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_Delete
+    identifier : 0x286d09d62eb5e53e
+    internal_properties : CAAAAAgAAAAZr1fw+UINVORv4oto3zVsf6wfbyHaSHXqmEBqBW0Z63lqI5ZeMfyOhlNCy0pK0TD2Kk+lqDIJnQLBK1+rsKDp7dfAZqofd9Pf/XbYUe+4Y7m4Rrc575jsI0nyABhgjvbe8QVILUiiK+60ybWafJqjEnrb8PN+kpFPwA3PdKWecIF2l/XJ6T/I6Q9+Z1JnZBpAYQ7NnIO76qbOzpXNYRUPMUC/fpEjopBMk7ggHWoclz3Ek9Mk2anAvtRWKJyk9Pi914agu9HYyMV5kVVDuREaByVwya5+A1MzZ1z3iyWvW5C4RUwDeDGlxp2goCxNTndpBZE422s/1MUzeLXSfifRoB8Zu9FB8MI+XvVzV6Whw3v/f2GK75jx0slqsd7aZAz+HOnESB4lQ8MQ6jiprzbOn+Ty+KNN1tW7QMFO4p6Cl0uKWOx5UrfOVRJZmm/r4YAcTd7aPOv6/tJfXn5LQ6cqp3bCKxd44ngU/beLbv0VRvyZrV3WWbVzIVlZIyeaD+s33uTOjqUb1nSmaD9GbszeZATaU7nSYriZLTJNc/Y9lPMxtyxvabyvLS2aypAKHTNstHUs1F3MEKTHudHOWs4gM6FHQFN1Gy82bKzElvsK2SPCnQSrEFDXikGxmkPOL5fuVOfFqeOdL2g2Oh41+589cESzYTB6gRnrnwKPDji/YkXYlBA782HDRO58q1oumHSpgcPf20aE3P/oykxnWZD1tCbKTmnAJKbydXwpRuQCdT5Ubc5k/Dt17XfJwKSuXZlIzkB/lQbDiHsDQkYrLkRe6aAhkpZRFSUUHI0g0TmCA25L8pTZjKv6QySQUbDinQKNY6hdRwYWhDTpvqkO+g/ga8ADsZNybY7E6x5O+TiNnBa90vkc5hQ3RZ/oeP8zg6xpbkO10ZJhQS8=
+    properties :
+     x : 284
+     y : 124
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADJIBwKO8InsVPwWK22Hyyk8SRnJhwci5nLPMtnJ2QbCuOI+xFWU5FEf6nLoV9BI0tMUdhadgbti/dMBgXVIyjfLx4YMxC0ANZwbNB0yqc+ZnlTEQrOOIcd/s/+PzNhJM4kO/tPfrvvV83eDCihYPp0ifh1Mv21j9TzGWC6LBm3/xz1oqTVoIbeTfwQxwZlbK2ffsiCuzGG5TNz3NXbv4lLXZqqCvvxKWN6u1zbbX7sgrwM6/uxHE6xXw==
+        code : |1-
+         
+         //1: &Delete the organizer
+         //3: D&elete the organizer and its events
+         //2: Do&n't delete
+         SWITCH Dialog(<§?1B029F2E0047D48B§>, LIST_CALENDARS..DisplayedValue)
+         	// &Delete the organizer
+         	CASE 1
+         		
+         		// Positions on the Google calendar
+         		HReadSeekFirst(GoogleCalendar, GoogleCalendarID, LIST_CALENDARS..StoredValue)
+         		IF HFound(GoogleCalendar) THEN
+         						
+         			// Delete
+         			HDelete(GoogleCalendar)
+         			ListDisplay(LIST_CALENDARS, taInit)
+         		END
+         
+         	// D&elete the organizer and its events
+         	CASE 3
+         		
+         		// Positions on the Google calendar
+         		HReadSeekFirst(GoogleCalendar, GoogleCalendarID, LIST_CALENDARS..StoredValue)
+         		IF HFound(GoogleCalendar) THEN
+         			
+         			// Deletes the events linked to this organizer
+         			FOR EACH OrganizerEvent WHERE GoogleCalendarID = GoogleCalendar.GoogleCalendarID		
+         				
+         				// Delete the event only if it is not linked to another profile (Notes or Outlook)
+         				IF OrganizerEvent.NotesCalendarID = 0 _AND_ OrganizerEvent.OutlookCalendarID = 0 THEN
+         					HDelete(OrganizerEvent)	
+         				END
+         			END
+         			
+         			// Delete
+         			HDelete(GoogleCalendar)
+         			ListDisplay(LIST_CALENDARS, taInit)
+         		END
+         
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x2b029eae2103e128
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAQB7TWDeHfUcO+ftiXRTV4/GCXimLWoulF3nTB6xcZp7luk5EGQOvvmWkOFeSL0RgOqkIdesRjVy+q2L04sHRHPpq5xdzx7wXhxW0NnoGJjpIzc07gQ86zmNlR
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      // Default return value
+      MyWindow..ReturnedValue = False
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x1b029eae001ee147
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+ dialogs :
+  -
+    identifier : 0x1b029f2e0047d48b
+    internal_properties : CAAAAAgAAAC/cGO/L2kejMJ1wokyRsW7sP1B1nKI/eHwtvFnRRwu+JAP+4jwYd1d471H/Ts/tjAQATeMKmeDy7wr9ES3EN0yuFfkwcrN3/vbwmp3
+    label :
+     fr-FR : "Les événements ne seront plus synchronisés avec cet agenda.\r\n\r\nÊtes-vous sûr de vouloir supprimer l'agenda '%1' ?\r\n"
+     en-GB : "The events will no longer be synchronized with this organizer.\r\n\r\nDo you want to delete the '%1' organizer?\r\n"
+    image : {}
+    cancel_button : 2
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer l'agenda"
+        en-GB : "&Delete the organizer"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : S&upprimer l'agenda et ses événements
+        en-GB : "&Delete the organizer and its events"
+       image : {}
+       value : 3
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
